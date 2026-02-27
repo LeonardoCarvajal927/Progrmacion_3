@@ -1,0 +1,7 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Ejercicios\Ejercicios\bin\Debug\Ejercicios.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Ejercicios\Ejercicios\bin\Debug\Ejercicios.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Ejercicios\Ejercicios\bin\Debug\Ejercicios.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Ejercicios\Ejercicios\obj\Debug\Ejercicios.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Ejercicios\Ejercicios\obj\Debug\Ejercicios.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Ejercicios\Ejercicios\obj\Debug\Ejercicios.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Ejercicios\Ejercicios\obj\Debug\Ejercicios.pdb
