@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Simulador de Cajero Automático (Clase Cuenta)
+
+using System;
 
 namespace Ejercicios_POO.Ejemplos
 {
@@ -53,7 +55,8 @@ namespace Ejercicios_POO.Ejemplos
     {
         public static void Ejecutar()
         {
-            Console.Write("Ingrese su nombre: ");
+            Console.Write("Simulador de Cajero Automático\n");
+            Console.Write("\nIngrese su nombre: ");
             string nombre = Console.ReadLine();
 
             CuentaBancaria cuenta = new CuentaBancaria(nombre);
@@ -62,6 +65,8 @@ namespace Ejercicios_POO.Ejemplos
 
             do
             {
+
+                Console.WriteLine("Simulador de Cajero Automático\n");
                 Console.WriteLine("\n--- Cajero Automático ---");
                 Console.WriteLine("1. Consultar saldo");
                 Console.WriteLine("2. Depositar");
