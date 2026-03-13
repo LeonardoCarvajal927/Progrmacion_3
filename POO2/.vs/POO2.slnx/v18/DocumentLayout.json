@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\ejercicios\\ejercicio_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\ejercicios\\ejercicio_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\modelos\\revista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\modelos\\revista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\modelos\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\modelos\\libro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\modelos\\materialbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\modelos\\materialbiblioteca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\modelos\\audiolibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\modelos\\audiolibro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\interfaces\\iprestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\interfaces\\iprestable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\enums\\tipocategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\enums\\tipocategoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\poo2\\poo2\\poo2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC0C7D18-F69A-46B0-82F0-8EEEC066BACA}|POO2\\POO2.csproj|solutionrelative:poo2\\poo2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AudioLibro.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\AudioLibro.cs",
+              "RelativeDocumentMoniker": "POO2\\Modelos\\AudioLibro.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\AudioLibro.cs",
+              "RelativeToolTip": "POO2\\Modelos\\AudioLibro.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:56:59.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaterialBiblioteca.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\MaterialBiblioteca.cs",
+              "RelativeDocumentMoniker": "POO2\\Modelos\\MaterialBiblioteca.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\MaterialBiblioteca.cs",
+              "RelativeToolTip": "POO2\\Modelos\\MaterialBiblioteca.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:56:07.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Libro.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\Libro.cs",
+              "RelativeDocumentMoniker": "POO2\\Modelos\\Libro.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\Libro.cs",
+              "RelativeToolTip": "POO2\\Modelos\\Libro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:56:29.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Revista.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\Revista.cs",
+              "RelativeDocumentMoniker": "POO2\\Modelos\\Revista.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Modelos\\Revista.cs",
+              "RelativeToolTip": "POO2\\Modelos\\Revista.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:56:44.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ejercicio_1.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Ejercicios\\Ejercicio_1.cs",
+              "RelativeDocumentMoniker": "POO2\\Ejercicios\\Ejercicio_1.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Ejercicios\\Ejercicio_1.cs",
+              "RelativeToolTip": "POO2\\Ejercicios\\Ejercicio_1.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAuwJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T12:01:56.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Program.cs",
+              "RelativeDocumentMoniker": "POO2\\Program.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Program.cs",
+              "RelativeToolTip": "POO2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:44:56.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IPrestable.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Interfaces\\IPrestable.cs",
+              "RelativeDocumentMoniker": "POO2\\Interfaces\\IPrestable.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Interfaces\\IPrestable.cs",
+              "RelativeToolTip": "POO2\\Interfaces\\IPrestable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:55:08.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TipoCategoria.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Enums\\TipoCategoria.cs",
+              "RelativeDocumentMoniker": "POO2\\Enums\\TipoCategoria.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\Enums\\TipoCategoria.cs",
+              "RelativeToolTip": "POO2\\Enums\\TipoCategoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:53:55.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "POO2",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\POO2.csproj",
+              "RelativeDocumentMoniker": "POO2\\POO2.csproj",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\POO2\\POO2\\POO2.csproj",
+              "RelativeToolTip": "POO2\\POO2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T11:55:43.123Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
