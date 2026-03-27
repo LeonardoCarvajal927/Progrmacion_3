@@ -1,0 +1,15 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\bin\Debug\net10.0\Parcial_02.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\bin\Debug\net10.0\Parcial_02.deps.json
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\bin\Debug\net10.0\Parcial_02.runtimeconfig.json
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\bin\Debug\net10.0\Parcial_02.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\bin\Debug\net10.0\Parcial_02.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.AssemblyInfoInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.AssemblyInfo.cs
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.sourcelink.json
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\refint\Parcial_02.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\Parcial_02.genruntimeconfig.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Parcial_02\Parcial_02\obj\Debug\net10.0\ref\Parcial_02.dll

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Parcial_#1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD0ED20-5A71-4ADA-B464-53398D04EB4C}|Parcial_#1\\Parcial_#1.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\parcial_#1\\parcial_#1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CD0ED20-5A71-4ADA-B464-53398D04EB4C}|Parcial_#1\\Parcial_#1.csproj|solutionrelative:parcial_#1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Parcial_#1\\Parcial_#1\\Program.cs",
+              "RelativeDocumentMoniker": "Parcial_#1\\Program.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Parcial_#1\\Parcial_#1\\Program.cs",
+              "RelativeToolTip": "Parcial_#1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T11:15:56.62Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
