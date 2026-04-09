@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\",
+  "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\2.Panel de Configuraci\u00F3n con Pesta\u00F1as\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95332549-0B42-473A-BB40-3297C7225D89}|Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\progrmacion_3\\segundo corte\\panel de configuraci\u00F3n con pesta\u00F1as\\panel de configuraci\u00F3n con pesta\u00F1as\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{95332549-0B42-473A-BB40-3297C7225D89}|Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\progrmacion_3\\segundo corte\\2.panel de configuraci\u00F3n con pesta\u00F1as\\panel de configuraci\u00F3n con pesta\u00F1as\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{95332549-0B42-473A-BB40-3297C7225D89}|Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as.csproj|solutionrelative:panel de configuraci\u00F3n con pesta\u00F1as\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95332549-0B42-473A-BB40-3297C7225D89}|Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\progrmacion_3\\segundo corte\\2.panel de configuraci\u00F3n con pesta\u00F1as\\panel de configuraci\u00F3n con pesta\u00F1as\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95332549-0B42-473A-BB40-3297C7225D89}|Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as.csproj|solutionrelative:panel de configuraci\u00F3n con pesta\u00F1as\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,14 +26,27 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\2.Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs",
+              "RelativeDocumentMoniker": "Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\2.Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs*",
+              "RelativeToolTip": "Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T22:10:23.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\2.Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs",
               "RelativeDocumentMoniker": "Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\2.Panel de Configuraci\u00F3n con Pesta\u00F1as\\Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Panel de Configuraci\u00F3n con Pesta\u00F1as\\Form1.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-09T21:44:22.056Z",
+              "WhenOpened": "2026-04-09T21:50:51.491Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

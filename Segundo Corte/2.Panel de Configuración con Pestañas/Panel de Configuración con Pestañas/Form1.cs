@@ -16,5 +16,10 @@ namespace Panel_de_Configuración_con_Pestañas
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
