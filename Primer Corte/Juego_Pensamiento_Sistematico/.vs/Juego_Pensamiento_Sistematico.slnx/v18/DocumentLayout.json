@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Programacion_3\\Primer Corte\\Juego_Pensamiento_Sistematico\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DBF8D656-4D65-6E1F-32DA-8BC5C8AD5162}|Juego_Pensamiento_Sistematico\\Juego_Pensamiento_Sistematico.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\programacion_3\\primer corte\\juego_pensamiento_sistematico\\juego_pensamiento_sistematico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBF8D656-4D65-6E1F-32DA-8BC5C8AD5162}|Juego_Pensamiento_Sistematico\\Juego_Pensamiento_Sistematico.csproj|solutionrelative:juego_pensamiento_sistematico\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Programacion_3\\Primer Corte\\Juego_Pensamiento_Sistematico\\Juego_Pensamiento_Sistematico\\Program.cs",
+              "RelativeDocumentMoniker": "Juego_Pensamiento_Sistematico\\Program.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Programacion_3\\Primer Corte\\Juego_Pensamiento_Sistematico\\Juego_Pensamiento_Sistematico\\Program.cs",
+              "RelativeToolTip": "Juego_Pensamiento_Sistematico\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T00:37:15.296Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

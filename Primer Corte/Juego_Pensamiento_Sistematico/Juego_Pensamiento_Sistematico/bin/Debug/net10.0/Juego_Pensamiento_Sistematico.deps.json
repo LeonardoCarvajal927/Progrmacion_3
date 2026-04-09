@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Juego_Pensamiento_Sistematico/1.0.0": {
+        "runtime": {
+          "Juego_Pensamiento_Sistematico.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Juego_Pensamiento_Sistematico/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

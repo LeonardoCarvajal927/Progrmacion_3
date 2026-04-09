@@ -1,0 +1,15 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\bin\Debug\net10.0\Juego_Pensamiento_Sistematico.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\bin\Debug\net10.0\Juego_Pensamiento_Sistematico.deps.json
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\bin\Debug\net10.0\Juego_Pensamiento_Sistematico.runtimeconfig.json
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\bin\Debug\net10.0\Juego_Pensamiento_Sistematico.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\bin\Debug\net10.0\Juego_Pensamiento_Sistematico.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.AssemblyInfoInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.AssemblyInfo.cs
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.sourcelink.json
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\refint\Juego_Pensamiento_Sistematico.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\Juego_Pensamiento_Sistematico.genruntimeconfig.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Programacion_3\Primer Corte\Juego_Pensamiento_Sistematico\Juego_Pensamiento_Sistematico\obj\Debug\net10.0\ref\Juego_Pensamiento_Sistematico.dll
