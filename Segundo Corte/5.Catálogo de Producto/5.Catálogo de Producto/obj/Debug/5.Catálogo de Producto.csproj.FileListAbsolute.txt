@@ -1,0 +1,10 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\bin\Debug\5.Catálogo de Producto.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\bin\Debug\5.Catálogo de Producto.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\bin\Debug\5.Catálogo de Producto.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\obj\Debug\5.Catálogo de Producto.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\obj\Debug\_5.Catálogo_de_Producto.Form1.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\obj\Debug\_5.Catálogo_de_Producto.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\obj\Debug\5.Catálogo de Producto.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\obj\Debug\5.Catálogo de Producto.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\obj\Debug\5.Catálogo de Producto.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\5.Catálogo de Producto\5.Catálogo de Producto\obj\Debug\5.Catálogo de Producto.pdb
