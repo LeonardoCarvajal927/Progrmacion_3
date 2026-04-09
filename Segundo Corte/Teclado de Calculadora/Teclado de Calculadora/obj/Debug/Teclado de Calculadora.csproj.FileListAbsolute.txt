@@ -1,0 +1,10 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\bin\Debug\Teclado de Calculadora.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\bin\Debug\Teclado de Calculadora.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\bin\Debug\Teclado de Calculadora.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\obj\Debug\Teclado de Calculadora.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\obj\Debug\Teclado_de_Calculadora.Form1.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\obj\Debug\Teclado_de_Calculadora.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\obj\Debug\Teclado de Calculadora.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\obj\Debug\Teclado de Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\obj\Debug\Teclado de Calculadora.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Teclado de Calculadora\Teclado de Calculadora\obj\Debug\Teclado de Calculadora.pdb
