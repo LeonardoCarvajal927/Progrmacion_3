@@ -8,3 +8,13 @@ C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Cor
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Ejercicio_#1\Ejercicio_#1\obj\Debug\Ejercicio_#1.csproj.CoreCompileInputs.cache
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Ejercicio_#1\Ejercicio_#1\obj\Debug\Ejercicio_#1.exe
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Ejercicio_#1\Ejercicio_#1\obj\Debug\Ejercicio_#1.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\bin\Debug\Ejercicio_#1.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\bin\Debug\Ejercicio_#1.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\bin\Debug\Ejercicio_#1.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\obj\Debug\Ejercicio_#1.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\obj\Debug\Ejercicio__1.Form1.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\obj\Debug\Ejercicio__1.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\obj\Debug\Ejercicio_#1.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\obj\Debug\Ejercicio_#1.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\obj\Debug\Ejercicio_#1.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\1.Formulario de Perfil Mi Cuenta\Ejercicio_#1\obj\Debug\Ejercicio_#1.pdb
