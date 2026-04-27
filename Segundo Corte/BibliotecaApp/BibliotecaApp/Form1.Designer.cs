@@ -127,7 +127,9 @@
             // 
             // btnLibros
             // 
+            this.btnLibros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(203)))), ((int)(((byte)(255)))));
             this.btnLibros.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLibros.FlatAppearance.BorderSize = 0;
             this.btnLibros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLibros.Font = new System.Drawing.Font("Myanmar Text", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLibros.Image = global::BibliotecaApp.Properties.Resources.bookshelf_icon_icons_com_54414__3_;
@@ -138,11 +140,13 @@
             this.btnLibros.Text = "Libros";
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLibros.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnLibros.UseVisualStyleBackColor = true;
+            this.btnLibros.UseVisualStyleBackColor = false;
             // 
             // btnPrestamos
             // 
+            this.btnPrestamos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
             this.btnPrestamos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnPrestamos.FlatAppearance.BorderSize = 0;
             this.btnPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrestamos.Font = new System.Drawing.Font("Myanmar Text", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrestamos.Image = global::BibliotecaApp.Properties.Resources.clipboard_notes_list_tasks_icon_191193;
@@ -153,11 +157,13 @@
             this.btnPrestamos.Text = "Préstamos";
             this.btnPrestamos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPrestamos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnPrestamos.UseVisualStyleBackColor = true;
+            this.btnPrestamos.UseVisualStyleBackColor = false;
             // 
             // btnDevoluciones
             // 
+            this.btnDevoluciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(255)))), ((int)(((byte)(176)))));
             this.btnDevoluciones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDevoluciones.FlatAppearance.BorderSize = 0;
             this.btnDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevoluciones.Font = new System.Drawing.Font("Myanmar Text", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevoluciones.Image = global::BibliotecaApp.Properties.Resources.left_arrow_curved_black_symbol_icon_icons_com_73000;
@@ -168,11 +174,13 @@
             this.btnDevoluciones.Text = "Devoluciones";
             this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDevoluciones.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnDevoluciones.UseVisualStyleBackColor = true;
+            this.btnDevoluciones.UseVisualStyleBackColor = false;
             // 
             // btnInformes
             // 
+            this.btnInformes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(125)))), ((int)(((byte)(255)))));
             this.btnInformes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInformes.FlatAppearance.BorderSize = 0;
             this.btnInformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformes.Font = new System.Drawing.Font("Myanmar Text", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInformes.Image = global::BibliotecaApp.Properties.Resources.iconfinder_documents01_1622837_121952;
@@ -183,7 +191,7 @@
             this.btnInformes.Text = "Informes";
             this.btnInformes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnInformes.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnInformes.UseVisualStyleBackColor = true;
+            this.btnInformes.UseVisualStyleBackColor = false;
             // 
             // lblSubtitulo
             // 

@@ -3,6 +3,7 @@ C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Cor
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\BibliotecaApp\BibliotecaApp\bin\Debug\BibliotecaApp.pdb
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\BibliotecaApp\BibliotecaApp\obj\Debug\BibliotecaApp.csproj.AssemblyReference.cache
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\BibliotecaApp\BibliotecaApp\obj\Debug\BibliotecaApp.FormPrincipal.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\BibliotecaApp\BibliotecaApp\obj\Debug\BibliotecaApp.FormLibros.resources
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\BibliotecaApp\BibliotecaApp\obj\Debug\BibliotecaApp.Properties.Resources.resources
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\BibliotecaApp\BibliotecaApp\obj\Debug\BibliotecaApp.csproj.GenerateResource.cache
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\BibliotecaApp\BibliotecaApp\obj\Debug\BibliotecaApp.csproj.CoreCompileInputs.cache
