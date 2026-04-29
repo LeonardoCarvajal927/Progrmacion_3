@@ -16,5 +16,10 @@ namespace BibliotecaApp
         {
             InitializeComponent();
         }
+
+        private void lblEditorial_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
