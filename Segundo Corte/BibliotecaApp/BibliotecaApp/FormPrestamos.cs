@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace BibliotecaApp
 {
-    public partial class FormLibros : Form
+    public partial class FormPrestamos : Form
     {
-        public FormLibros()
+        public FormPrestamos()
         {
             InitializeComponent();
         }
 
-        private void lblEditorial_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblSubtituloLibros_Click(object sender, EventArgs e)
+        private void lblIdPrestamo_Click(object sender, EventArgs e)
         {
 
         }
