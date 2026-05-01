@@ -30,18 +30,18 @@
         {
             this.pnlHeaderInformes = new System.Windows.Forms.Panel();
             this.pnlTituloInformes = new System.Windows.Forms.Panel();
-            this.picIconoInformes = new System.Windows.Forms.PictureBox();
             this.lblTituloInformes = new System.Windows.Forms.Label();
+            this.picIconoInformes = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlEjemplaresDisponibles = new System.Windows.Forms.Panel();
-            this.lblNumDisponibles = new System.Windows.Forms.Label();
             this.lblTextoDisponibles = new System.Windows.Forms.Label();
+            this.lblNumDisponibles = new System.Windows.Forms.Label();
             this.pnlPrestamosActivos = new System.Windows.Forms.Panel();
-            this.lblNumActivos = new System.Windows.Forms.Label();
             this.lblTextoActivos = new System.Windows.Forms.Label();
+            this.lblNumActivos = new System.Windows.Forms.Label();
             this.pnlPrestamosVencidos = new System.Windows.Forms.Panel();
-            this.lblNumVencidos = new System.Windows.Forms.Label();
             this.lblTextoVencidos = new System.Windows.Forms.Label();
+            this.lblNumVencidos = new System.Windows.Forms.Label();
             this.pnlFiltros = new System.Windows.Forms.Panel();
             this.tblFiltros = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,6 +52,12 @@
             this.btnVerTodo = new System.Windows.Forms.Button();
             this.gbDisponibilidadLibro = new System.Windows.Forms.GroupBox();
             this.dgvDisponibilidad = new System.Windows.Forms.DataGridView();
+            this.colISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrestados = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDisponibles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbPrestamosVencidos = new System.Windows.Forms.GroupBox();
             this.dgvPrestamosVencidos = new System.Windows.Forms.DataGridView();
             this.colIDVencido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,12 +70,6 @@
             this.lblEstadoInformes = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTotalTitulos = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTotalVencidos = new System.Windows.Forms.ToolStripStatusLabel();
-            this.colISBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrestados = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDisponibles = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlHeaderInformes.SuspendLayout();
             this.pnlTituloInformes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconoInformes)).BeginInit();
@@ -107,16 +107,6 @@
             this.pnlTituloInformes.Size = new System.Drawing.Size(600, 100);
             this.pnlTituloInformes.TabIndex = 0;
             // 
-            // picIconoInformes
-            // 
-            this.picIconoInformes.Image = global::BibliotecaApp.Properties.Resources.iconfinder_documents01_1622837_121952;
-            this.picIconoInformes.Location = new System.Drawing.Point(100, 15);
-            this.picIconoInformes.Name = "picIconoInformes";
-            this.picIconoInformes.Size = new System.Drawing.Size(65, 65);
-            this.picIconoInformes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picIconoInformes.TabIndex = 0;
-            this.picIconoInformes.TabStop = false;
-            // 
             // lblTituloInformes
             // 
             this.lblTituloInformes.AutoSize = true;
@@ -126,6 +116,16 @@
             this.lblTituloInformes.Size = new System.Drawing.Size(239, 67);
             this.lblTituloInformes.TabIndex = 1;
             this.lblTituloInformes.Text = "INFORMES";
+            // 
+            // picIconoInformes
+            // 
+            this.picIconoInformes.Image = global::BibliotecaApp.Properties.Resources.iconfinder_documents01_1622837_121952;
+            this.picIconoInformes.Location = new System.Drawing.Point(100, 15);
+            this.picIconoInformes.Name = "picIconoInformes";
+            this.picIconoInformes.Size = new System.Drawing.Size(65, 65);
+            this.picIconoInformes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIconoInformes.TabIndex = 0;
+            this.picIconoInformes.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -156,18 +156,6 @@
             this.pnlEjemplaresDisponibles.Size = new System.Drawing.Size(369, 80);
             this.pnlEjemplaresDisponibles.TabIndex = 0;
             // 
-            // lblNumDisponibles
-            // 
-            this.lblNumDisponibles.AutoSize = true;
-            this.lblNumDisponibles.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumDisponibles.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblNumDisponibles.Location = new System.Drawing.Point(272, 0);
-            this.lblNumDisponibles.Name = "lblNumDisponibles";
-            this.lblNumDisponibles.Size = new System.Drawing.Size(48, 63);
-            this.lblNumDisponibles.TabIndex = 0;
-            this.lblNumDisponibles.Text = "0";
-            this.lblNumDisponibles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // lblTextoDisponibles
             // 
             this.lblTextoDisponibles.AutoSize = true;
@@ -179,6 +167,18 @@
             this.lblTextoDisponibles.Text = "Ejemplares disponibles";
             this.lblTextoDisponibles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblTextoDisponibles.Click += new System.EventHandler(this.lblTextoDisponibles_Click);
+            // 
+            // lblNumDisponibles
+            // 
+            this.lblNumDisponibles.AutoSize = true;
+            this.lblNumDisponibles.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumDisponibles.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblNumDisponibles.Location = new System.Drawing.Point(272, 0);
+            this.lblNumDisponibles.Name = "lblNumDisponibles";
+            this.lblNumDisponibles.Size = new System.Drawing.Size(48, 63);
+            this.lblNumDisponibles.TabIndex = 0;
+            this.lblNumDisponibles.Text = "0";
+            this.lblNumDisponibles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pnlPrestamosActivos
             // 
@@ -192,6 +192,16 @@
             this.pnlPrestamosActivos.Size = new System.Drawing.Size(380, 80);
             this.pnlPrestamosActivos.TabIndex = 1;
             // 
+            // lblTextoActivos
+            // 
+            this.lblTextoActivos.AutoSize = true;
+            this.lblTextoActivos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoActivos.Location = new System.Drawing.Point(202, 42);
+            this.lblTextoActivos.Name = "lblTextoActivos";
+            this.lblTextoActivos.Size = new System.Drawing.Size(171, 36);
+            this.lblTextoActivos.TabIndex = 1;
+            this.lblTextoActivos.Text = "Préstamos activos";
+            // 
             // lblNumActivos
             // 
             this.lblNumActivos.AutoSize = true;
@@ -202,16 +212,6 @@
             this.lblNumActivos.Size = new System.Drawing.Size(48, 63);
             this.lblNumActivos.TabIndex = 0;
             this.lblNumActivos.Text = "0";
-            // 
-            // lblTextoActivos
-            // 
-            this.lblTextoActivos.AutoSize = true;
-            this.lblTextoActivos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoActivos.Location = new System.Drawing.Point(202, 42);
-            this.lblTextoActivos.Name = "lblTextoActivos";
-            this.lblTextoActivos.Size = new System.Drawing.Size(171, 36);
-            this.lblTextoActivos.TabIndex = 1;
-            this.lblTextoActivos.Text = "Préstamos activos";
             // 
             // pnlPrestamosVencidos
             // 
@@ -225,6 +225,16 @@
             this.pnlPrestamosVencidos.Size = new System.Drawing.Size(370, 80);
             this.pnlPrestamosVencidos.TabIndex = 2;
             // 
+            // lblTextoVencidos
+            // 
+            this.lblTextoVencidos.AutoSize = true;
+            this.lblTextoVencidos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoVencidos.Location = new System.Drawing.Point(175, 42);
+            this.lblTextoVencidos.Name = "lblTextoVencidos";
+            this.lblTextoVencidos.Size = new System.Drawing.Size(187, 36);
+            this.lblTextoVencidos.TabIndex = 1;
+            this.lblTextoVencidos.Text = "Préstamos vencidos";
+            // 
             // lblNumVencidos
             // 
             this.lblNumVencidos.AutoSize = true;
@@ -235,16 +245,6 @@
             this.lblNumVencidos.Size = new System.Drawing.Size(48, 63);
             this.lblNumVencidos.TabIndex = 0;
             this.lblNumVencidos.Text = "0";
-            // 
-            // lblTextoVencidos
-            // 
-            this.lblTextoVencidos.AutoSize = true;
-            this.lblTextoVencidos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoVencidos.Location = new System.Drawing.Point(175, 42);
-            this.lblTextoVencidos.Name = "lblTextoVencidos";
-            this.lblTextoVencidos.Size = new System.Drawing.Size(187, 36);
-            this.lblTextoVencidos.TabIndex = 1;
-            this.lblTextoVencidos.Text = "Préstamos vencidos";
             // 
             // pnlFiltros
             // 
@@ -264,7 +264,7 @@
             this.tblFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tblFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tblFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tblFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
+            this.tblFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 707F));
             this.tblFiltros.Controls.Add(this.label1, 1, 0);
             this.tblFiltros.Controls.Add(this.cmbCategoriaFiltro, 1, 1);
             this.tblFiltros.Controls.Add(this.label2, 3, 0);
@@ -391,6 +391,48 @@
             this.dgvDisponibilidad.Size = new System.Drawing.Size(1173, 215);
             this.dgvDisponibilidad.TabIndex = 0;
             // 
+            // colISBN
+            // 
+            this.colISBN.HeaderText = "ISBN";
+            this.colISBN.MinimumWidth = 8;
+            this.colISBN.Name = "colISBN";
+            this.colISBN.ReadOnly = true;
+            // 
+            // colTitulo
+            // 
+            this.colTitulo.HeaderText = "Título";
+            this.colTitulo.MinimumWidth = 8;
+            this.colTitulo.Name = "colTitulo";
+            this.colTitulo.ReadOnly = true;
+            // 
+            // colTotal
+            // 
+            this.colTotal.HeaderText = "Total";
+            this.colTotal.MinimumWidth = 8;
+            this.colTotal.Name = "colTotal";
+            this.colTotal.ReadOnly = true;
+            // 
+            // colPrestados
+            // 
+            this.colPrestados.HeaderText = "Prestados";
+            this.colPrestados.MinimumWidth = 8;
+            this.colPrestados.Name = "colPrestados";
+            this.colPrestados.ReadOnly = true;
+            // 
+            // colDisponibles
+            // 
+            this.colDisponibles.HeaderText = "Disponibles";
+            this.colDisponibles.MinimumWidth = 8;
+            this.colDisponibles.Name = "colDisponibles";
+            this.colDisponibles.ReadOnly = true;
+            // 
+            // colCategoria
+            // 
+            this.colCategoria.HeaderText = "Categoría";
+            this.colCategoria.MinimumWidth = 8;
+            this.colCategoria.Name = "colCategoria";
+            this.colCategoria.ReadOnly = true;
+            // 
             // gbPrestamosVencidos
             // 
             this.gbPrestamosVencidos.Controls.Add(this.dgvPrestamosVencidos);
@@ -506,48 +548,6 @@
             this.lblTotalVencidos.Name = "lblTotalVencidos";
             this.lblTotalVencidos.Size = new System.Drawing.Size(116, 36);
             this.lblTotalVencidos.Text = "0 vencidos";
-            // 
-            // colISBN
-            // 
-            this.colISBN.HeaderText = "ISBN";
-            this.colISBN.MinimumWidth = 8;
-            this.colISBN.Name = "colISBN";
-            this.colISBN.ReadOnly = true;
-            // 
-            // colTitulo
-            // 
-            this.colTitulo.HeaderText = "Título";
-            this.colTitulo.MinimumWidth = 8;
-            this.colTitulo.Name = "colTitulo";
-            this.colTitulo.ReadOnly = true;
-            // 
-            // colTotal
-            // 
-            this.colTotal.HeaderText = "Total";
-            this.colTotal.MinimumWidth = 8;
-            this.colTotal.Name = "colTotal";
-            this.colTotal.ReadOnly = true;
-            // 
-            // colPrestados
-            // 
-            this.colPrestados.HeaderText = "Prestados";
-            this.colPrestados.MinimumWidth = 8;
-            this.colPrestados.Name = "colPrestados";
-            this.colPrestados.ReadOnly = true;
-            // 
-            // colDisponibles
-            // 
-            this.colDisponibles.HeaderText = "Disponibles";
-            this.colDisponibles.MinimumWidth = 8;
-            this.colDisponibles.Name = "colDisponibles";
-            this.colDisponibles.ReadOnly = true;
-            // 
-            // colCategoria
-            // 
-            this.colCategoria.HeaderText = "Categoría";
-            this.colCategoria.MinimumWidth = 8;
-            this.colCategoria.Name = "colCategoria";
-            this.colCategoria.ReadOnly = true;
             // 
             // FormInformes
             // 
