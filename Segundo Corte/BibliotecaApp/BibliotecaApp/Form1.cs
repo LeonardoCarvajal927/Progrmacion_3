@@ -26,5 +26,30 @@ namespace BibliotecaApp
         {
 
         }
+
+        private void btnLibros_Click(object sender, EventArgs e)
+        {
+            FormLibros frm = new FormLibros();
+            frm.Show();
+        }
+
+        private void btnPrestamos_Click(object sender, EventArgs e)
+        {
+            FormPrestamos frm = new FormPrestamos();
+            frm.Show();
+        }
+
+        private void btnDevoluciones_Click(object sender, EventArgs e)
+        {
+            FormDevoluciones frm = new FormDevoluciones();
+            frm.Show();
+        }
+
+        private void btnInformes_Click(object sender, EventArgs e)
+        {
+            FormInformes frm = new FormInformes();
+            frm.Show();
+        }
     }
+    
 }

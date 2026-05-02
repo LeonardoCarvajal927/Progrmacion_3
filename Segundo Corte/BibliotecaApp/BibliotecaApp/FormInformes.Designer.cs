@@ -34,18 +34,18 @@
             this.picIconoInformes = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlEjemplaresDisponibles = new System.Windows.Forms.Panel();
-            this.lblTextoDisponibles = new System.Windows.Forms.Label();
-            this.lblNumDisponibles = new System.Windows.Forms.Label();
+            this.lblEjemplaresDisponibles = new System.Windows.Forms.Label();
+            this.lblNumeroDisponibles = new System.Windows.Forms.Label();
             this.pnlPrestamosActivos = new System.Windows.Forms.Panel();
-            this.lblTextoActivos = new System.Windows.Forms.Label();
-            this.lblNumActivos = new System.Windows.Forms.Label();
+            this.lblPrestamosActivos = new System.Windows.Forms.Label();
+            this.lblNumeroActivos = new System.Windows.Forms.Label();
             this.pnlPrestamosVencidos = new System.Windows.Forms.Panel();
-            this.lblTextoVencidos = new System.Windows.Forms.Label();
-            this.lblNumVencidos = new System.Windows.Forms.Label();
+            this.lblPrestamosVencidos = new System.Windows.Forms.Label();
+            this.lblNumeroVencidos = new System.Windows.Forms.Label();
             this.pnlFiltros = new System.Windows.Forms.Panel();
             this.tblFiltros = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbCategoriaFiltro = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.btnFiltrar = new System.Windows.Forms.Button();
@@ -59,7 +59,7 @@
             this.colDisponibles = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbPrestamosVencidos = new System.Windows.Forms.GroupBox();
-            this.dgvPrestamosVencidos = new System.Windows.Forms.DataGridView();
+            this.dgvVencidos = new System.Windows.Forms.DataGridView();
             this.colIDVencido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLibroVencido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstudianteVencido = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -82,7 +82,7 @@
             this.gbDisponibilidadLibro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisponibilidad)).BeginInit();
             this.gbPrestamosVencidos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamosVencidos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVencidos)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -147,8 +147,8 @@
             // pnlEjemplaresDisponibles
             // 
             this.pnlEjemplaresDisponibles.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlEjemplaresDisponibles.Controls.Add(this.lblTextoDisponibles);
-            this.pnlEjemplaresDisponibles.Controls.Add(this.lblNumDisponibles);
+            this.pnlEjemplaresDisponibles.Controls.Add(this.lblEjemplaresDisponibles);
+            this.pnlEjemplaresDisponibles.Controls.Add(this.lblNumeroDisponibles);
             this.pnlEjemplaresDisponibles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlEjemplaresDisponibles.Location = new System.Drawing.Point(10, 10);
             this.pnlEjemplaresDisponibles.Margin = new System.Windows.Forms.Padding(10);
@@ -156,35 +156,36 @@
             this.pnlEjemplaresDisponibles.Size = new System.Drawing.Size(369, 80);
             this.pnlEjemplaresDisponibles.TabIndex = 0;
             // 
-            // lblTextoDisponibles
+            // lblEjemplaresDisponibles
             // 
-            this.lblTextoDisponibles.AutoSize = true;
-            this.lblTextoDisponibles.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoDisponibles.Location = new System.Drawing.Point(191, 43);
-            this.lblTextoDisponibles.Name = "lblTextoDisponibles";
-            this.lblTextoDisponibles.Size = new System.Drawing.Size(214, 36);
-            this.lblTextoDisponibles.TabIndex = 1;
-            this.lblTextoDisponibles.Text = "Ejemplares disponibles";
-            this.lblTextoDisponibles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTextoDisponibles.Click += new System.EventHandler(this.lblTextoDisponibles_Click);
+            this.lblEjemplaresDisponibles.AutoSize = true;
+            this.lblEjemplaresDisponibles.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEjemplaresDisponibles.Location = new System.Drawing.Point(191, 43);
+            this.lblEjemplaresDisponibles.Name = "lblEjemplaresDisponibles";
+            this.lblEjemplaresDisponibles.Size = new System.Drawing.Size(214, 36);
+            this.lblEjemplaresDisponibles.TabIndex = 1;
+            this.lblEjemplaresDisponibles.Text = "Ejemplares disponibles";
+            this.lblEjemplaresDisponibles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblEjemplaresDisponibles.Click += new System.EventHandler(this.lblTextoDisponibles_Click);
             // 
-            // lblNumDisponibles
+            // lblNumeroDisponibles
             // 
-            this.lblNumDisponibles.AutoSize = true;
-            this.lblNumDisponibles.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumDisponibles.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblNumDisponibles.Location = new System.Drawing.Point(272, 0);
-            this.lblNumDisponibles.Name = "lblNumDisponibles";
-            this.lblNumDisponibles.Size = new System.Drawing.Size(48, 63);
-            this.lblNumDisponibles.TabIndex = 0;
-            this.lblNumDisponibles.Text = "0";
-            this.lblNumDisponibles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblNumeroDisponibles.AutoSize = true;
+            this.lblNumeroDisponibles.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroDisponibles.ForeColor = System.Drawing.Color.SeaGreen;
+            this.lblNumeroDisponibles.Location = new System.Drawing.Point(272, 0);
+            this.lblNumeroDisponibles.Name = "lblNumeroDisponibles";
+            this.lblNumeroDisponibles.Size = new System.Drawing.Size(48, 63);
+            this.lblNumeroDisponibles.TabIndex = 0;
+            this.lblNumeroDisponibles.Text = "0";
+            this.lblNumeroDisponibles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblNumeroDisponibles.Click += new System.EventHandler(this.lblNumeroActivos_Click);
             // 
             // pnlPrestamosActivos
             // 
             this.pnlPrestamosActivos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlPrestamosActivos.Controls.Add(this.lblTextoActivos);
-            this.pnlPrestamosActivos.Controls.Add(this.lblNumActivos);
+            this.pnlPrestamosActivos.Controls.Add(this.lblPrestamosActivos);
+            this.pnlPrestamosActivos.Controls.Add(this.lblNumeroActivos);
             this.pnlPrestamosActivos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrestamosActivos.Location = new System.Drawing.Point(399, 10);
             this.pnlPrestamosActivos.Margin = new System.Windows.Forms.Padding(10);
@@ -192,32 +193,32 @@
             this.pnlPrestamosActivos.Size = new System.Drawing.Size(380, 80);
             this.pnlPrestamosActivos.TabIndex = 1;
             // 
-            // lblTextoActivos
+            // lblPrestamosActivos
             // 
-            this.lblTextoActivos.AutoSize = true;
-            this.lblTextoActivos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoActivos.Location = new System.Drawing.Point(202, 42);
-            this.lblTextoActivos.Name = "lblTextoActivos";
-            this.lblTextoActivos.Size = new System.Drawing.Size(171, 36);
-            this.lblTextoActivos.TabIndex = 1;
-            this.lblTextoActivos.Text = "Préstamos activos";
+            this.lblPrestamosActivos.AutoSize = true;
+            this.lblPrestamosActivos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrestamosActivos.Location = new System.Drawing.Point(202, 42);
+            this.lblPrestamosActivos.Name = "lblPrestamosActivos";
+            this.lblPrestamosActivos.Size = new System.Drawing.Size(171, 36);
+            this.lblPrestamosActivos.TabIndex = 1;
+            this.lblPrestamosActivos.Text = "Préstamos activos";
             // 
-            // lblNumActivos
+            // lblNumeroActivos
             // 
-            this.lblNumActivos.AutoSize = true;
-            this.lblNumActivos.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumActivos.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblNumActivos.Location = new System.Drawing.Point(274, 0);
-            this.lblNumActivos.Name = "lblNumActivos";
-            this.lblNumActivos.Size = new System.Drawing.Size(48, 63);
-            this.lblNumActivos.TabIndex = 0;
-            this.lblNumActivos.Text = "0";
+            this.lblNumeroActivos.AutoSize = true;
+            this.lblNumeroActivos.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroActivos.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblNumeroActivos.Location = new System.Drawing.Point(274, 0);
+            this.lblNumeroActivos.Name = "lblNumeroActivos";
+            this.lblNumeroActivos.Size = new System.Drawing.Size(48, 63);
+            this.lblNumeroActivos.TabIndex = 0;
+            this.lblNumeroActivos.Text = "0";
             // 
             // pnlPrestamosVencidos
             // 
             this.pnlPrestamosVencidos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlPrestamosVencidos.Controls.Add(this.lblTextoVencidos);
-            this.pnlPrestamosVencidos.Controls.Add(this.lblNumVencidos);
+            this.pnlPrestamosVencidos.Controls.Add(this.lblPrestamosVencidos);
+            this.pnlPrestamosVencidos.Controls.Add(this.lblNumeroVencidos);
             this.pnlPrestamosVencidos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlPrestamosVencidos.Location = new System.Drawing.Point(799, 10);
             this.pnlPrestamosVencidos.Margin = new System.Windows.Forms.Padding(10);
@@ -225,26 +226,26 @@
             this.pnlPrestamosVencidos.Size = new System.Drawing.Size(370, 80);
             this.pnlPrestamosVencidos.TabIndex = 2;
             // 
-            // lblTextoVencidos
+            // lblPrestamosVencidos
             // 
-            this.lblTextoVencidos.AutoSize = true;
-            this.lblTextoVencidos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoVencidos.Location = new System.Drawing.Point(175, 42);
-            this.lblTextoVencidos.Name = "lblTextoVencidos";
-            this.lblTextoVencidos.Size = new System.Drawing.Size(187, 36);
-            this.lblTextoVencidos.TabIndex = 1;
-            this.lblTextoVencidos.Text = "Préstamos vencidos";
+            this.lblPrestamosVencidos.AutoSize = true;
+            this.lblPrestamosVencidos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrestamosVencidos.Location = new System.Drawing.Point(175, 42);
+            this.lblPrestamosVencidos.Name = "lblPrestamosVencidos";
+            this.lblPrestamosVencidos.Size = new System.Drawing.Size(187, 36);
+            this.lblPrestamosVencidos.TabIndex = 1;
+            this.lblPrestamosVencidos.Text = "Préstamos vencidos";
             // 
-            // lblNumVencidos
+            // lblNumeroVencidos
             // 
-            this.lblNumVencidos.AutoSize = true;
-            this.lblNumVencidos.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumVencidos.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblNumVencidos.Location = new System.Drawing.Point(248, 0);
-            this.lblNumVencidos.Name = "lblNumVencidos";
-            this.lblNumVencidos.Size = new System.Drawing.Size(48, 63);
-            this.lblNumVencidos.TabIndex = 0;
-            this.lblNumVencidos.Text = "0";
+            this.lblNumeroVencidos.AutoSize = true;
+            this.lblNumeroVencidos.Font = new System.Drawing.Font("Myanmar Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroVencidos.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblNumeroVencidos.Location = new System.Drawing.Point(248, 0);
+            this.lblNumeroVencidos.Name = "lblNumeroVencidos";
+            this.lblNumeroVencidos.Size = new System.Drawing.Size(48, 63);
+            this.lblNumeroVencidos.TabIndex = 0;
+            this.lblNumeroVencidos.Text = "0";
             // 
             // pnlFiltros
             // 
@@ -266,7 +267,7 @@
             this.tblFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
             this.tblFiltros.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 707F));
             this.tblFiltros.Controls.Add(this.label1, 1, 0);
-            this.tblFiltros.Controls.Add(this.cmbCategoriaFiltro, 1, 1);
+            this.tblFiltros.Controls.Add(this.cmbCategoria, 1, 1);
             this.tblFiltros.Controls.Add(this.label2, 3, 0);
             this.tblFiltros.Controls.Add(this.cmbEstado, 3, 1);
             this.tblFiltros.Controls.Add(this.btnFiltrar, 4, 0);
@@ -291,21 +292,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Filtrar por categoría:";
             // 
-            // cmbCategoriaFiltro
+            // cmbCategoria
             // 
-            this.cmbCategoriaFiltro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCategoriaFiltro.FormattingEnabled = true;
-            this.cmbCategoriaFiltro.Items.AddRange(new object[] {
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Items.AddRange(new object[] {
             "— Todas —",
             "Literatura",
             "Clásicos",
             "Ciencia",
             "Historia",
             "Tecnología"});
-            this.cmbCategoriaFiltro.Location = new System.Drawing.Point(3, 49);
-            this.cmbCategoriaFiltro.Name = "cmbCategoriaFiltro";
-            this.cmbCategoriaFiltro.Size = new System.Drawing.Size(191, 28);
-            this.cmbCategoriaFiltro.TabIndex = 1;
+            this.cmbCategoria.Location = new System.Drawing.Point(3, 49);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(191, 28);
+            this.cmbCategoria.TabIndex = 1;
             // 
             // label2
             // 
@@ -342,6 +343,7 @@
             this.btnFiltrar.TabIndex = 4;
             this.btnFiltrar.Text = "🔍 Filtrar";
             this.btnFiltrar.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
             // 
             // btnVerTodo
             // 
@@ -351,6 +353,7 @@
             this.btnVerTodo.TabIndex = 5;
             this.btnVerTodo.Text = "Ver todo";
             this.btnVerTodo.UseVisualStyleBackColor = true;
+            this.btnVerTodo.Click += new System.EventHandler(this.btnVerTodo_Click);
             // 
             // gbDisponibilidadLibro
             // 
@@ -435,7 +438,7 @@
             // 
             // gbPrestamosVencidos
             // 
-            this.gbPrestamosVencidos.Controls.Add(this.dgvPrestamosVencidos);
+            this.gbPrestamosVencidos.Controls.Add(this.dgvVencidos);
             this.gbPrestamosVencidos.Dock = System.Windows.Forms.DockStyle.Top;
             this.gbPrestamosVencidos.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPrestamosVencidos.Location = new System.Drawing.Point(0, 580);
@@ -443,34 +446,34 @@
             this.gbPrestamosVencidos.Size = new System.Drawing.Size(1179, 180);
             this.gbPrestamosVencidos.TabIndex = 4;
             this.gbPrestamosVencidos.TabStop = false;
-            this.gbPrestamosVencidos.Text = "ta";
+            this.gbPrestamosVencidos.Text = "Préstamos Vencidos";
             // 
-            // dgvPrestamosVencidos
+            // dgvVencidos
             // 
-            this.dgvPrestamosVencidos.AllowUserToAddRows = false;
-            this.dgvPrestamosVencidos.AllowUserToDeleteRows = false;
-            this.dgvPrestamosVencidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvPrestamosVencidos.BackgroundColor = System.Drawing.Color.White;
-            this.dgvPrestamosVencidos.ColumnHeadersHeight = 45;
-            this.dgvPrestamosVencidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvPrestamosVencidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvVencidos.AllowUserToAddRows = false;
+            this.dgvVencidos.AllowUserToDeleteRows = false;
+            this.dgvVencidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvVencidos.BackgroundColor = System.Drawing.Color.White;
+            this.dgvVencidos.ColumnHeadersHeight = 45;
+            this.dgvVencidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvVencidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colIDVencido,
             this.colLibroVencido,
             this.colEstudianteVencido,
             this.colFechaPrestamoVencido,
             this.colFechaEsperadaVencido,
             this.colDiasMora});
-            this.dgvPrestamosVencidos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvPrestamosVencidos.EnableHeadersVisualStyles = false;
-            this.dgvPrestamosVencidos.Location = new System.Drawing.Point(3, 42);
-            this.dgvPrestamosVencidos.Name = "dgvPrestamosVencidos";
-            this.dgvPrestamosVencidos.ReadOnly = true;
-            this.dgvPrestamosVencidos.RowHeadersVisible = false;
-            this.dgvPrestamosVencidos.RowHeadersWidth = 62;
-            this.dgvPrestamosVencidos.RowTemplate.Height = 28;
-            this.dgvPrestamosVencidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPrestamosVencidos.Size = new System.Drawing.Size(1173, 135);
-            this.dgvPrestamosVencidos.TabIndex = 0;
+            this.dgvVencidos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvVencidos.EnableHeadersVisualStyles = false;
+            this.dgvVencidos.Location = new System.Drawing.Point(3, 42);
+            this.dgvVencidos.Name = "dgvVencidos";
+            this.dgvVencidos.ReadOnly = true;
+            this.dgvVencidos.RowHeadersVisible = false;
+            this.dgvVencidos.RowHeadersWidth = 62;
+            this.dgvVencidos.RowTemplate.Height = 28;
+            this.dgvVencidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvVencidos.Size = new System.Drawing.Size(1173, 135);
+            this.dgvVencidos.TabIndex = 0;
             // 
             // colIDVencido
             // 
@@ -582,7 +585,7 @@
             this.gbDisponibilidadLibro.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisponibilidad)).EndInit();
             this.gbPrestamosVencidos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamosVencidos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvVencidos)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -598,18 +601,18 @@
         private System.Windows.Forms.Label lblTituloInformes;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel pnlEjemplaresDisponibles;
-        private System.Windows.Forms.Label lblTextoDisponibles;
-        private System.Windows.Forms.Label lblNumDisponibles;
+        private System.Windows.Forms.Label lblEjemplaresDisponibles;
+        private System.Windows.Forms.Label lblNumeroDisponibles;
         private System.Windows.Forms.Panel pnlPrestamosActivos;
-        private System.Windows.Forms.Label lblTextoActivos;
-        private System.Windows.Forms.Label lblNumActivos;
+        private System.Windows.Forms.Label lblPrestamosActivos;
+        private System.Windows.Forms.Label lblNumeroActivos;
         private System.Windows.Forms.Panel pnlPrestamosVencidos;
-        private System.Windows.Forms.Label lblNumVencidos;
-        private System.Windows.Forms.Label lblTextoVencidos;
+        private System.Windows.Forms.Label lblNumeroVencidos;
+        private System.Windows.Forms.Label lblPrestamosVencidos;
         private System.Windows.Forms.Panel pnlFiltros;
         private System.Windows.Forms.TableLayoutPanel tblFiltros;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbCategoriaFiltro;
+        private System.Windows.Forms.ComboBox cmbCategoria;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbEstado;
         private System.Windows.Forms.Button btnFiltrar;
@@ -617,7 +620,7 @@
         private System.Windows.Forms.GroupBox gbDisponibilidadLibro;
         private System.Windows.Forms.DataGridView dgvDisponibilidad;
         private System.Windows.Forms.GroupBox gbPrestamosVencidos;
-        private System.Windows.Forms.DataGridView dgvPrestamosVencidos;
+        private System.Windows.Forms.DataGridView dgvVencidos;
         private System.Windows.Forms.DataGridViewTextBoxColumn colIDVencido;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLibroVencido;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEstudianteVencido;

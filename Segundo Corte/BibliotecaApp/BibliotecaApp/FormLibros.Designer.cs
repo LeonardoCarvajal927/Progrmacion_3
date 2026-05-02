@@ -31,6 +31,7 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.pnlCentro = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.picIcono = new System.Windows.Forms.PictureBox();
             this.splitLibros = new System.Windows.Forms.SplitContainer();
             this.gbRegistrarLibro = new System.Windows.Forms.GroupBox();
             this.btnLimpiarLibro = new System.Windows.Forms.Button();
@@ -63,9 +64,9 @@
             this.lblEstadoLibros = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblTotalLibros = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblAgotadosLibros = new System.Windows.Forms.ToolStripStatusLabel();
-            this.picIcono = new System.Windows.Forms.PictureBox();
             this.pnlHeader.SuspendLayout();
             this.pnlCentro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitLibros)).BeginInit();
             this.splitLibros.Panel1.SuspendLayout();
             this.splitLibros.Panel2.SuspendLayout();
@@ -77,7 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvLibros)).BeginInit();
             this.tblPrincipal.SuspendLayout();
             this.statusLibros.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIcono)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -111,6 +111,16 @@
             this.lblTitulo.Size = new System.Drawing.Size(185, 67);
             this.lblTitulo.TabIndex = 1;
             this.lblTitulo.Text = "LIBROS";
+            // 
+            // picIcono
+            // 
+            this.picIcono.Image = global::BibliotecaApp.Properties.Resources.bookshelf_icon_icons_com_54414__3_;
+            this.picIcono.Location = new System.Drawing.Point(128, 20);
+            this.picIcono.Name = "picIcono";
+            this.picIcono.Size = new System.Drawing.Size(60, 60);
+            this.picIcono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIcono.TabIndex = 0;
+            this.picIcono.TabStop = false;
             // 
             // splitLibros
             // 
@@ -164,6 +174,7 @@
             this.btnLimpiarLibro.TabIndex = 13;
             this.btnLimpiarLibro.Text = "Limpiar";
             this.btnLimpiarLibro.UseVisualStyleBackColor = true;
+            this.btnLimpiarLibro.Click += new System.EventHandler(this.btnLimpiarLibro_Click);
             // 
             // btnRegistrarLibro
             // 
@@ -177,6 +188,7 @@
             this.btnRegistrarLibro.TabIndex = 12;
             this.btnRegistrarLibro.Text = "Registrar Libro";
             this.btnRegistrarLibro.UseVisualStyleBackColor = false;
+            this.btnRegistrarLibro.Click += new System.EventHandler(this.btnRegistrarLibro_Click);
             // 
             // numCantidad
             // 
@@ -339,6 +351,7 @@
             this.btnEliminarLibro.TabIndex = 3;
             this.btnEliminarLibro.Text = "Eliminar";
             this.btnEliminarLibro.UseVisualStyleBackColor = true;
+            this.btnEliminarLibro.Click += new System.EventHandler(this.btnEliminarLibro_Click);
             // 
             // btnActualizarLibro
             // 
@@ -352,6 +365,7 @@
             this.btnActualizarLibro.TabIndex = 2;
             this.btnActualizarLibro.Text = "Actualizar";
             this.btnActualizarLibro.UseVisualStyleBackColor = false;
+            this.btnActualizarLibro.Click += new System.EventHandler(this.btnActualizarLibro_Click);
             // 
             // dgvLibros
             // 
@@ -444,6 +458,7 @@
             this.tblPrincipal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
             this.tblPrincipal.Size = new System.Drawing.Size(1190, 591);
             this.tblPrincipal.TabIndex = 1;
+            this.tblPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.tblPrincipal_Paint);
             // 
             // statusLibros
             // 
@@ -480,16 +495,6 @@
             this.lblAgotadosLibros.Size = new System.Drawing.Size(128, 36);
             this.lblAgotadosLibros.Text = "Agotados: 0";
             // 
-            // picIcono
-            // 
-            this.picIcono.Image = global::BibliotecaApp.Properties.Resources.bookshelf_icon_icons_com_54414__3_;
-            this.picIcono.Location = new System.Drawing.Point(128, 20);
-            this.picIcono.Name = "picIcono";
-            this.picIcono.Size = new System.Drawing.Size(60, 60);
-            this.picIcono.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picIcono.TabIndex = 0;
-            this.picIcono.TabStop = false;
-            // 
             // FormLibros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -501,9 +506,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de Libros";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormLibros_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlCentro.ResumeLayout(false);
             this.pnlCentro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picIcono)).EndInit();
             this.splitLibros.Panel1.ResumeLayout(false);
             this.splitLibros.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitLibros)).EndInit();
@@ -518,7 +525,6 @@
             this.tblPrincipal.PerformLayout();
             this.statusLibros.ResumeLayout(false);
             this.statusLibros.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picIcono)).EndInit();
             this.ResumeLayout(false);
 
         }

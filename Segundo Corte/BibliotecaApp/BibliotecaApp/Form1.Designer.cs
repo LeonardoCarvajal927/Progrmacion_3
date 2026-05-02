@@ -141,6 +141,7 @@
             this.btnLibros.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnLibros.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnLibros.UseVisualStyleBackColor = false;
+            this.btnLibros.Click += new System.EventHandler(this.btnLibros_Click);
             // 
             // btnPrestamos
             // 
@@ -158,6 +159,7 @@
             this.btnPrestamos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnPrestamos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnPrestamos.UseVisualStyleBackColor = false;
+            this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
             // 
             // btnDevoluciones
             // 
@@ -175,6 +177,7 @@
             this.btnDevoluciones.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDevoluciones.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnDevoluciones.UseVisualStyleBackColor = false;
+            this.btnDevoluciones.Click += new System.EventHandler(this.btnDevoluciones_Click);
             // 
             // btnInformes
             // 
@@ -192,6 +195,7 @@
             this.btnInformes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnInformes.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.btnInformes.UseVisualStyleBackColor = false;
+            this.btnInformes.Click += new System.EventHandler(this.btnInformes_Click);
             // 
             // lblSubtitulo
             // 

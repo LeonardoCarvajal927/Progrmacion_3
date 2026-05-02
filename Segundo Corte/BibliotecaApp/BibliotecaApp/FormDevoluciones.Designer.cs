@@ -30,35 +30,35 @@
         {
             this.pnlHeaderDevoluciones = new System.Windows.Forms.Panel();
             this.pnlTituloDevoluciones = new System.Windows.Forms.Panel();
-            this.picIconoDevoluciones = new System.Windows.Forms.PictureBox();
             this.lblTituloDevoluciones = new System.Windows.Forms.Label();
+            this.picIconoDevoluciones = new System.Windows.Forms.PictureBox();
             this.tblPrincipalDevoluciones = new System.Windows.Forms.TableLayoutPanel();
             this.splitDevoluciones = new System.Windows.Forms.SplitContainer();
             this.gbRegistrarDevolucion = new System.Windows.Forms.GroupBox();
-            this.lblIdPrestamo = new System.Windows.Forms.Label();
-            this.txtIdPrestamo = new System.Windows.Forms.TextBox();
-            this.btnBuscarPrestamo = new System.Windows.Forms.Button();
-            this.lblSubtituloDevoluciones = new System.Windows.Forms.Label();
-            this.pnlInfoPrestamo = new System.Windows.Forms.Panel();
-            this.lblInfoPrestamo = new System.Windows.Forms.Label();
-            this.lblInfoLibro = new System.Windows.Forms.Label();
-            this.lblInfoEstudiante = new System.Windows.Forms.Label();
-            this.lblInfoFechaEsperada = new System.Windows.Forms.Label();
-            this.lblFechaDevolucion = new System.Windows.Forms.Label();
-            this.dtpFechaDevolucion = new System.Windows.Forms.DateTimePicker();
-            this.pnlSinMora = new System.Windows.Forms.Panel();
-            this.lblSinMora = new System.Windows.Forms.Label();
+            this.btnConfirmarDevolucion = new System.Windows.Forms.Button();
             this.pnlConMora = new System.Windows.Forms.Panel();
             this.lblConMora = new System.Windows.Forms.Label();
-            this.btnConfirmarDevolucion = new System.Windows.Forms.Button();
+            this.pnlSinMora = new System.Windows.Forms.Panel();
+            this.lblSinMora = new System.Windows.Forms.Label();
+            this.pnlInfoPrestamo = new System.Windows.Forms.Panel();
+            this.dtpFechaDevolucion = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaDevolucion = new System.Windows.Forms.Label();
+            this.lblInfoFechaEsperada = new System.Windows.Forms.Label();
+            this.lblInfoEstudiante = new System.Windows.Forms.Label();
+            this.lblInfoLibro = new System.Windows.Forms.Label();
+            this.lblInfoPrestamo = new System.Windows.Forms.Label();
+            this.btnBuscarPrestamo = new System.Windows.Forms.Button();
+            this.txtIdPrestamo = new System.Windows.Forms.TextBox();
+            this.lblIdPrestamo = new System.Windows.Forms.Label();
             this.gbHistorialDevoluciones = new System.Windows.Forms.GroupBox();
+            this.btnActualizarDevoluciones = new System.Windows.Forms.Button();
             this.dgvDevoluciones = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstudiante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFechaDevolucion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnActualizarDevoluciones = new System.Windows.Forms.Button();
+            this.lblSubtituloDevoluciones = new System.Windows.Forms.Label();
             this.pnlHeaderDevoluciones.SuspendLayout();
             this.pnlTituloDevoluciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIconoDevoluciones)).BeginInit();
@@ -68,9 +68,9 @@
             this.splitDevoluciones.Panel2.SuspendLayout();
             this.splitDevoluciones.SuspendLayout();
             this.gbRegistrarDevolucion.SuspendLayout();
-            this.pnlInfoPrestamo.SuspendLayout();
-            this.pnlSinMora.SuspendLayout();
             this.pnlConMora.SuspendLayout();
+            this.pnlSinMora.SuspendLayout();
+            this.pnlInfoPrestamo.SuspendLayout();
             this.gbHistorialDevoluciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDevoluciones)).BeginInit();
             this.SuspendLayout();
@@ -96,16 +96,6 @@
             this.pnlTituloDevoluciones.Size = new System.Drawing.Size(600, 100);
             this.pnlTituloDevoluciones.TabIndex = 0;
             // 
-            // picIconoDevoluciones
-            // 
-            this.picIconoDevoluciones.Image = global::BibliotecaApp.Properties.Resources.left_arrow_curved_black_symbol_icon_icons_com_73000;
-            this.picIconoDevoluciones.Location = new System.Drawing.Point(51, 14);
-            this.picIconoDevoluciones.Name = "picIconoDevoluciones";
-            this.picIconoDevoluciones.Size = new System.Drawing.Size(65, 65);
-            this.picIconoDevoluciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picIconoDevoluciones.TabIndex = 0;
-            this.picIconoDevoluciones.TabStop = false;
-            // 
             // lblTituloDevoluciones
             // 
             this.lblTituloDevoluciones.AutoSize = true;
@@ -116,6 +106,16 @@
             this.lblTituloDevoluciones.Size = new System.Drawing.Size(338, 67);
             this.lblTituloDevoluciones.TabIndex = 1;
             this.lblTituloDevoluciones.Text = "DEVOLUCIONES";
+            // 
+            // picIconoDevoluciones
+            // 
+            this.picIconoDevoluciones.Image = global::BibliotecaApp.Properties.Resources.left_arrow_curved_black_symbol_icon_icons_com_73000;
+            this.picIconoDevoluciones.Location = new System.Drawing.Point(51, 14);
+            this.picIconoDevoluciones.Name = "picIconoDevoluciones";
+            this.picIconoDevoluciones.Size = new System.Drawing.Size(65, 65);
+            this.picIconoDevoluciones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIconoDevoluciones.TabIndex = 0;
+            this.picIconoDevoluciones.TabStop = false;
             // 
             // tblPrincipalDevoluciones
             // 
@@ -170,119 +170,41 @@
             this.gbRegistrarDevolucion.TabIndex = 0;
             this.gbRegistrarDevolucion.TabStop = false;
             this.gbRegistrarDevolucion.Text = "Registrar Devolución";
+            this.gbRegistrarDevolucion.Enter += new System.EventHandler(this.gbRegistrarDevolucion_Enter);
             // 
-            // lblIdPrestamo
+            // btnConfirmarDevolucion
             // 
-            this.lblIdPrestamo.AutoSize = true;
-            this.lblIdPrestamo.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdPrestamo.Location = new System.Drawing.Point(12, 45);
-            this.lblIdPrestamo.Name = "lblIdPrestamo";
-            this.lblIdPrestamo.Size = new System.Drawing.Size(125, 36);
-            this.lblIdPrestamo.TabIndex = 0;
-            this.lblIdPrestamo.Text = "ID Préstamo:";
+            this.btnConfirmarDevolucion.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnConfirmarDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmarDevolucion.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmarDevolucion.Location = new System.Drawing.Point(8, 510);
+            this.btnConfirmarDevolucion.Name = "btnConfirmarDevolucion";
+            this.btnConfirmarDevolucion.Size = new System.Drawing.Size(366, 48);
+            this.btnConfirmarDevolucion.TabIndex = 6;
+            this.btnConfirmarDevolucion.Text = "Confirmar Devolución";
+            this.btnConfirmarDevolucion.UseVisualStyleBackColor = false;
+            this.btnConfirmarDevolucion.Click += new System.EventHandler(this.btnConfirmarDevolucion_Click);
             // 
-            // txtIdPrestamo
+            // pnlConMora
             // 
-            this.txtIdPrestamo.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdPrestamo.Location = new System.Drawing.Point(143, 40);
-            this.txtIdPrestamo.Name = "txtIdPrestamo";
-            this.txtIdPrestamo.Size = new System.Drawing.Size(170, 45);
-            this.txtIdPrestamo.TabIndex = 1;
+            this.pnlConMora.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlConMora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlConMora.Controls.Add(this.lblConMora);
+            this.pnlConMora.Location = new System.Drawing.Point(8, 431);
+            this.pnlConMora.Name = "pnlConMora";
+            this.pnlConMora.Size = new System.Drawing.Size(366, 63);
+            this.pnlConMora.TabIndex = 5;
             // 
-            // btnBuscarPrestamo
+            // lblConMora
             // 
-            this.btnBuscarPrestamo.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarPrestamo.Location = new System.Drawing.Point(319, 40);
-            this.btnBuscarPrestamo.Name = "btnBuscarPrestamo";
-            this.btnBuscarPrestamo.Size = new System.Drawing.Size(75, 45);
-            this.btnBuscarPrestamo.TabIndex = 2;
-            this.btnBuscarPrestamo.Text = "🔍";
-            this.btnBuscarPrestamo.UseVisualStyleBackColor = true;
-            // 
-            // lblSubtituloDevoluciones
-            // 
-            this.lblSubtituloDevoluciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblSubtituloDevoluciones.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtituloDevoluciones.Location = new System.Drawing.Point(116, 0);
-            this.lblSubtituloDevoluciones.Name = "lblSubtituloDevoluciones";
-            this.lblSubtituloDevoluciones.Size = new System.Drawing.Size(898, 45);
-            this.lblSubtituloDevoluciones.TabIndex = 1;
-            this.lblSubtituloDevoluciones.Text = "Registro de libros devueltos";
-            this.lblSubtituloDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlInfoPrestamo
-            // 
-            this.pnlInfoPrestamo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlInfoPrestamo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlInfoPrestamo.Controls.Add(this.dtpFechaDevolucion);
-            this.pnlInfoPrestamo.Controls.Add(this.lblFechaDevolucion);
-            this.pnlInfoPrestamo.Controls.Add(this.lblInfoFechaEsperada);
-            this.pnlInfoPrestamo.Controls.Add(this.lblInfoEstudiante);
-            this.pnlInfoPrestamo.Controls.Add(this.lblInfoLibro);
-            this.pnlInfoPrestamo.Controls.Add(this.lblInfoPrestamo);
-            this.pnlInfoPrestamo.Location = new System.Drawing.Point(8, 92);
-            this.pnlInfoPrestamo.Name = "pnlInfoPrestamo";
-            this.pnlInfoPrestamo.Size = new System.Drawing.Size(366, 254);
-            this.pnlInfoPrestamo.TabIndex = 3;
-            // 
-            // lblInfoPrestamo
-            // 
-            this.lblInfoPrestamo.AutoSize = true;
-            this.lblInfoPrestamo.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfoPrestamo.Location = new System.Drawing.Point(15, 3);
-            this.lblInfoPrestamo.Name = "lblInfoPrestamo";
-            this.lblInfoPrestamo.Size = new System.Drawing.Size(142, 36);
-            this.lblInfoPrestamo.TabIndex = 0;
-            this.lblInfoPrestamo.Text = "Préstamo: #---";
-            // 
-            // lblInfoLibro
-            // 
-            this.lblInfoLibro.AutoSize = true;
-            this.lblInfoLibro.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfoLibro.Location = new System.Drawing.Point(15, 29);
-            this.lblInfoLibro.Name = "lblInfoLibro";
-            this.lblInfoLibro.Size = new System.Drawing.Size(64, 36);
-            this.lblInfoLibro.TabIndex = 1;
-            this.lblInfoLibro.Text = "Libro:";
-            // 
-            // lblInfoEstudiante
-            // 
-            this.lblInfoEstudiante.AutoSize = true;
-            this.lblInfoEstudiante.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfoEstudiante.Location = new System.Drawing.Point(15, 65);
-            this.lblInfoEstudiante.Name = "lblInfoEstudiante";
-            this.lblInfoEstudiante.Size = new System.Drawing.Size(110, 36);
-            this.lblInfoEstudiante.TabIndex = 2;
-            this.lblInfoEstudiante.Text = "Estudiante:";
-            // 
-            // lblInfoFechaEsperada
-            // 
-            this.lblInfoFechaEsperada.AutoSize = true;
-            this.lblInfoFechaEsperada.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInfoFechaEsperada.Location = new System.Drawing.Point(15, 101);
-            this.lblInfoFechaEsperada.Name = "lblInfoFechaEsperada";
-            this.lblInfoFechaEsperada.Size = new System.Drawing.Size(117, 36);
-            this.lblInfoFechaEsperada.TabIndex = 3;
-            this.lblInfoFechaEsperada.Text = "F. Esperada:";
-            // 
-            // lblFechaDevolucion
-            // 
-            this.lblFechaDevolucion.AutoSize = true;
-            this.lblFechaDevolucion.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaDevolucion.Location = new System.Drawing.Point(15, 137);
-            this.lblFechaDevolucion.Name = "lblFechaDevolucion";
-            this.lblFechaDevolucion.Size = new System.Drawing.Size(137, 36);
-            this.lblFechaDevolucion.TabIndex = 4;
-            this.lblFechaDevolucion.Text = "F. Devolución:";
-            // 
-            // dtpFechaDevolucion
-            // 
-            this.dtpFechaDevolucion.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaDevolucion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaDevolucion.Location = new System.Drawing.Point(21, 177);
-            this.dtpFechaDevolucion.Name = "dtpFechaDevolucion";
-            this.dtpFechaDevolucion.Size = new System.Drawing.Size(206, 48);
-            this.dtpFechaDevolucion.TabIndex = 5;
+            this.lblConMora.AutoSize = true;
+            this.lblConMora.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConMora.ForeColor = System.Drawing.Color.Firebrick;
+            this.lblConMora.Location = new System.Drawing.Point(62, 13);
+            this.lblConMora.Name = "lblConMora";
+            this.lblConMora.Size = new System.Drawing.Size(214, 36);
+            this.lblConMora.TabIndex = 0;
+            this.lblConMora.Text = "⚠ Devuelto con mora";
             // 
             // pnlSinMora
             // 
@@ -306,38 +228,108 @@
             this.lblSinMora.Text = "✅ Devuelto a tiempo — Sin mora";
             this.lblSinMora.Click += new System.EventHandler(this.lblSinMora_Click);
             // 
-            // pnlConMora
+            // pnlInfoPrestamo
             // 
-            this.pnlConMora.BackColor = System.Drawing.Color.MistyRose;
-            this.pnlConMora.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlConMora.Controls.Add(this.lblConMora);
-            this.pnlConMora.Location = new System.Drawing.Point(8, 431);
-            this.pnlConMora.Name = "pnlConMora";
-            this.pnlConMora.Size = new System.Drawing.Size(366, 63);
-            this.pnlConMora.TabIndex = 5;
+            this.pnlInfoPrestamo.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlInfoPrestamo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlInfoPrestamo.Controls.Add(this.dtpFechaDevolucion);
+            this.pnlInfoPrestamo.Controls.Add(this.lblFechaDevolucion);
+            this.pnlInfoPrestamo.Controls.Add(this.lblInfoFechaEsperada);
+            this.pnlInfoPrestamo.Controls.Add(this.lblInfoEstudiante);
+            this.pnlInfoPrestamo.Controls.Add(this.lblInfoLibro);
+            this.pnlInfoPrestamo.Controls.Add(this.lblInfoPrestamo);
+            this.pnlInfoPrestamo.Location = new System.Drawing.Point(8, 92);
+            this.pnlInfoPrestamo.Name = "pnlInfoPrestamo";
+            this.pnlInfoPrestamo.Size = new System.Drawing.Size(366, 254);
+            this.pnlInfoPrestamo.TabIndex = 3;
             // 
-            // lblConMora
+            // dtpFechaDevolucion
             // 
-            this.lblConMora.AutoSize = true;
-            this.lblConMora.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConMora.ForeColor = System.Drawing.Color.Firebrick;
-            this.lblConMora.Location = new System.Drawing.Point(62, 13);
-            this.lblConMora.Name = "lblConMora";
-            this.lblConMora.Size = new System.Drawing.Size(214, 36);
-            this.lblConMora.TabIndex = 0;
-            this.lblConMora.Text = "⚠ Devuelto con mora";
+            this.dtpFechaDevolucion.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaDevolucion.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaDevolucion.Location = new System.Drawing.Point(21, 177);
+            this.dtpFechaDevolucion.Name = "dtpFechaDevolucion";
+            this.dtpFechaDevolucion.Size = new System.Drawing.Size(206, 48);
+            this.dtpFechaDevolucion.TabIndex = 5;
             // 
-            // btnConfirmarDevolucion
+            // lblFechaDevolucion
             // 
-            this.btnConfirmarDevolucion.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnConfirmarDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmarDevolucion.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmarDevolucion.Location = new System.Drawing.Point(8, 510);
-            this.btnConfirmarDevolucion.Name = "btnConfirmarDevolucion";
-            this.btnConfirmarDevolucion.Size = new System.Drawing.Size(366, 48);
-            this.btnConfirmarDevolucion.TabIndex = 6;
-            this.btnConfirmarDevolucion.Text = "Confirmar Devolución";
-            this.btnConfirmarDevolucion.UseVisualStyleBackColor = false;
+            this.lblFechaDevolucion.AutoSize = true;
+            this.lblFechaDevolucion.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaDevolucion.Location = new System.Drawing.Point(15, 137);
+            this.lblFechaDevolucion.Name = "lblFechaDevolucion";
+            this.lblFechaDevolucion.Size = new System.Drawing.Size(137, 36);
+            this.lblFechaDevolucion.TabIndex = 4;
+            this.lblFechaDevolucion.Text = "F. Devolución:";
+            // 
+            // lblInfoFechaEsperada
+            // 
+            this.lblInfoFechaEsperada.AutoSize = true;
+            this.lblInfoFechaEsperada.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoFechaEsperada.Location = new System.Drawing.Point(15, 101);
+            this.lblInfoFechaEsperada.Name = "lblInfoFechaEsperada";
+            this.lblInfoFechaEsperada.Size = new System.Drawing.Size(117, 36);
+            this.lblInfoFechaEsperada.TabIndex = 3;
+            this.lblInfoFechaEsperada.Text = "F. Esperada:";
+            // 
+            // lblInfoEstudiante
+            // 
+            this.lblInfoEstudiante.AutoSize = true;
+            this.lblInfoEstudiante.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoEstudiante.Location = new System.Drawing.Point(15, 65);
+            this.lblInfoEstudiante.Name = "lblInfoEstudiante";
+            this.lblInfoEstudiante.Size = new System.Drawing.Size(110, 36);
+            this.lblInfoEstudiante.TabIndex = 2;
+            this.lblInfoEstudiante.Text = "Estudiante:";
+            // 
+            // lblInfoLibro
+            // 
+            this.lblInfoLibro.AutoSize = true;
+            this.lblInfoLibro.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoLibro.Location = new System.Drawing.Point(15, 29);
+            this.lblInfoLibro.Name = "lblInfoLibro";
+            this.lblInfoLibro.Size = new System.Drawing.Size(64, 36);
+            this.lblInfoLibro.TabIndex = 1;
+            this.lblInfoLibro.Text = "Libro:";
+            // 
+            // lblInfoPrestamo
+            // 
+            this.lblInfoPrestamo.AutoSize = true;
+            this.lblInfoPrestamo.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfoPrestamo.Location = new System.Drawing.Point(15, 3);
+            this.lblInfoPrestamo.Name = "lblInfoPrestamo";
+            this.lblInfoPrestamo.Size = new System.Drawing.Size(142, 36);
+            this.lblInfoPrestamo.TabIndex = 0;
+            this.lblInfoPrestamo.Text = "Préstamo: #---";
+            // 
+            // btnBuscarPrestamo
+            // 
+            this.btnBuscarPrestamo.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarPrestamo.Location = new System.Drawing.Point(319, 40);
+            this.btnBuscarPrestamo.Name = "btnBuscarPrestamo";
+            this.btnBuscarPrestamo.Size = new System.Drawing.Size(75, 45);
+            this.btnBuscarPrestamo.TabIndex = 2;
+            this.btnBuscarPrestamo.Text = "🔍";
+            this.btnBuscarPrestamo.UseVisualStyleBackColor = true;
+            this.btnBuscarPrestamo.Click += new System.EventHandler(this.btnBuscarPrestamo_Click);
+            // 
+            // txtIdPrestamo
+            // 
+            this.txtIdPrestamo.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdPrestamo.Location = new System.Drawing.Point(143, 40);
+            this.txtIdPrestamo.Name = "txtIdPrestamo";
+            this.txtIdPrestamo.Size = new System.Drawing.Size(170, 45);
+            this.txtIdPrestamo.TabIndex = 1;
+            // 
+            // lblIdPrestamo
+            // 
+            this.lblIdPrestamo.AutoSize = true;
+            this.lblIdPrestamo.Font = new System.Drawing.Font("Myanmar Text", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdPrestamo.Location = new System.Drawing.Point(12, 45);
+            this.lblIdPrestamo.Name = "lblIdPrestamo";
+            this.lblIdPrestamo.Size = new System.Drawing.Size(125, 36);
+            this.lblIdPrestamo.TabIndex = 0;
+            this.lblIdPrestamo.Text = "ID Préstamo:";
             // 
             // gbHistorialDevoluciones
             // 
@@ -351,6 +343,19 @@
             this.gbHistorialDevoluciones.TabIndex = 0;
             this.gbHistorialDevoluciones.TabStop = false;
             this.gbHistorialDevoluciones.Text = "Historial de Devoluciones";
+            // 
+            // btnActualizarDevoluciones
+            // 
+            this.btnActualizarDevoluciones.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnActualizarDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarDevoluciones.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarDevoluciones.Location = new System.Drawing.Point(6, 302);
+            this.btnActualizarDevoluciones.Name = "btnActualizarDevoluciones";
+            this.btnActualizarDevoluciones.Size = new System.Drawing.Size(142, 44);
+            this.btnActualizarDevoluciones.TabIndex = 1;
+            this.btnActualizarDevoluciones.Text = "Actualizar";
+            this.btnActualizarDevoluciones.UseVisualStyleBackColor = false;
+            this.btnActualizarDevoluciones.Click += new System.EventHandler(this.btnActualizarDevoluciones_Click);
             // 
             // dgvDevoluciones
             // 
@@ -410,17 +415,16 @@
             this.colMora.Name = "colMora";
             this.colMora.ReadOnly = true;
             // 
-            // btnActualizarDevoluciones
+            // lblSubtituloDevoluciones
             // 
-            this.btnActualizarDevoluciones.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnActualizarDevoluciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarDevoluciones.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarDevoluciones.Location = new System.Drawing.Point(6, 302);
-            this.btnActualizarDevoluciones.Name = "btnActualizarDevoluciones";
-            this.btnActualizarDevoluciones.Size = new System.Drawing.Size(142, 44);
-            this.btnActualizarDevoluciones.TabIndex = 1;
-            this.btnActualizarDevoluciones.Text = "Actualizar";
-            this.btnActualizarDevoluciones.UseVisualStyleBackColor = false;
+            this.lblSubtituloDevoluciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSubtituloDevoluciones.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtituloDevoluciones.Location = new System.Drawing.Point(116, 0);
+            this.lblSubtituloDevoluciones.Name = "lblSubtituloDevoluciones";
+            this.lblSubtituloDevoluciones.Size = new System.Drawing.Size(898, 45);
+            this.lblSubtituloDevoluciones.TabIndex = 1;
+            this.lblSubtituloDevoluciones.Text = "Registro de libros devueltos";
+            this.lblSubtituloDevoluciones.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormDevoluciones
             // 
@@ -444,12 +448,12 @@
             this.splitDevoluciones.ResumeLayout(false);
             this.gbRegistrarDevolucion.ResumeLayout(false);
             this.gbRegistrarDevolucion.PerformLayout();
-            this.pnlInfoPrestamo.ResumeLayout(false);
-            this.pnlInfoPrestamo.PerformLayout();
-            this.pnlSinMora.ResumeLayout(false);
-            this.pnlSinMora.PerformLayout();
             this.pnlConMora.ResumeLayout(false);
             this.pnlConMora.PerformLayout();
+            this.pnlSinMora.ResumeLayout(false);
+            this.pnlSinMora.PerformLayout();
+            this.pnlInfoPrestamo.ResumeLayout(false);
+            this.pnlInfoPrestamo.PerformLayout();
             this.gbHistorialDevoluciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDevoluciones)).EndInit();
             this.ResumeLayout(false);

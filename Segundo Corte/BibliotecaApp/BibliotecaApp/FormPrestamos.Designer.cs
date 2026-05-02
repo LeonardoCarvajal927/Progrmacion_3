@@ -30,36 +30,36 @@
         {
             this.pnlHeaderPrestamos = new System.Windows.Forms.Panel();
             this.pnlTituloPrestamos = new System.Windows.Forms.Panel();
-            this.picIconoPrestamos = new System.Windows.Forms.PictureBox();
             this.lblTituloPrestamos = new System.Windows.Forms.Label();
+            this.picIconoPrestamos = new System.Windows.Forms.PictureBox();
             this.tblPrincipalPrestamos = new System.Windows.Forms.TableLayoutPanel();
             this.lblSubtituloPrestamos = new System.Windows.Forms.Label();
             this.splitPrestamos = new System.Windows.Forms.SplitContainer();
             this.gbRegistrarPrestamo = new System.Windows.Forms.GroupBox();
-            this.lblIdPrestamo = new System.Windows.Forms.Label();
-            this.txtIdPrestamo = new System.Windows.Forms.TextBox();
-            this.lblFechaPrestamo = new System.Windows.Forms.Label();
-            this.dtpFechaPrestamo = new System.Windows.Forms.DateTimePicker();
-            this.lblLibroPrestamo = new System.Windows.Forms.Label();
-            this.cmbLibroPrestamo = new System.Windows.Forms.ComboBox();
-            this.txtEstudiante = new System.Windows.Forms.TextBox();
-            this.lblEstudiante = new System.Windows.Forms.Label();
+            this.btnRegistrarPrestamo = new System.Windows.Forms.Button();
+            this.pnlInfoLibro = new System.Windows.Forms.Panel();
+            this.lblDisponibles = new System.Windows.Forms.Label();
+            this.lblLibroSeleccionado = new System.Windows.Forms.Label();
             this.dtpFechaDevolucion = new System.Windows.Forms.DateTimePicker();
             this.lblFechaDevolucion = new System.Windows.Forms.Label();
-            this.pnlInfoLibro = new System.Windows.Forms.Panel();
-            this.lblLibroSeleccionado = new System.Windows.Forms.Label();
-            this.lblDisponibles = new System.Windows.Forms.Label();
-            this.btnRegistrarPrestamo = new System.Windows.Forms.Button();
+            this.txtEstudiante = new System.Windows.Forms.TextBox();
+            this.lblEstudiante = new System.Windows.Forms.Label();
+            this.cmbLibroPrestamo = new System.Windows.Forms.ComboBox();
+            this.lblLibroPrestamo = new System.Windows.Forms.Label();
+            this.dtpFechaPrestamo = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaPrestamo = new System.Windows.Forms.Label();
+            this.txtIdPrestamo = new System.Windows.Forms.TextBox();
+            this.lblIdPrestamo = new System.Windows.Forms.Label();
             this.gbPrestamosActivos = new System.Windows.Forms.GroupBox();
+            this.btnActualizarPrestamos = new System.Windows.Forms.Button();
+            this.pnlAlerta = new System.Windows.Forms.Panel();
+            this.lblAlerta = new System.Windows.Forms.Label();
             this.dgvPrestamos = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstudiante = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colFechaEsperada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlAlerta = new System.Windows.Forms.Panel();
-            this.lblAlerta = new System.Windows.Forms.Label();
-            this.btnActualizarPrestamos = new System.Windows.Forms.Button();
             this.statusPrestamos = new System.Windows.Forms.StatusStrip();
             this.lblEstadoPrestamos = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblPrestamosActivos = new System.Windows.Forms.ToolStripStatusLabel();
@@ -75,8 +75,8 @@
             this.gbRegistrarPrestamo.SuspendLayout();
             this.pnlInfoLibro.SuspendLayout();
             this.gbPrestamosActivos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).BeginInit();
             this.pnlAlerta.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).BeginInit();
             this.statusPrestamos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,16 +101,6 @@
             this.pnlTituloPrestamos.Size = new System.Drawing.Size(500, 100);
             this.pnlTituloPrestamos.TabIndex = 0;
             // 
-            // picIconoPrestamos
-            // 
-            this.picIconoPrestamos.Image = global::BibliotecaApp.Properties.Resources.clipboard_notes_list_tasks_icon_191193;
-            this.picIconoPrestamos.Location = new System.Drawing.Point(27, 17);
-            this.picIconoPrestamos.Name = "picIconoPrestamos";
-            this.picIconoPrestamos.Size = new System.Drawing.Size(65, 65);
-            this.picIconoPrestamos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picIconoPrestamos.TabIndex = 0;
-            this.picIconoPrestamos.TabStop = false;
-            // 
             // lblTituloPrestamos
             // 
             this.lblTituloPrestamos.AutoSize = true;
@@ -121,6 +111,16 @@
             this.lblTituloPrestamos.Size = new System.Drawing.Size(279, 67);
             this.lblTituloPrestamos.TabIndex = 1;
             this.lblTituloPrestamos.Text = "PRÉSTAMOS";
+            // 
+            // picIconoPrestamos
+            // 
+            this.picIconoPrestamos.Image = global::BibliotecaApp.Properties.Resources.clipboard_notes_list_tasks_icon_191193;
+            this.picIconoPrestamos.Location = new System.Drawing.Point(27, 17);
+            this.picIconoPrestamos.Name = "picIconoPrestamos";
+            this.picIconoPrestamos.Size = new System.Drawing.Size(65, 65);
+            this.picIconoPrestamos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picIconoPrestamos.TabIndex = 0;
+            this.picIconoPrestamos.TabStop = false;
             // 
             // tblPrincipalPrestamos
             // 
@@ -193,81 +193,47 @@
             this.gbRegistrarPrestamo.TabStop = false;
             this.gbRegistrarPrestamo.Text = "Registrar Préstamo";
             // 
-            // lblIdPrestamo
+            // btnRegistrarPrestamo
             // 
-            this.lblIdPrestamo.AutoSize = true;
-            this.lblIdPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdPrestamo.Location = new System.Drawing.Point(22, 54);
-            this.lblIdPrestamo.Name = "lblIdPrestamo";
-            this.lblIdPrestamo.Size = new System.Drawing.Size(125, 25);
-            this.lblIdPrestamo.TabIndex = 0;
-            this.lblIdPrestamo.Text = "ID Préstamo:";
-            this.lblIdPrestamo.Click += new System.EventHandler(this.lblIdPrestamo_Click);
+            this.btnRegistrarPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.btnRegistrarPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarPrestamo.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarPrestamo.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarPrestamo.Location = new System.Drawing.Point(7, 391);
+            this.btnRegistrarPrestamo.Name = "btnRegistrarPrestamo";
+            this.btnRegistrarPrestamo.Size = new System.Drawing.Size(367, 57);
+            this.btnRegistrarPrestamo.TabIndex = 11;
+            this.btnRegistrarPrestamo.Text = "Registrar Préstamo";
+            this.btnRegistrarPrestamo.UseVisualStyleBackColor = false;
+            this.btnRegistrarPrestamo.Click += new System.EventHandler(this.btnRegistrarPrestamo_Click);
             // 
-            // txtIdPrestamo
+            // pnlInfoLibro
             // 
-            this.txtIdPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdPrestamo.Location = new System.Drawing.Point(153, 54);
-            this.txtIdPrestamo.Name = "txtIdPrestamo";
-            this.txtIdPrestamo.ReadOnly = true;
-            this.txtIdPrestamo.Size = new System.Drawing.Size(204, 30);
-            this.txtIdPrestamo.TabIndex = 1;
-            this.txtIdPrestamo.Text = "001";
+            this.pnlInfoLibro.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlInfoLibro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlInfoLibro.Controls.Add(this.lblDisponibles);
+            this.pnlInfoLibro.Controls.Add(this.lblLibroSeleccionado);
+            this.pnlInfoLibro.Location = new System.Drawing.Point(7, 293);
+            this.pnlInfoLibro.Name = "pnlInfoLibro";
+            this.pnlInfoLibro.Size = new System.Drawing.Size(367, 70);
+            this.pnlInfoLibro.TabIndex = 10;
             // 
-            // lblFechaPrestamo
+            // lblDisponibles
             // 
-            this.lblFechaPrestamo.AutoSize = true;
-            this.lblFechaPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechaPrestamo.Location = new System.Drawing.Point(74, 96);
-            this.lblFechaPrestamo.Name = "lblFechaPrestamo";
-            this.lblFechaPrestamo.Size = new System.Drawing.Size(73, 25);
-            this.lblFechaPrestamo.TabIndex = 2;
-            this.lblFechaPrestamo.Text = "Fecha:";
+            this.lblDisponibles.Location = new System.Drawing.Point(19, 38);
+            this.lblDisponibles.Name = "lblDisponibles";
+            this.lblDisponibles.Size = new System.Drawing.Size(221, 30);
+            this.lblDisponibles.TabIndex = 1;
+            this.lblDisponibles.Text = "✅ Disponibles: 0 ejemplares";
             // 
-            // dtpFechaPrestamo
+            // lblLibroSeleccionado
             // 
-            this.dtpFechaPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFechaPrestamo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaPrestamo.Location = new System.Drawing.Point(154, 96);
-            this.dtpFechaPrestamo.Name = "dtpFechaPrestamo";
-            this.dtpFechaPrestamo.Size = new System.Drawing.Size(203, 30);
-            this.dtpFechaPrestamo.TabIndex = 3;
-            // 
-            // lblLibroPrestamo
-            // 
-            this.lblLibroPrestamo.AutoSize = true;
-            this.lblLibroPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLibroPrestamo.Location = new System.Drawing.Point(86, 140);
-            this.lblLibroPrestamo.Name = "lblLibroPrestamo";
-            this.lblLibroPrestamo.Size = new System.Drawing.Size(61, 25);
-            this.lblLibroPrestamo.TabIndex = 4;
-            this.lblLibroPrestamo.Text = "Libro:";
-            // 
-            // cmbLibroPrestamo
-            // 
-            this.cmbLibroPrestamo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbLibroPrestamo.FormattingEnabled = true;
-            this.cmbLibroPrestamo.Location = new System.Drawing.Point(154, 132);
-            this.cmbLibroPrestamo.Name = "cmbLibroPrestamo";
-            this.cmbLibroPrestamo.Size = new System.Drawing.Size(203, 44);
-            this.cmbLibroPrestamo.TabIndex = 5;
-            // 
-            // txtEstudiante
-            // 
-            this.txtEstudiante.Location = new System.Drawing.Point(153, 188);
-            this.txtEstudiante.Name = "txtEstudiante";
-            this.txtEstudiante.Size = new System.Drawing.Size(204, 46);
-            this.txtEstudiante.TabIndex = 7;
-            // 
-            // lblEstudiante
-            // 
-            this.lblEstudiante.AutoSize = true;
-            this.lblEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstudiante.Location = new System.Drawing.Point(37, 192);
-            this.lblEstudiante.Name = "lblEstudiante";
-            this.lblEstudiante.Size = new System.Drawing.Size(110, 25);
-            this.lblEstudiante.TabIndex = 6;
-            this.lblEstudiante.Text = "Estudiante:";
+            this.lblLibroSeleccionado.AutoSize = true;
+            this.lblLibroSeleccionado.Location = new System.Drawing.Point(19, 4);
+            this.lblLibroSeleccionado.Name = "lblLibroSeleccionado";
+            this.lblLibroSeleccionado.Size = new System.Drawing.Size(225, 36);
+            this.lblLibroSeleccionado.TabIndex = 0;
+            this.lblLibroSeleccionado.Text = "📖 Libro seleccionado";
             // 
             // dtpFechaDevolucion
             // 
@@ -288,46 +254,81 @@
             this.lblFechaDevolucion.TabIndex = 8;
             this.lblFechaDevolucion.Text = "F. Devolución:";
             // 
-            // pnlInfoLibro
+            // txtEstudiante
             // 
-            this.pnlInfoLibro.BackColor = System.Drawing.Color.AliceBlue;
-            this.pnlInfoLibro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlInfoLibro.Controls.Add(this.lblDisponibles);
-            this.pnlInfoLibro.Controls.Add(this.lblLibroSeleccionado);
-            this.pnlInfoLibro.Location = new System.Drawing.Point(7, 293);
-            this.pnlInfoLibro.Name = "pnlInfoLibro";
-            this.pnlInfoLibro.Size = new System.Drawing.Size(367, 70);
-            this.pnlInfoLibro.TabIndex = 10;
+            this.txtEstudiante.Location = new System.Drawing.Point(153, 188);
+            this.txtEstudiante.Name = "txtEstudiante";
+            this.txtEstudiante.Size = new System.Drawing.Size(204, 46);
+            this.txtEstudiante.TabIndex = 7;
             // 
-            // lblLibroSeleccionado
+            // lblEstudiante
             // 
-            this.lblLibroSeleccionado.AutoSize = true;
-            this.lblLibroSeleccionado.Location = new System.Drawing.Point(19, 4);
-            this.lblLibroSeleccionado.Name = "lblLibroSeleccionado";
-            this.lblLibroSeleccionado.Size = new System.Drawing.Size(225, 36);
-            this.lblLibroSeleccionado.TabIndex = 0;
-            this.lblLibroSeleccionado.Text = "📖 Libro seleccionado";
+            this.lblEstudiante.AutoSize = true;
+            this.lblEstudiante.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstudiante.Location = new System.Drawing.Point(37, 192);
+            this.lblEstudiante.Name = "lblEstudiante";
+            this.lblEstudiante.Size = new System.Drawing.Size(110, 25);
+            this.lblEstudiante.TabIndex = 6;
+            this.lblEstudiante.Text = "Estudiante:";
             // 
-            // lblDisponibles
+            // cmbLibroPrestamo
             // 
-            this.lblDisponibles.Location = new System.Drawing.Point(19, 38);
-            this.lblDisponibles.Name = "lblDisponibles";
-            this.lblDisponibles.Size = new System.Drawing.Size(221, 30);
-            this.lblDisponibles.TabIndex = 1;
-            this.lblDisponibles.Text = "✅ Disponibles: 0 ejemplares";
+            this.cmbLibroPrestamo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLibroPrestamo.FormattingEnabled = true;
+            this.cmbLibroPrestamo.Location = new System.Drawing.Point(154, 132);
+            this.cmbLibroPrestamo.Name = "cmbLibroPrestamo";
+            this.cmbLibroPrestamo.Size = new System.Drawing.Size(203, 44);
+            this.cmbLibroPrestamo.TabIndex = 5;
+            this.cmbLibroPrestamo.SelectedIndexChanged += new System.EventHandler(this.cmbLibroPrestamo_SelectedIndexChanged);
             // 
-            // btnRegistrarPrestamo
+            // lblLibroPrestamo
             // 
-            this.btnRegistrarPrestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
-            this.btnRegistrarPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarPrestamo.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarPrestamo.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarPrestamo.Location = new System.Drawing.Point(7, 391);
-            this.btnRegistrarPrestamo.Name = "btnRegistrarPrestamo";
-            this.btnRegistrarPrestamo.Size = new System.Drawing.Size(367, 57);
-            this.btnRegistrarPrestamo.TabIndex = 11;
-            this.btnRegistrarPrestamo.Text = "Registrar Préstamo";
-            this.btnRegistrarPrestamo.UseVisualStyleBackColor = false;
+            this.lblLibroPrestamo.AutoSize = true;
+            this.lblLibroPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLibroPrestamo.Location = new System.Drawing.Point(86, 140);
+            this.lblLibroPrestamo.Name = "lblLibroPrestamo";
+            this.lblLibroPrestamo.Size = new System.Drawing.Size(61, 25);
+            this.lblLibroPrestamo.TabIndex = 4;
+            this.lblLibroPrestamo.Text = "Libro:";
+            // 
+            // dtpFechaPrestamo
+            // 
+            this.dtpFechaPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaPrestamo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaPrestamo.Location = new System.Drawing.Point(154, 96);
+            this.dtpFechaPrestamo.Name = "dtpFechaPrestamo";
+            this.dtpFechaPrestamo.Size = new System.Drawing.Size(203, 30);
+            this.dtpFechaPrestamo.TabIndex = 3;
+            // 
+            // lblFechaPrestamo
+            // 
+            this.lblFechaPrestamo.AutoSize = true;
+            this.lblFechaPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaPrestamo.Location = new System.Drawing.Point(74, 96);
+            this.lblFechaPrestamo.Name = "lblFechaPrestamo";
+            this.lblFechaPrestamo.Size = new System.Drawing.Size(73, 25);
+            this.lblFechaPrestamo.TabIndex = 2;
+            this.lblFechaPrestamo.Text = "Fecha:";
+            // 
+            // txtIdPrestamo
+            // 
+            this.txtIdPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdPrestamo.Location = new System.Drawing.Point(153, 54);
+            this.txtIdPrestamo.Name = "txtIdPrestamo";
+            this.txtIdPrestamo.Size = new System.Drawing.Size(204, 30);
+            this.txtIdPrestamo.TabIndex = 1;
+            this.txtIdPrestamo.Text = "001";
+            // 
+            // lblIdPrestamo
+            // 
+            this.lblIdPrestamo.AutoSize = true;
+            this.lblIdPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdPrestamo.Location = new System.Drawing.Point(22, 54);
+            this.lblIdPrestamo.Name = "lblIdPrestamo";
+            this.lblIdPrestamo.Size = new System.Drawing.Size(125, 25);
+            this.lblIdPrestamo.TabIndex = 0;
+            this.lblIdPrestamo.Text = "ID Préstamo:";
+            this.lblIdPrestamo.Click += new System.EventHandler(this.lblIdPrestamo_Click);
             // 
             // gbPrestamosActivos
             // 
@@ -342,6 +343,40 @@
             this.gbPrestamosActivos.TabIndex = 0;
             this.gbPrestamosActivos.TabStop = false;
             this.gbPrestamosActivos.Text = "Préstamos Activos";
+            // 
+            // btnActualizarPrestamos
+            // 
+            this.btnActualizarPrestamos.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnActualizarPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizarPrestamos.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarPrestamos.Location = new System.Drawing.Point(6, 348);
+            this.btnActualizarPrestamos.Name = "btnActualizarPrestamos";
+            this.btnActualizarPrestamos.Size = new System.Drawing.Size(137, 59);
+            this.btnActualizarPrestamos.TabIndex = 2;
+            this.btnActualizarPrestamos.Text = "Actualizar";
+            this.btnActualizarPrestamos.UseVisualStyleBackColor = false;
+            // 
+            // pnlAlerta
+            // 
+            this.pnlAlerta.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlAlerta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlerta.Controls.Add(this.lblAlerta);
+            this.pnlAlerta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlerta.Location = new System.Drawing.Point(3, 292);
+            this.pnlAlerta.Name = "pnlAlerta";
+            this.pnlAlerta.Size = new System.Drawing.Size(651, 50);
+            this.pnlAlerta.TabIndex = 1;
+            // 
+            // lblAlerta
+            // 
+            this.lblAlerta.AutoSize = true;
+            this.lblAlerta.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlerta.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblAlerta.Location = new System.Drawing.Point(348, 5);
+            this.lblAlerta.Name = "lblAlerta";
+            this.lblAlerta.Size = new System.Drawing.Size(279, 39);
+            this.lblAlerta.TabIndex = 0;
+            this.lblAlerta.Text = "⚠️ 0 préstamos vencidos";
             // 
             // dgvPrestamos
             // 
@@ -400,40 +435,6 @@
             this.colFechaEsperada.MinimumWidth = 8;
             this.colFechaEsperada.Name = "colFechaEsperada";
             this.colFechaEsperada.ReadOnly = true;
-            // 
-            // pnlAlerta
-            // 
-            this.pnlAlerta.BackColor = System.Drawing.Color.MistyRose;
-            this.pnlAlerta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlAlerta.Controls.Add(this.lblAlerta);
-            this.pnlAlerta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlAlerta.Location = new System.Drawing.Point(3, 292);
-            this.pnlAlerta.Name = "pnlAlerta";
-            this.pnlAlerta.Size = new System.Drawing.Size(651, 50);
-            this.pnlAlerta.TabIndex = 1;
-            // 
-            // lblAlerta
-            // 
-            this.lblAlerta.AutoSize = true;
-            this.lblAlerta.Font = new System.Drawing.Font("Myanmar Text", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAlerta.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblAlerta.Location = new System.Drawing.Point(348, 5);
-            this.lblAlerta.Name = "lblAlerta";
-            this.lblAlerta.Size = new System.Drawing.Size(279, 39);
-            this.lblAlerta.TabIndex = 0;
-            this.lblAlerta.Text = "⚠️ 0 préstamos vencidos";
-            // 
-            // btnActualizarPrestamos
-            // 
-            this.btnActualizarPrestamos.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnActualizarPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizarPrestamos.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarPrestamos.Location = new System.Drawing.Point(6, 348);
-            this.btnActualizarPrestamos.Name = "btnActualizarPrestamos";
-            this.btnActualizarPrestamos.Size = new System.Drawing.Size(137, 59);
-            this.btnActualizarPrestamos.TabIndex = 2;
-            this.btnActualizarPrestamos.Text = "Actualizar";
-            this.btnActualizarPrestamos.UseVisualStyleBackColor = false;
             // 
             // statusPrestamos
             // 
@@ -497,9 +498,9 @@
             this.pnlInfoLibro.ResumeLayout(false);
             this.pnlInfoLibro.PerformLayout();
             this.gbPrestamosActivos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).EndInit();
             this.pnlAlerta.ResumeLayout(false);
             this.pnlAlerta.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamos)).EndInit();
             this.statusPrestamos.ResumeLayout(false);
             this.statusPrestamos.PerformLayout();
             this.ResumeLayout(false);
@@ -537,12 +538,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colLibro;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEstudiante;
         private System.Windows.Forms.DataGridViewTextBoxColumn colFechaEsperada;
-        private System.Windows.Forms.Panel pnlAlerta;
-        private System.Windows.Forms.Label lblAlerta;
         private System.Windows.Forms.Button btnActualizarPrestamos;
         private System.Windows.Forms.StatusStrip statusPrestamos;
         private System.Windows.Forms.ToolStripStatusLabel lblEstadoPrestamos;
         private System.Windows.Forms.ToolStripStatusLabel lblPrestamosActivos;
         private System.Windows.Forms.ToolStripStatusLabel lblPrestamosVencidos;
+        private System.Windows.Forms.Panel pnlAlerta;
+        private System.Windows.Forms.Label lblAlerta;
     }
 }
