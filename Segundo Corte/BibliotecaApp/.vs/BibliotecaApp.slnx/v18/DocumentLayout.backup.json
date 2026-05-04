@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\bibliotecaapp\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\progrmacion_3\\segundo corte\\bibliotecaapp\\bibliotecaapp\\formprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\formprestamos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\progrmacion_3\\segundo corte\\bibliotecaapp\\bibliotecaapp\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\bibliotecaapp\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\bibliotecaapp\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|solutionrelative:bibliotecaapp\\forminformes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E011EC-4738-42D3-9774-A152E79A344F}|BibliotecaApp\\BibliotecaApp.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\bibliotecaapp\\formlibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,43 +58,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "FormPrestamos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormPrestamos.cs",
+              "RelativeDocumentMoniker": "BibliotecaApp\\FormPrestamos.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormPrestamos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "BibliotecaApp\\FormPrestamos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T13:08:36.292Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FormInformes.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormInformes.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\FormInformes.cs",
               "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormInformes.cs",
               "RelativeToolTip": "BibliotecaApp\\FormInformes.cs",
-              "ViewState": "AgIAADwBAAAAAAAAAAA8wD8BAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T19:51:58.878Z"
+              "WhenOpened": "2026-05-02T19:51:58.878Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "FormInformes.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormInformes.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\FormInformes.cs",
               "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormInformes.cs [Dise\u00F1o]",
               "RelativeToolTip": "BibliotecaApp\\FormInformes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T19:27:35.534Z"
+              "WhenOpened": "2026-05-02T19:27:35.534Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "FormLibros.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormLibros.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\FormLibros.cs",
               "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormLibros.cs",
               "RelativeToolTip": "BibliotecaApp\\FormLibros.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAAAK8AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T19:24:34.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormLibros.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormLibros.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\FormLibros.cs",
@@ -101,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FormDevoluciones.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormDevoluciones.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\FormDevoluciones.cs",
@@ -113,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FormDevoluciones.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\FormDevoluciones.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\FormDevoluciones.cs",
@@ -124,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\Form1.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\Form1.cs",
@@ -135,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\Form1.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\Form1.cs",
@@ -147,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Segundo Corte\\BibliotecaApp\\BibliotecaApp\\Program.cs",
               "RelativeDocumentMoniker": "BibliotecaApp\\Program.cs",
