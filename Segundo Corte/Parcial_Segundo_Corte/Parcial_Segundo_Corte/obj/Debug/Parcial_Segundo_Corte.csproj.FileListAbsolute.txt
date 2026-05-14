@@ -1,0 +1,10 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\bin\Debug\Parcial_Segundo_Corte.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\bin\Debug\Parcial_Segundo_Corte.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\bin\Debug\Parcial_Segundo_Corte.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\obj\Debug\Parcial_Segundo_Corte.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\obj\Debug\Parcial_Segundo_Corte.FormPricipal.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\obj\Debug\Parcial_Segundo_Corte.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\obj\Debug\Parcial_Segundo_Corte.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\obj\Debug\Parcial_Segundo_Corte.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\obj\Debug\Parcial_Segundo_Corte.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Segundo Corte\Parcial_Segundo_Corte\Parcial_Segundo_Corte\obj\Debug\Parcial_Segundo_Corte.pdb
