@@ -1,0 +1,14 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmCambiarPassword.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmGestionUsuarios.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmLogin.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmMenuPrincipal.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRegistroUsuario.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
