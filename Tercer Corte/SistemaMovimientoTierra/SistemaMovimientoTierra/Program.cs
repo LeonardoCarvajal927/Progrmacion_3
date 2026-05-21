@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,8 +18,9 @@ namespace SistemaMovimientoTierra
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // Formulario inicial de la aplicación
-            Application.Run(new FrmMenuPrincipal());
+
+            Application.Run(new FrmLogin());
+           
         }
     }
 }

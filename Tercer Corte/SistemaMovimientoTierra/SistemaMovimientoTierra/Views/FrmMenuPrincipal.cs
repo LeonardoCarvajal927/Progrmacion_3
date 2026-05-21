@@ -1,13 +1,31 @@
-﻿using System;
+﻿using SistemaMovimientoTierra.Models;
+using System;
 using System.Windows.Forms;
 
 namespace SistemaMovimientoTierra
 {
     public partial class FrmMenuPrincipal : Form
     {
-        public FrmMenuPrincipal()
+        private Usuario usuarioActual;
+
+        public FrmMenuPrincipal(Usuario usuario)
         {
             InitializeComponent();
+            usuarioActual = usuario;
+        }
+
+        private void FrmMenuPrincipal_Load(object sender, EventArgs e)
+        {
+            lblBienvenido.Text = "Bienvenido: " + usuarioActual.NombreUsuario + " | Rol: " + usuarioActual.Rol;
+
+            if (usuarioActual.Rol != "Administrador")
+            {
+                btnGestionUsuarios.Visible = false;
+            }
+            else
+            {
+                btnGestionUsuarios.Visible = true;
+            }
         }
 
         private void btnGestionUsuarios_Click(object sender, EventArgs e)
@@ -18,7 +36,7 @@ namespace SistemaMovimientoTierra
 
         private void btnCambiarPassword_Click(object sender, EventArgs e)
         {
-            FrmCambiarPassword formCambiarPassword = new FrmCambiarPassword();
+            FrmCambiarPassword formCambiarPassword = new FrmCambiarPassword(usuarioActual.NombreUsuario);
             formCambiarPassword.ShowDialog();
         }
 

@@ -250,6 +250,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmMenuPrincipal_Load);
             this.pnlMenu.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.ResumeLayout(false);

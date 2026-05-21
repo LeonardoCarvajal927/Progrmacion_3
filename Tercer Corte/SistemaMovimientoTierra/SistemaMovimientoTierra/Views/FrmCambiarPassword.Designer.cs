@@ -127,6 +127,7 @@
             this.btnCambiar.TabIndex = 7;
             this.btnCambiar.Text = "Cambiar contraseña";
             this.btnCambiar.UseVisualStyleBackColor = false;
+            this.btnCambiar.Click += new System.EventHandler(this.btnCambiar_Click);
             // 
             // btnCancelar
             // 
@@ -141,6 +142,7 @@
             this.btnCancelar.TabIndex = 8;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FrmCambiarPassword
             // 

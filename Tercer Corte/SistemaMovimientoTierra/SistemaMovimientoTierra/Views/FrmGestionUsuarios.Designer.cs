@@ -32,12 +32,15 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.dgvUsuarios = new System.Windows.Forms.DataGridView();
             this.gbAcciones = new System.Windows.Forms.GroupBox();
-            this.lblUsuarioSeleccionado = new System.Windows.Forms.Label();
-            this.txtUsuarioSeleccionado = new System.Windows.Forms.TextBox();
-            this.btnActivar = new System.Windows.Forms.Button();
-            this.btnInactivar = new System.Windows.Forms.Button();
-            this.btnRestablecerPassword = new System.Windows.Forms.Button();
+            this.btnCambiarRol = new System.Windows.Forms.Button();
+            this.cmbRolUsuario = new System.Windows.Forms.ComboBox();
+            this.lblRolUsuario = new System.Windows.Forms.Label();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnRestablecerPassword = new System.Windows.Forms.Button();
+            this.btnInactivar = new System.Windows.Forms.Button();
+            this.btnActivar = new System.Windows.Forms.Button();
+            this.txtUsuarioSeleccionado = new System.Windows.Forms.TextBox();
+            this.lblUsuarioSeleccionado = new System.Windows.Forms.Label();
             this.pnlSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
             this.gbAcciones.SuspendLayout();
@@ -80,9 +83,13 @@
             this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvUsuarios.Size = new System.Drawing.Size(580, 390);
             this.dgvUsuarios.TabIndex = 1;
+            this.dgvUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellClick);
             // 
             // gbAcciones
             // 
+            this.gbAcciones.Controls.Add(this.btnCambiarRol);
+            this.gbAcciones.Controls.Add(this.cmbRolUsuario);
+            this.gbAcciones.Controls.Add(this.lblRolUsuario);
             this.gbAcciones.Controls.Add(this.btnActualizar);
             this.gbAcciones.Controls.Add(this.btnRestablecerPassword);
             this.gbAcciones.Controls.Add(this.btnInactivar);
@@ -92,19 +99,106 @@
             this.gbAcciones.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbAcciones.Location = new System.Drawing.Point(641, 110);
             this.gbAcciones.Name = "gbAcciones";
-            this.gbAcciones.Size = new System.Drawing.Size(441, 350);
+            this.gbAcciones.Size = new System.Drawing.Size(441, 493);
             this.gbAcciones.TabIndex = 2;
             this.gbAcciones.TabStop = false;
             this.gbAcciones.Text = "Acciones de usuario";
             // 
-            // lblUsuarioSeleccionado
+            // btnCambiarRol
             // 
-            this.lblUsuarioSeleccionado.Location = new System.Drawing.Point(52, 45);
-            this.lblUsuarioSeleccionado.Name = "lblUsuarioSeleccionado";
-            this.lblUsuarioSeleccionado.Size = new System.Drawing.Size(253, 36);
-            this.lblUsuarioSeleccionado.TabIndex = 0;
-            this.lblUsuarioSeleccionado.Text = "Usuario seleccionado:";
-            this.lblUsuarioSeleccionado.Click += new System.EventHandler(this.lblUsuarioSeleccionado_Click);
+            this.btnCambiarRol.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCambiarRol.FlatAppearance.BorderSize = 0;
+            this.btnCambiarRol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCambiarRol.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCambiarRol.ForeColor = System.Drawing.Color.White;
+            this.btnCambiarRol.Location = new System.Drawing.Point(25, 285);
+            this.btnCambiarRol.Name = "btnCambiarRol";
+            this.btnCambiarRol.Size = new System.Drawing.Size(247, 38);
+            this.btnCambiarRol.TabIndex = 8;
+            this.btnCambiarRol.Text = "Cambiar rol";
+            this.btnCambiarRol.UseVisualStyleBackColor = false;
+            this.btnCambiarRol.Click += new System.EventHandler(this.btnCambiarRol_Click);
+            // 
+            // cmbRolUsuario
+            // 
+            this.cmbRolUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbRolUsuario.FormattingEnabled = true;
+            this.cmbRolUsuario.Items.AddRange(new object[] {
+            "Administrador",
+            "Usuario"});
+            this.cmbRolUsuario.Location = new System.Drawing.Point(25, 147);
+            this.cmbRolUsuario.Name = "cmbRolUsuario";
+            this.cmbRolUsuario.Size = new System.Drawing.Size(247, 36);
+            this.cmbRolUsuario.TabIndex = 7;
+            // 
+            // lblRolUsuario
+            // 
+            this.lblRolUsuario.AutoSize = true;
+            this.lblRolUsuario.Location = new System.Drawing.Point(52, 112);
+            this.lblRolUsuario.Name = "lblRolUsuario";
+            this.lblRolUsuario.Size = new System.Drawing.Size(168, 28);
+            this.lblRolUsuario.TabIndex = 6;
+            this.lblRolUsuario.Text = "Rol del usuario:";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackColor = System.Drawing.Color.Gray;
+            this.btnActualizar.FlatAppearance.BorderSize = 0;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.White;
+            this.btnActualizar.Location = new System.Drawing.Point(25, 373);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(247, 38);
+            this.btnActualizar.TabIndex = 5;
+            this.btnActualizar.Text = "Actualizar lista";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnRestablecerPassword
+            // 
+            this.btnRestablecerPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnRestablecerPassword.FlatAppearance.BorderSize = 0;
+            this.btnRestablecerPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestablecerPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestablecerPassword.ForeColor = System.Drawing.Color.White;
+            this.btnRestablecerPassword.Location = new System.Drawing.Point(25, 329);
+            this.btnRestablecerPassword.Name = "btnRestablecerPassword";
+            this.btnRestablecerPassword.Size = new System.Drawing.Size(247, 38);
+            this.btnRestablecerPassword.TabIndex = 4;
+            this.btnRestablecerPassword.Text = "Restablecer contraseña";
+            this.btnRestablecerPassword.UseVisualStyleBackColor = false;
+            this.btnRestablecerPassword.Click += new System.EventHandler(this.btnRestablecerPassword_Click);
+            // 
+            // btnInactivar
+            // 
+            this.btnInactivar.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnInactivar.FlatAppearance.BorderSize = 0;
+            this.btnInactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInactivar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInactivar.ForeColor = System.Drawing.Color.White;
+            this.btnInactivar.Location = new System.Drawing.Point(25, 241);
+            this.btnInactivar.Name = "btnInactivar";
+            this.btnInactivar.Size = new System.Drawing.Size(247, 38);
+            this.btnInactivar.TabIndex = 3;
+            this.btnInactivar.Text = "Inactivar usuario";
+            this.btnInactivar.UseVisualStyleBackColor = false;
+            this.btnInactivar.Click += new System.EventHandler(this.btnInactivar_Click);
+            // 
+            // btnActivar
+            // 
+            this.btnActivar.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnActivar.FlatAppearance.BorderSize = 0;
+            this.btnActivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActivar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActivar.ForeColor = System.Drawing.Color.White;
+            this.btnActivar.Location = new System.Drawing.Point(25, 197);
+            this.btnActivar.Name = "btnActivar";
+            this.btnActivar.Size = new System.Drawing.Size(247, 38);
+            this.btnActivar.TabIndex = 2;
+            this.btnActivar.Text = "Activar usuario";
+            this.btnActivar.UseVisualStyleBackColor = false;
+            this.btnActivar.Click += new System.EventHandler(this.btnActivar_Click);
             // 
             // txtUsuarioSeleccionado
             // 
@@ -115,61 +209,14 @@
             this.txtUsuarioSeleccionado.Size = new System.Drawing.Size(247, 34);
             this.txtUsuarioSeleccionado.TabIndex = 1;
             // 
-            // btnActivar
+            // lblUsuarioSeleccionado
             // 
-            this.btnActivar.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnActivar.FlatAppearance.BorderSize = 0;
-            this.btnActivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActivar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActivar.ForeColor = System.Drawing.Color.White;
-            this.btnActivar.Location = new System.Drawing.Point(25, 125);
-            this.btnActivar.Name = "btnActivar";
-            this.btnActivar.Size = new System.Drawing.Size(247, 38);
-            this.btnActivar.TabIndex = 2;
-            this.btnActivar.Text = "Activar usuario";
-            this.btnActivar.UseVisualStyleBackColor = false;
-            // 
-            // btnInactivar
-            // 
-            this.btnInactivar.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnInactivar.FlatAppearance.BorderSize = 0;
-            this.btnInactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInactivar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInactivar.ForeColor = System.Drawing.Color.White;
-            this.btnInactivar.Location = new System.Drawing.Point(25, 169);
-            this.btnInactivar.Name = "btnInactivar";
-            this.btnInactivar.Size = new System.Drawing.Size(247, 38);
-            this.btnInactivar.TabIndex = 3;
-            this.btnInactivar.Text = "Inactivar usuario";
-            this.btnInactivar.UseVisualStyleBackColor = false;
-            // 
-            // btnRestablecerPassword
-            // 
-            this.btnRestablecerPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnRestablecerPassword.FlatAppearance.BorderSize = 0;
-            this.btnRestablecerPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRestablecerPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRestablecerPassword.ForeColor = System.Drawing.Color.White;
-            this.btnRestablecerPassword.Location = new System.Drawing.Point(25, 213);
-            this.btnRestablecerPassword.Name = "btnRestablecerPassword";
-            this.btnRestablecerPassword.Size = new System.Drawing.Size(247, 38);
-            this.btnRestablecerPassword.TabIndex = 4;
-            this.btnRestablecerPassword.Text = "Restablecer contraseña";
-            this.btnRestablecerPassword.UseVisualStyleBackColor = false;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.BackColor = System.Drawing.Color.Gray;
-            this.btnActualizar.FlatAppearance.BorderSize = 0;
-            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(25, 257);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(247, 38);
-            this.btnActualizar.TabIndex = 5;
-            this.btnActualizar.Text = "Actualizar lista";
-            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.lblUsuarioSeleccionado.Location = new System.Drawing.Point(52, 45);
+            this.lblUsuarioSeleccionado.Name = "lblUsuarioSeleccionado";
+            this.lblUsuarioSeleccionado.Size = new System.Drawing.Size(253, 36);
+            this.lblUsuarioSeleccionado.TabIndex = 0;
+            this.lblUsuarioSeleccionado.Text = "Usuario seleccionado:";
+            this.lblUsuarioSeleccionado.Click += new System.EventHandler(this.lblUsuarioSeleccionado_Click);
             // 
             // FrmGestionUsuarios
             // 
@@ -181,11 +228,12 @@
             this.Controls.Add(this.pnlSuperior);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmGestionUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestión de usuarios";
+            this.Load += new System.EventHandler(this.FrmGestionUsuarios_Load);
             this.pnlSuperior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();
             this.gbAcciones.ResumeLayout(false);
@@ -206,5 +254,8 @@
         private System.Windows.Forms.Button btnRestablecerPassword;
         private System.Windows.Forms.Button btnInactivar;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Label lblRolUsuario;
+        private System.Windows.Forms.ComboBox cmbRolUsuario;
+        private System.Windows.Forms.Button btnCambiarRol;
     }
 }
