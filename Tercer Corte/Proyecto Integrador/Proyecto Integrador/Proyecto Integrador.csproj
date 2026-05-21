@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78B65B08-B86F-442D-BAD0-1C7969F9704D}</ProjectGuid>
+    <ProjectGuid>{FE64B46C-94C9-450D-A328-B39D3C0989B5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SistemaMovimientoTierra</RootNamespace>
-    <AssemblyName>SistemaMovimientoTierra</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>Proyecto_Integrador</RootNamespace>
+    <AssemblyName>Proyecto Integrador</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -46,53 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\FrmCambiarPassword.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FrmCambiarPassword.Designer.cs">
-      <DependentUpon>FrmCambiarPassword.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FrmGestionUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmGestionUsuarios.Designer.cs">
-      <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FrmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FrmMenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmMenuPrincipal.Designer.cs">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\FrmRegistroUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\FrmRegistroUsuario.Designer.cs">
-      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Views\FrmCambiarPassword.resx">
-      <DependentUpon>FrmCambiarPassword.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmGestionUsuarios.resx">
-      <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmMenuPrincipal.resx">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\FrmRegistroUsuario.resx">
-      <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,12 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
