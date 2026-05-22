@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\progrmacion_3\\tercer corte\\sistemamovimientotierra\\sistemamovimientotierra\\views\\frmrestablecerpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmrestablecerpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\primer corte\\progrmacion_3\\tercer corte\\sistemamovimientotierra\\sistemamovimientotierra\\data\\usuarios.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\data\\usuarios.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmrestablecerpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmrestablecerpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmrestablecerpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -39,16 +47,8 @@
       "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\data\\usuarios.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\data\\usuarios.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmregistrousuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,31 +90,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmRestablecerPassword.cs",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
-              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
-              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwD8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-21T21:00:57.525Z",
+              "DocumentIndex": 2,
+              "Title": "usuarios.csv",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Data\\usuarios.csv",
+              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Data\\usuarios.csv",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Data\\usuarios.csv",
+              "RelativeToolTip": "SistemaMovimientoTierra\\Data\\usuarios.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2026-05-21T19:22:11.267Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FrmLogin.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmLogin.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmLogin.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T19:40:11.702Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FrmMenuPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
               "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T20:48:21.355Z"
+              "WhenOpened": "2026-05-14T20:48:21.355Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FrmRestablecerPassword.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
@@ -126,6 +139,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "FrmRestablecerPassword.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
+              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
+              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmRestablecerPassword.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-21T21:00:57.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "FrmGestionUsuarios.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmGestionUsuarios.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmGestionUsuarios.cs",
@@ -137,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "FrmGestionUsuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmGestionUsuarios.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmGestionUsuarios.cs",
@@ -148,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Program.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Program.cs",
@@ -160,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "FrmCambiarPassword.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmCambiarPassword.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmCambiarPassword.cs",
@@ -171,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "FrmCambiarPassword.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmCambiarPassword.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmCambiarPassword.cs",
@@ -183,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "FrmLogin.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmLogin.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmLogin.cs",
@@ -191,11 +216,12 @@
               "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmLogin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T19:37:27.878Z"
+              "WhenOpened": "2026-05-14T19:37:27.878Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "FrmMenuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
@@ -203,30 +229,8 @@
               "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAYwCgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T21:10:05.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FrmLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmLogin.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T19:40:11.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "usuarios.csv",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Data\\usuarios.csv",
-              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Data\\usuarios.csv",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Primer Corte\\Progrmacion_3\\Tercer Corte\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Data\\usuarios.csv",
-              "RelativeToolTip": "SistemaMovimientoTierra\\Data\\usuarios.csv",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2026-05-21T19:22:11.267Z"
+              "WhenOpened": "2026-05-14T21:10:05.932Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -297,7 +301,8 @@
               "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.Designer.cs",
               "ViewState": "AgIAANEAAAAAAAAAAAAgwOEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T22:17:21.48Z"
+              "WhenOpened": "2026-05-14T22:17:21.48Z",
+              "EditorCaption": ""
             }
           ]
         }

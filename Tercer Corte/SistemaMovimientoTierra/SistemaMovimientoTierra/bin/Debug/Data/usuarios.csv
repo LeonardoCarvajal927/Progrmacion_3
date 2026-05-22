@@ -1,1 +1,3 @@
-﻿NombreUsuario,PasswordHash,Rol,Activo
+NombreUsuario,PasswordHash,Rol,Activo
+admin,$2a$11$HPm/K2jt9Ig3yaO6l/5LxeZmdfplNwVwpKHyEWbyZBGO3T7S9Lgxq,Administrador,True
+prueba,$2a$11$w9ZzLQst1bk12fc0t1jNrORCSyQojlF6z2mQJCbf4z6VJLIEdAOEm,Usuario,True

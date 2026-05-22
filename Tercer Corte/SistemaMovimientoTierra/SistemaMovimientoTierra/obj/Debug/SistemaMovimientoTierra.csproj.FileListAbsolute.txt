@@ -1,4 +1,3 @@
-C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\Data\usuarios.csv
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
