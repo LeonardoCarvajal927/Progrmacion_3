@@ -1,3 +1,1 @@
-NombreUsuario,PasswordHash,Rol,Activo
-admin,$2a$11$.iyZNnrb6KaeXK9X6fPzs./.biLXklfKLUbekCa5DNcnubsRlBUWe,Administrador,True
-prueba,$2a$11$KAN6hAbOrSQlI7Vn0Zoo/ed56gt8yPXBmEQebiK5SNiDRS5L1LHYK,Usuario,True
+﻿NombreUsuario,PasswordHash,Rol,Activo
