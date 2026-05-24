@@ -87,6 +87,11 @@ namespace SistemaMovimientoTierra.Controllers
             File.WriteAllLines(rutaArchivo, lineas);
         }
 
+        public bool ValidarPasswordSegura(string password, out string mensaje)
+        {
+            return passwordService.ValidarPasswordSegura(password, out mensaje);
+        }
+
         public bool RegistrarUsuario(string nombreUsuario, string password, string rol)
         {
             List<Usuario> usuarios = ObtenerUsuarios();

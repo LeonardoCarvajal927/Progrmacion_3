@@ -43,6 +43,19 @@ namespace SistemaMovimientoTierra
                 return;
             }
 
+            string mensajeValidacion;
+
+            bool passwordSegura = usuarioController.ValidarPasswordSegura(nuevaPassword, out mensajeValidacion);
+
+            if (!passwordSegura)
+            {
+                MessageBox.Show(mensajeValidacion,
+                                "Contraseña no válida",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
             bool resultado = usuarioController.RestablecerPassword(usuarioSeleccionado, nuevaPassword);
 
             if (resultado)
