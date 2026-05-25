@@ -98,7 +98,7 @@ namespace SistemaMovimientoTierra.Controllers
 
             do
             {
-                nuevoId = random.Next(1000, 10000); // Genera un número entre 1000 y 9999
+                nuevoId = random.Next(1000, 10000); 
             }
             while (clientes.Any(c => c.IdCliente == nuevoId));
 
