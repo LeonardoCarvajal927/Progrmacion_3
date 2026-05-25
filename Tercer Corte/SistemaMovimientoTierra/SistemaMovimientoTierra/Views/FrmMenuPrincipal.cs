@@ -42,10 +42,8 @@ namespace SistemaMovimientoTierra
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Módulo de clientes pendiente por desarrollar.",
-                            "Información",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+            SistemaMovimientoTierra.Views.FrmRegistroCliente form = new SistemaMovimientoTierra.Views.FrmRegistroCliente();
+            form.ShowDialog();
         }
 
         private void btnMateriales_Click(object sender, EventArgs e)

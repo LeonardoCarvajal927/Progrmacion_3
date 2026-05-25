@@ -62,7 +62,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Persona.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Service\PasswordService.cs" />
     <Compile Include="Views\FrmCambiarPassword.cs">
@@ -76,6 +79,12 @@
     </Compile>
     <Compile Include="Views\FrmGestionUsuarios.Designer.cs">
       <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmListaClientes.Designer.cs">
+      <DependentUpon>FrmListaClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmLogin.cs">
       <SubType>Form</SubType>
@@ -115,11 +124,17 @@
     <EmbeddedResource Include="Views\FrmGestionUsuarios.resx">
       <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmListaClientes.resx">
+      <DependentUpon>FrmListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmRegistroCliente.resx">
+      <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmRegistroUsuario.resx">
       <DependentUpon>FrmRegistroUsuario.cs</DependentUpon>
@@ -137,6 +152,7 @@
     <EmbeddedResource Include="Views\FrmRestablecerPassword.resx">
       <DependentUpon>FrmRestablecerPassword.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="Data\clientes.csv" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

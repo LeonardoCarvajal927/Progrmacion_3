@@ -1,4 +1,4 @@
-﻿
+﻿using SistemaMovimientoTierra.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +18,8 @@ namespace SistemaMovimientoTierra
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-
+            
             Application.Run(new FrmLogin());
-           
         }
     }
 }

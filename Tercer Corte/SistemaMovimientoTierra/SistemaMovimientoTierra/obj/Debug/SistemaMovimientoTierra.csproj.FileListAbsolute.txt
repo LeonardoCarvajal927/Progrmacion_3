@@ -23,3 +23,5 @@ C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Cort
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
 C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmRegistroCliente.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmListaClientes.resources
