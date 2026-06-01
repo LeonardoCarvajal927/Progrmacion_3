@@ -1,0 +1,4 @@
+NombreUsuario,PasswordHash,Rol,Activo
+admin,$2a$11$HPm/K2jt9Ig3yaO6l/5LxeZmdfplNwVwpKHyEWbyZBGO3T7S9Lgxq,Administrador,True
+prueba,$2a$11$/eBWhfTuZvf9NkSa/vBBROnhZkAgPzu7ogD6ASfSTrS49famNxDMq,Usuario,True
+Leonardo,$2a$11$AFtiP0qmpKMLQ0rN54dQM.6z1GjAbg900dMWbRcBODI5LVqaI3WAy,Administrador,True
