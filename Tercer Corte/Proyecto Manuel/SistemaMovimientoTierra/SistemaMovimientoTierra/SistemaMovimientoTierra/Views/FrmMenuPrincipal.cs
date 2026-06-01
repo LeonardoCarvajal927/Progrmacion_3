@@ -95,5 +95,10 @@ namespace SistemaMovimientoTierra
         {
             // Evento vacío para evitar error del diseñador.
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

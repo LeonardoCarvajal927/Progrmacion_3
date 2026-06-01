@@ -37,7 +37,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -46,7 +45,6 @@
             this.btnCotizaciones = new System.Windows.Forms.Button();
             this.btnCalculoVolumen = new System.Windows.Forms.Button();
             this.btnMateriales = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
             this.btnGestionUsuarios = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -63,6 +61,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -70,7 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -82,6 +82,7 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMenu
@@ -95,7 +96,7 @@
             this.pnlMenu.Controls.Add(this.pictureBox5);
             this.pnlMenu.Controls.Add(this.label4);
             this.pnlMenu.Controls.Add(this.label3);
-            this.pnlMenu.Controls.Add(this.pictureBox4);
+            this.pnlMenu.Controls.Add(this.pictureBox14);
             this.pnlMenu.Controls.Add(this.pictureBox3);
             this.pnlMenu.Controls.Add(this.pictureBox1);
             this.pnlMenu.Controls.Add(this.btnSalir);
@@ -104,19 +105,20 @@
             this.pnlMenu.Controls.Add(this.btnCotizaciones);
             this.pnlMenu.Controls.Add(this.btnCalculoVolumen);
             this.pnlMenu.Controls.Add(this.btnMateriales);
-            this.pnlMenu.Controls.Add(this.btnClientes);
+            this.pnlMenu.Controls.Add(this.button2);
+            this.pnlMenu.Controls.Add(this.button1);
             this.pnlMenu.Controls.Add(this.btnGestionUsuarios);
             this.pnlMenu.Controls.Add(this.lblMenu);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(286, 512);
+            this.pnlMenu.Size = new System.Drawing.Size(286, 785);
             this.pnlMenu.TabIndex = 0;
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::SistemaMovimientoTierra.Properties.Resources.seguro;
-            this.pictureBox10.Location = new System.Drawing.Point(15, 401);
+            this.pictureBox10.Location = new System.Drawing.Point(9, 425);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(40, 36);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -126,7 +128,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::SistemaMovimientoTierra.Properties.Resources.ingresar1;
-            this.pictureBox9.Location = new System.Drawing.Point(15, 452);
+            this.pictureBox9.Location = new System.Drawing.Point(9, 488);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(40, 36);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -136,9 +138,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::SistemaMovimientoTierra.Properties.Resources.matematicas;
-            this.pictureBox8.Location = new System.Drawing.Point(15, 350);
+            this.pictureBox8.Location = new System.Drawing.Point(6, 373);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(40, 36);
+            this.pictureBox8.Size = new System.Drawing.Size(46, 36);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 17;
             this.pictureBox8.TabStop = false;
@@ -146,9 +148,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::SistemaMovimientoTierra.Properties.Resources.archivo_de_registro;
-            this.pictureBox7.Location = new System.Drawing.Point(15, 299);
+            this.pictureBox7.Location = new System.Drawing.Point(6, 320);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(40, 36);
+            this.pictureBox7.Size = new System.Drawing.Size(46, 36);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
@@ -156,17 +158,18 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::SistemaMovimientoTierra.Properties.Resources.matematicas;
-            this.pictureBox6.Location = new System.Drawing.Point(18, 248);
+            this.pictureBox6.Location = new System.Drawing.Point(6, 267);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(40, 36);
+            this.pictureBox6.Size = new System.Drawing.Size(46, 36);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::SistemaMovimientoTierra.Properties.Resources.construccion;
-            this.pictureBox5.Location = new System.Drawing.Point(15, 197);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 211);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 36);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -193,20 +196,10 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "SISTEMA DE";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::SistemaMovimientoTierra.Properties.Resources.Usuario;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 146);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(40, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::SistemaMovimientoTierra.Properties.Resources.Usuario;
-            this.pictureBox3.Location = new System.Drawing.Point(15, 82);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 102);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(40, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,7 +224,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(15, 452);
+            this.btnSalir.Location = new System.Drawing.Point(15, 488);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(240, 36);
             this.btnSalir.TabIndex = 8;
@@ -245,7 +238,7 @@
             this.btnCambiarPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCambiarPassword.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCambiarPassword.ForeColor = System.Drawing.Color.White;
-            this.btnCambiarPassword.Location = new System.Drawing.Point(15, 401);
+            this.btnCambiarPassword.Location = new System.Drawing.Point(12, 425);
             this.btnCambiarPassword.Name = "btnCambiarPassword";
             this.btnCambiarPassword.Size = new System.Drawing.Size(240, 36);
             this.btnCambiarPassword.TabIndex = 7;
@@ -260,9 +253,9 @@
             this.btnFacturas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturas.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFacturas.ForeColor = System.Drawing.Color.White;
-            this.btnFacturas.Location = new System.Drawing.Point(15, 350);
+            this.btnFacturas.Location = new System.Drawing.Point(6, 373);
             this.btnFacturas.Name = "btnFacturas";
-            this.btnFacturas.Size = new System.Drawing.Size(240, 36);
+            this.btnFacturas.Size = new System.Drawing.Size(249, 36);
             this.btnFacturas.TabIndex = 6;
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.UseVisualStyleBackColor = false;
@@ -275,9 +268,9 @@
             this.btnCotizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCotizaciones.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCotizaciones.ForeColor = System.Drawing.Color.White;
-            this.btnCotizaciones.Location = new System.Drawing.Point(15, 299);
+            this.btnCotizaciones.Location = new System.Drawing.Point(6, 320);
             this.btnCotizaciones.Name = "btnCotizaciones";
-            this.btnCotizaciones.Size = new System.Drawing.Size(240, 36);
+            this.btnCotizaciones.Size = new System.Drawing.Size(249, 36);
             this.btnCotizaciones.TabIndex = 5;
             this.btnCotizaciones.Text = "Cotizaciones";
             this.btnCotizaciones.UseVisualStyleBackColor = false;
@@ -290,7 +283,7 @@
             this.btnCalculoVolumen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalculoVolumen.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculoVolumen.ForeColor = System.Drawing.Color.White;
-            this.btnCalculoVolumen.Location = new System.Drawing.Point(15, 248);
+            this.btnCalculoVolumen.Location = new System.Drawing.Point(15, 267);
             this.btnCalculoVolumen.Name = "btnCalculoVolumen";
             this.btnCalculoVolumen.Size = new System.Drawing.Size(240, 36);
             this.btnCalculoVolumen.TabIndex = 4;
@@ -305,28 +298,13 @@
             this.btnMateriales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMateriales.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMateriales.ForeColor = System.Drawing.Color.White;
-            this.btnMateriales.Location = new System.Drawing.Point(15, 197);
+            this.btnMateriales.Location = new System.Drawing.Point(15, 211);
             this.btnMateriales.Name = "btnMateriales";
             this.btnMateriales.Size = new System.Drawing.Size(240, 36);
             this.btnMateriales.TabIndex = 3;
             this.btnMateriales.Text = "Materiales";
             this.btnMateriales.UseVisualStyleBackColor = false;
             this.btnMateriales.Click += new System.EventHandler(this.btnMateriales_Click);
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.Location = new System.Drawing.Point(15, 146);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(240, 36);
-            this.btnClientes.TabIndex = 2;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = false;
-            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnGestionUsuarios
             // 
@@ -335,7 +313,7 @@
             this.btnGestionUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGestionUsuarios.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGestionUsuarios.ForeColor = System.Drawing.Color.White;
-            this.btnGestionUsuarios.Location = new System.Drawing.Point(15, 82);
+            this.btnGestionUsuarios.Location = new System.Drawing.Point(15, 102);
             this.btnGestionUsuarios.Name = "btnGestionUsuarios";
             this.btnGestionUsuarios.Size = new System.Drawing.Size(240, 36);
             this.btnGestionUsuarios.TabIndex = 1;
@@ -490,12 +468,52 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(15, 102);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(240, 36);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Gestión usuarios";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnGestionUsuarios_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(15, 155);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(240, 36);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Clientes";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.Image = global::SistemaMovimientoTierra.Properties.Resources.Usuario;
+            this.pictureBox14.Location = new System.Drawing.Point(12, 155);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(40, 36);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 11;
+            this.pictureBox14.TabStop = false;
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(828, 512);
+            this.ClientSize = new System.Drawing.Size(1247, 785);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -519,7 +537,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -533,6 +550,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -545,7 +563,6 @@
         private System.Windows.Forms.Button btnCotizaciones;
         private System.Windows.Forms.Button btnCalculoVolumen;
         private System.Windows.Forms.Button btnMateriales;
-        private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnFacturas;
         private System.Windows.Forms.Button btnCambiarPassword;
         private System.Windows.Forms.Button btnSalir;
@@ -558,7 +575,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -574,5 +590,8 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
