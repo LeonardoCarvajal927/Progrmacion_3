@@ -16,7 +16,8 @@ namespace SistemaMovimientoTierra
 
         private void FrmMenuPrincipal_Load(object sender, EventArgs e)
         {
-           // lblBienvenido.Text = "Bienvenido: " + usuarioActual.NombreUsuario + " | Rol: " + usuarioActual.Rol;
+            lblNombreUsuario.Text = usuarioActual.NombreUsuario;
+            lblRolUsuario.Text = usuarioActual.Rol;
 
             if (usuarioActual.Rol != "Administrador")
             {
@@ -26,6 +27,32 @@ namespace SistemaMovimientoTierra
             {
                 btnGestionUsuarios.Visible = true;
             }
+
+            CentrarElementosPanelDerecho();
+        }
+
+        private void CentrarElementosPanelDerecho()
+        {
+            // Centrar panel de usuario
+            pnlUsuarioActual.Left = (pnlContenido.Width - pnlUsuarioActual.Width) / 2;
+
+            // Centrar banner
+            picBanner.Left = (pnlContenido.Width - picBanner.Width) / 2;
+
+            // Centrar tarjetas como bloque
+            int espacio = 20;
+            int anchoTotal = pnlResumenClientes.Width +
+                             pnlResumenMateriales.Width +
+                             pnlResumenCotizaciones.Width +
+                             
+                             (espacio * 3);
+
+            int inicioX = (pnlContenido.Width - anchoTotal) / 2;
+
+            pnlResumenClientes.Left = inicioX;
+            pnlResumenMateriales.Left = pnlResumenClientes.Right + espacio;
+            pnlResumenCotizaciones.Left = pnlResumenMateriales.Right + espacio;
+            
         }
 
         private void btnGestionUsuarios_Click(object sender, EventArgs e)

@@ -118,6 +118,8 @@
     <Compile Include="Views\FrmRestablecerPassword.Designer.cs">
       <DependentUpon>FrmRestablecerPassword.cs</DependentUpon>
     </Compile>
+    <None Include="Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png" />
+    <None Include="Resources\perfil.png" />
     <None Include="imagenes\Gemini_Generated_Image_jhf3v7jhf3v7jhf3.png" />
     <None Include="imagenes\archivo-de-registro.png" />
     <None Include="imagenes\matematicas.png" />
