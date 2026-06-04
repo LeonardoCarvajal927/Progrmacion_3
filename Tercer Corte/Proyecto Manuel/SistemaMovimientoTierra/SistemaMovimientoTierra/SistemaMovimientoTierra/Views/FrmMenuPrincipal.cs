@@ -19,13 +19,16 @@ namespace SistemaMovimientoTierra
             lblNombreUsuario.Text = usuarioActual.NombreUsuario;
             lblRolUsuario.Text = usuarioActual.Rol;
 
-            if (usuarioActual.Rol != "Administrador")
-            {
-                btnGestionUsuarios.Visible = false;
-            }
-            else
+            if (usuarioActual.Rol == "Administrador")
             {
                 btnGestionUsuarios.Visible = true;
+                picGestionUsuarios.Visible = true;
+            }
+            else
+            
+            {
+                btnGestionUsuarios.Visible = false;
+                picGestionUsuarios.Visible = false;
             }
 
             CentrarElementosPanelDerecho();
@@ -33,13 +36,13 @@ namespace SistemaMovimientoTierra
 
         private void CentrarElementosPanelDerecho()
         {
-            // Centrar panel de usuario
+           
             pnlUsuarioActual.Left = (pnlContenido.Width - pnlUsuarioActual.Width) / 2;
 
-            // Centrar banner
+            
             picBanner.Left = (pnlContenido.Width - picBanner.Width) / 2;
 
-            // Centrar tarjetas como bloque
+            
             int espacio = 20;
             int anchoTotal = pnlResumenClientes.Width +
                              pnlResumenMateriales.Width +
@@ -75,10 +78,8 @@ namespace SistemaMovimientoTierra
 
         private void btnMateriales_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Módulo de materiales pendiente por desarrollar.",
-                            "Información",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+            SistemaMovimientoTierra.Views.FrmMateriales form = new SistemaMovimientoTierra.Views.FrmMateriales();
+            form.ShowDialog();
         }
 
         private void btnCalculoVolumen_Click(object sender, EventArgs e)
@@ -120,7 +121,7 @@ namespace SistemaMovimientoTierra
 
         private void lblTituloCentral_Click(object sender, EventArgs e)
         {
-            // Evento vacío para evitar error del diseñador.
+            
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

@@ -63,8 +63,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\MaterialController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Material.cs" />
     <Compile Include="Models\Persona.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Service\PasswordService.cs" />
@@ -92,6 +94,12 @@
     <Compile Include="Views\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FrmMateriales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmMateriales.Designer.cs">
+      <DependentUpon>FrmMateriales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +126,7 @@
     <Compile Include="Views\FrmRestablecerPassword.Designer.cs">
       <DependentUpon>FrmRestablecerPassword.cs</DependentUpon>
     </Compile>
+    <Content Include="Data\materiales.csv" />
     <None Include="Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png" />
     <None Include="Resources\perfil.png" />
     <None Include="imagenes\Gemini_Generated_Image_jhf3v7jhf3v7jhf3.png" />
@@ -144,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmMateriales.resx">
+      <DependentUpon>FrmMateriales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>

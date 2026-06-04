@@ -18,7 +18,6 @@ namespace SistemaMovimientoTierra
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            
             Application.Run(new FrmLogin());
         }
     }
