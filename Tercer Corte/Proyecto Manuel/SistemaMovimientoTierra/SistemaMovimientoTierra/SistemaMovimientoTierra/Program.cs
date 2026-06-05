@@ -18,11 +18,8 @@ namespace SistemaMovimientoTierra
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // Temporal: ejecutar solo el formulario de cálculo de volumen
-            Application.Run(new FrmCotizaciones());
-
-            // Formulario real del sistema:
-            // Application.Run(new FrmLogin());
+            // Formulario principal de entrada al sistema
+            Application.Run(new FrmLogin());
         }
     }
 }

@@ -482,10 +482,5 @@ namespace SistemaMovimientoTierra.Views
         {
             this.Close();
         }
-
-        private void FrmCotizaciones_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }

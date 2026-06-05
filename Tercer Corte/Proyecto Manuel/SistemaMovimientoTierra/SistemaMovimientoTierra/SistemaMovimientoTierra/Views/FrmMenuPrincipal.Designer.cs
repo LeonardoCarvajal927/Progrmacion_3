@@ -46,6 +46,7 @@
             this.btnCotizaciones = new System.Windows.Forms.Button();
             this.btnCalculoVolumen = new System.Windows.Forms.Button();
             this.btnMateriales = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.btnGestionUsuarios = new System.Windows.Forms.Button();
             this.lblMenu = new System.Windows.Forms.Label();
             this.pnlContenido = new System.Windows.Forms.Panel();
@@ -66,7 +67,6 @@
             this.lblRolUsuario = new System.Windows.Forms.Label();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.lblTextoUsuarioActual = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -316,6 +316,21 @@
             this.btnMateriales.UseVisualStyleBackColor = false;
             this.btnMateriales.Click += new System.EventHandler(this.btnMateriales_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(15, 155);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(240, 36);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Clientes";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnClientes_Click);
+            // 
             // btnGestionUsuarios
             // 
             this.btnGestionUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
@@ -544,21 +559,6 @@
             this.lblTextoUsuarioActual.Size = new System.Drawing.Size(149, 28);
             this.lblTextoUsuarioActual.TabIndex = 0;
             this.lblTextoUsuarioActual.Text = "Usuario Actaual";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(59)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(15, 155);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(240, 36);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Clientes";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // FrmMenuPrincipal
             // 

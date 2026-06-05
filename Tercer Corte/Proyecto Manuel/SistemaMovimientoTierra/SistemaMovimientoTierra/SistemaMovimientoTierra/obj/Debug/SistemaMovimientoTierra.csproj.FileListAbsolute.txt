@@ -138,3 +138,5 @@ C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Ma
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCalculoVolumen.resources
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCotizaciones.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmFacturas.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmVistaFactura.resources

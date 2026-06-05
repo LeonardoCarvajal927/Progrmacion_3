@@ -1,6 +1,9 @@
 ﻿using SistemaMovimientoTierra.Models;
+using SistemaMovimientoTierra.Views;
 using System;
 using System.Windows.Forms;
+using SistemaMovimientoTierra.Controllers;
+using System.Collections.Generic;
 
 namespace SistemaMovimientoTierra
 {
@@ -18,6 +21,7 @@ namespace SistemaMovimientoTierra
         {
             lblNombreUsuario.Text = usuarioActual.NombreUsuario;
             lblRolUsuario.Text = usuarioActual.Rol;
+            CargarContadoresResumen();
 
             if (usuarioActual.Rol == "Administrador")
             {
@@ -72,38 +76,38 @@ namespace SistemaMovimientoTierra
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            SistemaMovimientoTierra.Views.FrmRegistroCliente form = new SistemaMovimientoTierra.Views.FrmRegistroCliente();
-            form.ShowDialog();
+            FrmRegistroCliente frm = new FrmRegistroCliente();
+            frm.ShowDialog();
+
+            CargarContadoresResumen();
         }
 
         private void btnMateriales_Click(object sender, EventArgs e)
         {
-            SistemaMovimientoTierra.Views.FrmMateriales form = new SistemaMovimientoTierra.Views.FrmMateriales();
-            form.ShowDialog();
+            FrmMateriales frm = new FrmMateriales();
+            frm.ShowDialog();
+
+            CargarContadoresResumen();
         }
 
         private void btnCalculoVolumen_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Módulo de cálculo de volumen pendiente por desarrollar.",
-                            "Información",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+            FrmCalculoVolumen frm = new FrmCalculoVolumen();
+            frm.ShowDialog();
         }
 
         private void btnCotizaciones_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Módulo de cotizaciones pendiente por desarrollar.",
-                            "Información",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+            FrmCotizaciones frm = new FrmCotizaciones();
+            frm.ShowDialog();
+
+            CargarContadoresResumen();
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Módulo de facturas pendiente por desarrollar.",
-                            "Información",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+            FrmFacturas frm = new FrmFacturas();
+            frm.ShowDialog();
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -127,6 +131,41 @@ namespace SistemaMovimientoTierra
         private void pictureBox6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void CargarContadoresResumen()
+        {
+            try
+            {
+                ClienteController clienteController = new ClienteController();
+                MaterialController materialController = new MaterialController();
+                CotizacionController cotizacionController = new CotizacionController();
+
+                int totalClientes = clienteController.ObtenerClientes().Count;
+
+                int totalMaterialesActivos = 0;
+                List<Material> materiales = materialController.ObtenerMateriales();
+
+                foreach (Material material in materiales)
+                {
+                    if (material.Estado == "Activo")
+                    {
+                        totalMaterialesActivos++;
+                    }
+                }
+
+                int totalCotizaciones = cotizacionController.ObtenerCotizaciones().Count;
+
+                lblTotalClientes.Text = totalClientes.ToString();
+                lblTotalMateriales.Text = totalMaterialesActivos.ToString();
+                lblTotalCotizaciones.Text = totalCotizaciones.ToString();
+            }
+            catch (Exception)
+            {
+                lblTotalClientes.Text = "0";
+                lblTotalMateriales.Text = "0";
+                lblTotalCotizaciones.Text = "0";
+            }
         }
     }
 }
