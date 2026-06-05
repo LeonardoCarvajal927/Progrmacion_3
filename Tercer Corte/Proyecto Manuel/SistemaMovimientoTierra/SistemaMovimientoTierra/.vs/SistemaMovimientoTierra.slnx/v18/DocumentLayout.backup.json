@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\tercer corte\\proyecto manuel\\sistemamovimientotierra\\sistemamovimientotierra\\sistemamovimientotierra\\views\\frmcalculovolumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmcalculovolumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\tercer corte\\proyecto manuel\\sistemamovimientotierra\\sistemamovimientotierra\\sistemamovimientotierra\\views\\frmcalculovolumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmcalculovolumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\tercer corte\\proyecto manuel\\sistemamovimientotierra\\sistemamovimientotierra\\sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|c:\\users\\leona\\onedrive\\documentos\\github\\progrmacion_3\\tercer corte\\proyecto manuel\\sistemamovimientotierra\\sistemamovimientotierra\\sistemamovimientotierra\\logic\\calculovolumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\logic\\calculovolumen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\sistemamovimientotierra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|solutionrelative:sistemamovimientotierra\\views\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78B65B08-B86F-442D-BAD0-1C7969F9704D}|SistemaMovimientoTierra\\SistemaMovimientoTierra.csproj|C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\sistemamovimientotierra\\views\\frmmateriales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -50,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,19 +70,70 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CalculoVolumen.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Logic\\CalculoVolumen.cs",
+              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Logic\\CalculoVolumen.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Logic\\CalculoVolumen.cs",
+              "RelativeToolTip": "SistemaMovimientoTierra\\Logic\\CalculoVolumen.cs",
+              "ViewState": "AgIAALEAAAAAAAAAAAAswNIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T00:37:07.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmCalculoVolumen.cs",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs",
+              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs",
+              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T00:13:59.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmCalculoVolumen.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs",
+              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmCalculoVolumen.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T23:47:44.791Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FrmMenuPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T13:21:06.812Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Program.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Program.cs",
               "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Program.cs",
               "RelativeToolTip": "SistemaMovimientoTierra\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T20:22:39.268Z"
+              "WhenOpened": "2026-06-04T20:22:39.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FrmMenuPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
@@ -83,19 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmMenuPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
-              "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaMovimientoTierra\\Views\\FrmMenuPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T13:21:06.812Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FrmMateriales.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMateriales.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmMateriales.cs",
@@ -106,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "FrmMateriales.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmMateriales.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmMateriales.cs",
@@ -118,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MaterialController.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Controllers\\MaterialController.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Controllers\\MaterialController.cs",
@@ -130,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Material.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Models\\Material.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Models\\Material.cs",
@@ -142,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "materiales.csv",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Data\\materiales.csv",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Data\\materiales.csv",
@@ -154,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "FrmLogin.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmLogin.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmLogin.cs",
@@ -165,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "FrmLogin.cs",
               "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\Documentos\\GitHub\\Progrmacion_3\\Tercer Corte\\Proyecto Manuel\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\SistemaMovimientoTierra\\Views\\FrmLogin.cs",
               "RelativeDocumentMoniker": "SistemaMovimientoTierra\\Views\\FrmLogin.cs",

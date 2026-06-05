@@ -67,11 +67,18 @@
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\MaterialController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Logic\CalculoVolumen.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Material.cs" />
     <Compile Include="Models\Persona.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Service\PasswordService.cs" />
+    <Compile Include="Views\FrmCalculoVolumen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCalculoVolumen.Designer.cs">
+      <DependentUpon>FrmCalculoVolumen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FrmCambiarPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +151,9 @@
     <None Include="imagenes\ingresar.png" />
     <None Include="imagenes\seguro.png" />
     <None Include="imagenes\Usuario.png" />
+    <EmbeddedResource Include="Views\FrmCalculoVolumen.resx">
+      <DependentUpon>FrmCalculoVolumen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCambiarPassword.resx">
       <DependentUpon>FrmCambiarPassword.cs</DependentUpon>
     </EmbeddedResource>

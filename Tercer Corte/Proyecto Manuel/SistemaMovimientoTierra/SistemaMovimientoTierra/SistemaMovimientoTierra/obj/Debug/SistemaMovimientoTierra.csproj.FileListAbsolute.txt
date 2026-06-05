@@ -136,3 +136,4 @@ C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Ma
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCalculoVolumen.resources
