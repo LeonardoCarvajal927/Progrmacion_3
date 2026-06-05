@@ -41,7 +41,7 @@ namespace SistemaMovimientoTierra.Views
             lblVolumen.Text = "0.00 m³";
             lblMetodoResultado.Text = "Método utilizado: ---";
 
-            btnGrafica3D.Enabled = false;
+            btnGrafica3D.Enabled = true;
 
             dgvAlturas.RowHeadersVisible = false;
             dgvAlturas.AllowUserToAddRows = false;
@@ -283,10 +283,32 @@ namespace SistemaMovimientoTierra.Views
 
         private void btnGrafica3D_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("La gráfica 3D se integrará después de instalar el paquete correspondiente.",
-                            "Gráfica pendiente",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+            if (dgvAlturas.Rows.Count == 0 || dgvAlturas.Columns.Count == 0)
+            {
+                MessageBox.Show("Primero debe generar la matriz de alturas.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            double[,] alturas;
+
+            try
+            {
+                alturas = ObtenerMatrizAlturas();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,
+                                "Error en matriz",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                return;
+            }
+
+            FrmGraficaTerreno frm = new FrmGraficaTerreno(alturas);
+            frm.ShowDialog();
         }
 
         // Estos eventos quedaron conectados accidentalmente desde el diseñador.

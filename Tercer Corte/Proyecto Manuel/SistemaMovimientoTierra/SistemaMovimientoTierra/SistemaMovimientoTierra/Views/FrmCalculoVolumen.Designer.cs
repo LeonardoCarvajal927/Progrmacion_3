@@ -31,30 +31,29 @@
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbConfiguracion = new System.Windows.Forms.GroupBox();
-            this.lblMetodo = new System.Windows.Forms.Label();
-            this.cmbMetodo = new System.Windows.Forms.ComboBox();
-            this.lblFilas = new System.Windows.Forms.Label();
-            this.txtFilas = new System.Windows.Forms.TextBox();
-            this.txtColumnas = new System.Windows.Forms.TextBox();
-            this.lblColumnas = new System.Windows.Forms.Label();
-            this.txtDx = new System.Windows.Forms.TextBox();
-            this.lblDx = new System.Windows.Forms.Label();
-            this.txtDy = new System.Windows.Forms.TextBox();
-            this.lblDy = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.txtH = new System.Windows.Forms.TextBox();
             this.lblH = new System.Windows.Forms.Label();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.btnCerrar = new System.Windows.Forms.Button();
+            this.txtDy = new System.Windows.Forms.TextBox();
+            this.lblDy = new System.Windows.Forms.Label();
+            this.txtDx = new System.Windows.Forms.TextBox();
+            this.lblDx = new System.Windows.Forms.Label();
+            this.txtColumnas = new System.Windows.Forms.TextBox();
+            this.lblColumnas = new System.Windows.Forms.Label();
+            this.txtFilas = new System.Windows.Forms.TextBox();
+            this.lblFilas = new System.Windows.Forms.Label();
+            this.cmbMetodo = new System.Windows.Forms.ComboBox();
+            this.lblMetodo = new System.Windows.Forms.Label();
             this.gbMatriz = new System.Windows.Forms.GroupBox();
-            this.dgvAlturas = new System.Windows.Forms.DataGridView();
-            this.btnGenerarMatriz = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.btnGenerarMatriz = new System.Windows.Forms.Button();
+            this.dgvAlturas = new System.Windows.Forms.DataGridView();
             this.gbResultado = new System.Windows.Forms.GroupBox();
-            this.lblTextoVolumen = new System.Windows.Forms.Label();
-            this.lblVolumen = new System.Windows.Forms.Label();
-            this.lblMetodoResultado = new System.Windows.Forms.Label();
-            this.lblNotaGrafica = new System.Windows.Forms.Label();
             this.btnGrafica3D = new System.Windows.Forms.Button();
+            this.lblMetodoResultado = new System.Windows.Forms.Label();
+            this.lblVolumen = new System.Windows.Forms.Label();
+            this.lblTextoVolumen = new System.Windows.Forms.Label();
             this.pnlSuperior.SuspendLayout();
             this.gbConfiguracion.SuspendLayout();
             this.gbMatriz.SuspendLayout();
@@ -109,78 +108,50 @@
             this.gbConfiguracion.TabStop = false;
             this.gbConfiguracion.Text = "Configuración del cálculo";
             // 
-            // lblMetodo
+            // btnCerrar
             // 
-            this.lblMetodo.AutoSize = true;
-            this.lblMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMetodo.Location = new System.Drawing.Point(40, 58);
-            this.lblMetodo.Name = "lblMetodo";
-            this.lblMetodo.Size = new System.Drawing.Size(87, 28);
-            this.lblMetodo.TabIndex = 0;
-            this.lblMetodo.Text = "Método:";
+            this.btnCerrar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.Location = new System.Drawing.Point(110, 351);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(226, 46);
+            this.btnCerrar.TabIndex = 13;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // cmbMetodo
+            // btnLimpiar
             // 
-            this.cmbMetodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMetodo.FormattingEnabled = true;
-            this.cmbMetodo.Location = new System.Drawing.Point(110, 55);
-            this.cmbMetodo.Name = "cmbMetodo";
-            this.cmbMetodo.Size = new System.Drawing.Size(226, 36);
-            this.cmbMetodo.TabIndex = 1;
+            this.btnLimpiar.BackColor = System.Drawing.Color.Gray;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(110, 299);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(226, 46);
+            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // lblFilas
+            // txtH
             // 
-            this.lblFilas.AutoSize = true;
-            this.lblFilas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilas.Location = new System.Drawing.Point(63, 101);
-            this.lblFilas.Name = "lblFilas";
-            this.lblFilas.Size = new System.Drawing.Size(54, 28);
-            this.lblFilas.TabIndex = 2;
-            this.lblFilas.Text = "Filas:";
+            this.txtH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtH.Location = new System.Drawing.Point(110, 258);
+            this.txtH.Name = "txtH";
+            this.txtH.Size = new System.Drawing.Size(226, 34);
+            this.txtH.TabIndex = 11;
             // 
-            // txtFilas
+            // lblH
             // 
-            this.txtFilas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFilas.Location = new System.Drawing.Point(110, 98);
-            this.txtFilas.Name = "txtFilas";
-            this.txtFilas.Size = new System.Drawing.Size(226, 34);
-            this.txtFilas.TabIndex = 3;
-            // 
-            // txtColumnas
-            // 
-            this.txtColumnas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColumnas.Location = new System.Drawing.Point(110, 138);
-            this.txtColumnas.Name = "txtColumnas";
-            this.txtColumnas.Size = new System.Drawing.Size(226, 34);
-            this.txtColumnas.TabIndex = 5;
-            // 
-            // lblColumnas
-            // 
-            this.lblColumnas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblColumnas.Location = new System.Drawing.Point(30, 141);
-            this.lblColumnas.Name = "lblColumnas";
-            this.lblColumnas.Size = new System.Drawing.Size(117, 28);
-            this.lblColumnas.TabIndex = 4;
-            this.lblColumnas.Text = "Columnas:";
-            this.lblColumnas.Click += new System.EventHandler(this.txtColumnas_Click);
-            // 
-            // txtDx
-            // 
-            this.txtDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDx.Location = new System.Drawing.Point(110, 178);
-            this.txtDx.Name = "txtDx";
-            this.txtDx.Size = new System.Drawing.Size(226, 34);
-            this.txtDx.TabIndex = 7;
-            // 
-            // lblDx
-            // 
-            this.lblDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDx.Location = new System.Drawing.Point(77, 181);
-            this.lblDx.Name = "lblDx";
-            this.lblDx.Size = new System.Drawing.Size(102, 28);
-            this.lblDx.TabIndex = 6;
-            this.lblDx.Text = "dx:";
+            this.lblH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblH.Location = new System.Drawing.Point(54, 261);
+            this.lblH.Name = "lblH";
+            this.lblH.Size = new System.Drawing.Size(102, 28);
+            this.lblH.TabIndex = 10;
+            this.lblH.Text = "h corte:";
             // 
             // txtDy
             // 
@@ -201,50 +172,78 @@
             this.lblDy.Text = "dy:";
             this.lblDy.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtH
+            // txtDx
             // 
-            this.txtH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtH.Location = new System.Drawing.Point(110, 258);
-            this.txtH.Name = "txtH";
-            this.txtH.Size = new System.Drawing.Size(226, 34);
-            this.txtH.TabIndex = 11;
+            this.txtDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDx.Location = new System.Drawing.Point(110, 178);
+            this.txtDx.Name = "txtDx";
+            this.txtDx.Size = new System.Drawing.Size(226, 34);
+            this.txtDx.TabIndex = 7;
             // 
-            // lblH
+            // lblDx
             // 
-            this.lblH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblH.Location = new System.Drawing.Point(54, 261);
-            this.lblH.Name = "lblH";
-            this.lblH.Size = new System.Drawing.Size(102, 28);
-            this.lblH.TabIndex = 10;
-            this.lblH.Text = "h corte:";
+            this.lblDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDx.Location = new System.Drawing.Point(77, 181);
+            this.lblDx.Name = "lblDx";
+            this.lblDx.Size = new System.Drawing.Size(102, 28);
+            this.lblDx.TabIndex = 6;
+            this.lblDx.Text = "dx:";
             // 
-            // btnLimpiar
+            // txtColumnas
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.Gray;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(110, 299);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(226, 46);
-            this.btnLimpiar.TabIndex = 12;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.txtColumnas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtColumnas.Location = new System.Drawing.Point(110, 138);
+            this.txtColumnas.Name = "txtColumnas";
+            this.txtColumnas.Size = new System.Drawing.Size(226, 34);
+            this.txtColumnas.TabIndex = 5;
             // 
-            // btnCerrar
+            // lblColumnas
             // 
-            this.btnCerrar.BackColor = System.Drawing.Color.Firebrick;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(110, 351);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(226, 46);
-            this.btnCerrar.TabIndex = 13;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.lblColumnas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblColumnas.Location = new System.Drawing.Point(30, 141);
+            this.lblColumnas.Name = "lblColumnas";
+            this.lblColumnas.Size = new System.Drawing.Size(117, 28);
+            this.lblColumnas.TabIndex = 4;
+            this.lblColumnas.Text = "Columnas:";
+            this.lblColumnas.Click += new System.EventHandler(this.txtColumnas_Click);
+            // 
+            // txtFilas
+            // 
+            this.txtFilas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFilas.Location = new System.Drawing.Point(110, 98);
+            this.txtFilas.Name = "txtFilas";
+            this.txtFilas.Size = new System.Drawing.Size(226, 34);
+            this.txtFilas.TabIndex = 3;
+            // 
+            // lblFilas
+            // 
+            this.lblFilas.AutoSize = true;
+            this.lblFilas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilas.Location = new System.Drawing.Point(63, 101);
+            this.lblFilas.Name = "lblFilas";
+            this.lblFilas.Size = new System.Drawing.Size(54, 28);
+            this.lblFilas.TabIndex = 2;
+            this.lblFilas.Text = "Filas:";
+            // 
+            // cmbMetodo
+            // 
+            this.cmbMetodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMetodo.FormattingEnabled = true;
+            this.cmbMetodo.Location = new System.Drawing.Point(110, 55);
+            this.cmbMetodo.Name = "cmbMetodo";
+            this.cmbMetodo.Size = new System.Drawing.Size(226, 36);
+            this.cmbMetodo.TabIndex = 1;
+            // 
+            // lblMetodo
+            // 
+            this.lblMetodo.AutoSize = true;
+            this.lblMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMetodo.Location = new System.Drawing.Point(40, 58);
+            this.lblMetodo.Name = "lblMetodo";
+            this.lblMetodo.Size = new System.Drawing.Size(87, 28);
+            this.lblMetodo.TabIndex = 0;
+            this.lblMetodo.Text = "Método:";
             // 
             // gbMatriz
             // 
@@ -259,6 +258,34 @@
             this.gbMatriz.TabIndex = 2;
             this.gbMatriz.TabStop = false;
             this.gbMatriz.Text = "Matriz de alturas del terreno";
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnCalcular.FlatAppearance.BorderSize = 0;
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCalcular.ForeColor = System.Drawing.Color.White;
+            this.btnCalcular.Location = new System.Drawing.Point(361, 331);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(226, 46);
+            this.btnCalcular.TabIndex = 15;
+            this.btnCalcular.Text = "Calcular volumen";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // btnGenerarMatriz
+            // 
+            this.btnGenerarMatriz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnGenerarMatriz.FlatAppearance.BorderSize = 0;
+            this.btnGenerarMatriz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarMatriz.ForeColor = System.Drawing.Color.White;
+            this.btnGenerarMatriz.Location = new System.Drawing.Point(104, 331);
+            this.btnGenerarMatriz.Name = "btnGenerarMatriz";
+            this.btnGenerarMatriz.Size = new System.Drawing.Size(226, 46);
+            this.btnGenerarMatriz.TabIndex = 14;
+            this.btnGenerarMatriz.Text = "Generar matriz";
+            this.btnGenerarMatriz.UseVisualStyleBackColor = false;
+            this.btnGenerarMatriz.Click += new System.EventHandler(this.btnGenerarMatriz_Click);
             // 
             // dgvAlturas
             // 
@@ -275,38 +302,9 @@
             this.dgvAlturas.Size = new System.Drawing.Size(670, 270);
             this.dgvAlturas.TabIndex = 0;
             // 
-            // btnGenerarMatriz
-            // 
-            this.btnGenerarMatriz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnGenerarMatriz.FlatAppearance.BorderSize = 0;
-            this.btnGenerarMatriz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerarMatriz.ForeColor = System.Drawing.Color.White;
-            this.btnGenerarMatriz.Location = new System.Drawing.Point(104, 331);
-            this.btnGenerarMatriz.Name = "btnGenerarMatriz";
-            this.btnGenerarMatriz.Size = new System.Drawing.Size(226, 46);
-            this.btnGenerarMatriz.TabIndex = 14;
-            this.btnGenerarMatriz.Text = "Generar matriz";
-            this.btnGenerarMatriz.UseVisualStyleBackColor = false;
-            this.btnGenerarMatriz.Click += new System.EventHandler(this.btnGenerarMatriz_Click);
-            // 
-            // btnCalcular
-            // 
-            this.btnCalcular.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnCalcular.FlatAppearance.BorderSize = 0;
-            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalcular.ForeColor = System.Drawing.Color.White;
-            this.btnCalcular.Location = new System.Drawing.Point(361, 331);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(226, 46);
-            this.btnCalcular.TabIndex = 15;
-            this.btnCalcular.Text = "Calcular volumen";
-            this.btnCalcular.UseVisualStyleBackColor = false;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
             // gbResultado
             // 
             this.gbResultado.Controls.Add(this.btnGrafica3D);
-            this.gbResultado.Controls.Add(this.lblNotaGrafica);
             this.gbResultado.Controls.Add(this.lblMetodoResultado);
             this.gbResultado.Controls.Add(this.lblVolumen);
             this.gbResultado.Controls.Add(this.lblTextoVolumen);
@@ -318,15 +316,28 @@
             this.gbResultado.TabStop = false;
             this.gbResultado.Text = "Resultado del cálculo";
             // 
-            // lblTextoVolumen
+            // btnGrafica3D
             // 
-            this.lblTextoVolumen.AutoSize = true;
-            this.lblTextoVolumen.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTextoVolumen.Location = new System.Drawing.Point(30, 49);
-            this.lblTextoVolumen.Name = "lblTextoVolumen";
-            this.lblTextoVolumen.Size = new System.Drawing.Size(181, 28);
-            this.lblTextoVolumen.TabIndex = 0;
-            this.lblTextoVolumen.Text = "Volumen calculado:";
+            this.btnGrafica3D.BackColor = System.Drawing.Color.Gray;
+            this.btnGrafica3D.FlatAppearance.BorderSize = 0;
+            this.btnGrafica3D.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGrafica3D.ForeColor = System.Drawing.Color.White;
+            this.btnGrafica3D.Location = new System.Drawing.Point(35, 129);
+            this.btnGrafica3D.Name = "btnGrafica3D";
+            this.btnGrafica3D.Size = new System.Drawing.Size(226, 46);
+            this.btnGrafica3D.TabIndex = 16;
+            this.btnGrafica3D.Text = "Ver gráfica 3D";
+            this.btnGrafica3D.UseVisualStyleBackColor = false;
+            this.btnGrafica3D.Click += new System.EventHandler(this.btnGrafica3D_Click);
+            // 
+            // lblMetodoResultado
+            // 
+            this.lblMetodoResultado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMetodoResultado.Location = new System.Drawing.Point(40, 86);
+            this.lblMetodoResultado.Name = "lblMetodoResultado";
+            this.lblMetodoResultado.Size = new System.Drawing.Size(444, 40);
+            this.lblMetodoResultado.TabIndex = 2;
+            this.lblMetodoResultado.Text = "Método utilizado: ---";
             // 
             // lblVolumen
             // 
@@ -338,38 +349,15 @@
             this.lblVolumen.TabIndex = 1;
             this.lblVolumen.Text = "0.00 m³";
             // 
-            // lblMetodoResultado
+            // lblTextoVolumen
             // 
-            this.lblMetodoResultado.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMetodoResultado.Location = new System.Drawing.Point(40, 86);
-            this.lblMetodoResultado.Name = "lblMetodoResultado";
-            this.lblMetodoResultado.Size = new System.Drawing.Size(444, 40);
-            this.lblMetodoResultado.TabIndex = 2;
-            this.lblMetodoResultado.Text = "Método utilizado: ---";
-            // 
-            // lblNotaGrafica
-            // 
-            this.lblNotaGrafica.AutoSize = true;
-            this.lblNotaGrafica.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotaGrafica.Location = new System.Drawing.Point(30, 126);
-            this.lblNotaGrafica.Name = "lblNotaGrafica";
-            this.lblNotaGrafica.Size = new System.Drawing.Size(310, 28);
-            this.lblNotaGrafica.TabIndex = 3;
-            this.lblNotaGrafica.Text = "Gráfica 3D pendiente por integrar.";
-            // 
-            // btnGrafica3D
-            // 
-            this.btnGrafica3D.BackColor = System.Drawing.Color.Gray;
-            this.btnGrafica3D.FlatAppearance.BorderSize = 0;
-            this.btnGrafica3D.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGrafica3D.ForeColor = System.Drawing.Color.White;
-            this.btnGrafica3D.Location = new System.Drawing.Point(358, 117);
-            this.btnGrafica3D.Name = "btnGrafica3D";
-            this.btnGrafica3D.Size = new System.Drawing.Size(226, 46);
-            this.btnGrafica3D.TabIndex = 16;
-            this.btnGrafica3D.Text = "Ver gráfica 3D";
-            this.btnGrafica3D.UseVisualStyleBackColor = false;
-            this.btnGrafica3D.Click += new System.EventHandler(this.btnGrafica3D_Click);
+            this.lblTextoVolumen.AutoSize = true;
+            this.lblTextoVolumen.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextoVolumen.Location = new System.Drawing.Point(30, 49);
+            this.lblTextoVolumen.Name = "lblTextoVolumen";
+            this.lblTextoVolumen.Size = new System.Drawing.Size(181, 28);
+            this.lblTextoVolumen.TabIndex = 0;
+            this.lblTextoVolumen.Text = "Volumen calculado:";
             // 
             // FrmCalculoVolumen
             // 
@@ -382,7 +370,7 @@
             this.Controls.Add(this.pnlSuperior);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmCalculoVolumen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -426,7 +414,6 @@
         private System.Windows.Forms.GroupBox gbResultado;
         private System.Windows.Forms.Label lblVolumen;
         private System.Windows.Forms.Label lblTextoVolumen;
-        private System.Windows.Forms.Label lblNotaGrafica;
         private System.Windows.Forms.Label lblMetodoResultado;
         private System.Windows.Forms.Button btnGrafica3D;
     }
