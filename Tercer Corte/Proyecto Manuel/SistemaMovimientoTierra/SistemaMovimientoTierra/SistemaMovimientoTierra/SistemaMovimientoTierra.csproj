@@ -65,10 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ClienteController.cs" />
+    <Compile Include="Controllers\CotizacionController.cs" />
     <Compile Include="Controllers\MaterialController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Logic\CalculoVolumen.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Cotizacion.cs" />
     <Compile Include="Models\Material.cs" />
     <Compile Include="Models\Persona.cs" />
     <Compile Include="Models\Usuario.cs" />
@@ -84,6 +86,12 @@
     </Compile>
     <Compile Include="Views\FrmCambiarPassword.Designer.cs">
       <DependentUpon>FrmCambiarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCotizaciones.Designer.cs">
+      <DependentUpon>FrmCotizaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmGestionUsuarios.cs">
       <SubType>Form</SubType>
@@ -136,6 +144,7 @@
       <DependentUpon>FrmRestablecerPassword.cs</DependentUpon>
     </Compile>
     <Content Include="Data\materiales.csv" />
+    <Content Include="Data\cotizaciones.csv" />
     <None Include="Resources\4092564-about-mobile-ui-profile-ui-user-website_114033.png" />
     <None Include="Resources\perfil.png" />
     <None Include="imagenes\Gemini_Generated_Image_jhf3v7jhf3v7jhf3.png" />
@@ -156,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmCambiarPassword.resx">
       <DependentUpon>FrmCambiarPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FrmCotizaciones.resx">
+      <DependentUpon>FrmCotizaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmGestionUsuarios.resx">
       <DependentUpon>FrmGestionUsuarios.cs</DependentUpon>
