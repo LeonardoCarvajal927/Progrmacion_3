@@ -1,0 +1,180 @@
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\BCrypt-Net-Next.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmCambiarPassword.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmGestionUsuarios.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmListaClientes.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmLogin.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmMenuPrincipal.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmRegistroCliente.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRegistroUsuario.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRestablecerPassword.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\BCrypt-Net-Next.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.AssemblyReference.cache
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmCambiarPassword.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmGestionUsuarios.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmListaClientes.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmLogin.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmMenuPrincipal.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmRegistroCliente.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRegistroUsuario.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Properties.Resources.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRestablecerPassword.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.GenerateResource.cache
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto\Progrmacion_3-main\Tercer Corte\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\BCrypt-Net-Next.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmCambiarPassword.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmGestionUsuarios.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmListaClientes.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmLogin.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmMenuPrincipal.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmRegistroCliente.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRegistroUsuario.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRestablecerPassword.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Primer Corte\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmMateriales.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\BCrypt-Net-Next.dll
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.dll
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.dll
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.xml
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.xml
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmCambiarPassword.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmGestionUsuarios.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmListaClientes.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmLogin.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmMateriales.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmMenuPrincipal.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmRegistroCliente.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRegistroUsuario.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRestablecerPassword.resources
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\BCrypt-Net-Next.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.AssemblyReference.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmCambiarPassword.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmGestionUsuarios.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmListaClientes.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmLogin.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmMateriales.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmMenuPrincipal.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmRegistroCliente.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRegistroUsuario.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Properties.Resources.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRestablecerPassword.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.GenerateResource.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.CoreCompileInputs.cache
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCalculoVolumen.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCotizaciones.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmFacturas.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmVistaFactura.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmGraficaTerreno.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe.config
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.exe
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\SistemaMovimientoTierra.pdb
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\BCrypt-Net-Next.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Buffers.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Memory.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.AssemblyReference.cache
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmGraficaTerreno.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmVistaFactura.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCalculoVolumen.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmCambiarPassword.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCotizaciones.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmFacturas.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmGestionUsuarios.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmListaClientes.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmLogin.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmMateriales.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmMenuPrincipal.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmRegistroCliente.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRegistroUsuario.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Properties.Resources.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.FrmRestablecerPassword.resources
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.GenerateResource.cache
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaM.FB0A1958.Up2Date
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.exe
+C:\Users\LENOVO\OneDrive\Escritorio\proyecto integrador\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.pdb
