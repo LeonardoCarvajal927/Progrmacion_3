@@ -19,7 +19,9 @@ namespace SistemaMovimientoTierra
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Formulario principal de entrada al sistema
-            Application.Run(new FrmLogin());
+            //Application.Run(new FrmLogin());
+
+            Application.Run(new FrmCalculoVolumenCoordenadas());
         }
     }
 }

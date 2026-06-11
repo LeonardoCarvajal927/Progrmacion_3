@@ -80,6 +80,7 @@
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Logic\CalculoVolumen.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Coordenada.cs" />
     <Compile Include="Models\Cotizacion.cs" />
     <Compile Include="Models\Factura.cs" />
     <Compile Include="Models\Material.cs" />
@@ -91,6 +92,12 @@
     </Compile>
     <Compile Include="Views\FrmCalculoVolumen.Designer.cs">
       <DependentUpon>FrmCalculoVolumen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FrmCalculoVolumenCoordenadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FrmCalculoVolumenCoordenadas.Designer.cs">
+      <DependentUpon>FrmCalculoVolumenCoordenadas.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FrmCambiarPassword.cs">
       <SubType>Form</SubType>
@@ -174,6 +181,9 @@
     </Compile>
     <Content Include="Data\materiales.csv" />
     <Content Include="Data\cotizaciones.csv" />
+    <EmbeddedResource Include="Views\FrmCalculoVolumenCoordenadas.resx">
+      <DependentUpon>FrmCalculoVolumenCoordenadas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FrmGraficaTerreno.resx">
       <DependentUpon>FrmGraficaTerreno.cs</DependentUpon>
     </EmbeddedResource>

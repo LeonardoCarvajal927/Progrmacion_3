@@ -143,3 +143,4 @@ C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Ma
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmGraficaTerreno.resources
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.dll
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCalculoVolumenCoordenadas.resources
