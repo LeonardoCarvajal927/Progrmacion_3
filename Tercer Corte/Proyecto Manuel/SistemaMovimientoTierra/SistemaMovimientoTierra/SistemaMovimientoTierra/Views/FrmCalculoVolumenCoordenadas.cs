@@ -16,14 +16,27 @@ namespace SistemaMovimientoTierra.Views
 
             CargarMetodos();
             ConfigurarTablaCoordenadas();
+            ConfigurarDatosIniciales();
+        }
 
+        private void ConfigurarDatosIniciales()
+        {
             txtCantidadPuntos.Text = "20";
             txtDx.Text = "1";
             txtDy.Text = "1";
             txtH.Text = "0";
 
+            txtX.Clear();
+            txtY.Clear();
+            txtZ.Clear();
+
             lblVolumen.Text = "0.00 m³";
             lblMetodoResultado.Text = "Método utilizado: ---";
+
+            if (cmbMetodo.Items.Count > 0)
+            {
+                cmbMetodo.SelectedIndex = 0;
+            }
         }
 
         private void CargarMetodos()
@@ -183,20 +196,10 @@ namespace SistemaMovimientoTierra.Views
                 return;
             }
 
-            try
-            {
-                double volumen = CalcularVolumenPorCoordenadas(dx, dy, h);
+            double volumen = CalcularVolumenPorCoordenadas(dx, dy, h);
 
-                lblVolumen.Text = volumen.ToString("N2") + " m³";
-                lblMetodoResultado.Text = "Método utilizado: " + cmbMetodo.Text;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message,
-                                "Error al calcular",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-            }
+            lblVolumen.Text = volumen.ToString("N2") + " m³";
+            lblMetodoResultado.Text = "Método utilizado: " + cmbMetodo.Text;
         }
 
         private double CalcularVolumenPorCoordenadas(double dx, double dy, double h)
@@ -204,7 +207,14 @@ namespace SistemaMovimientoTierra.Views
             /*
              Cálculo de volumen mediante coordenadas X, Y, Z.
 
-            
+             X y Y representan la ubicación del punto en el terreno.
+             Z representa la altura del terreno.
+             h representa la altura de corte o nivel base.
+
+             Altura útil = Z - h
+
+             En esta versión, el volumen se calcula directamente desde las coordenadas.
+             Por eso Prismas, Trapecio 2D y Simpson 2D muestran el mismo volumen base.
             */
 
             double volumen = 0;
@@ -233,47 +243,8 @@ namespace SistemaMovimientoTierra.Views
                 return;
             }
 
-            
-
-            double[,] superficie = ConvertirCoordenadasASuperficieSimple();
-
-            FrmGraficaTerreno frm = new FrmGraficaTerreno(superficie);
+            FrmGraficaCoordenadas frm = new FrmGraficaCoordenadas(coordenadas);
             frm.ShowDialog();
-        }
-
-        private double[,] ConvertirCoordenadasASuperficieSimple()
-        {
-            
-
-            int tamaño = 5;
-            double[,] superficie = new double[tamaño, tamaño];
-
-            for (int i = 0; i < tamaño; i++)
-            {
-                for (int j = 0; j < tamaño; j++)
-                {
-                    Coordenada puntoMasCercano = null;
-                    double menorDistancia = double.MaxValue;
-
-                    foreach (Coordenada c in coordenadas)
-                    {
-                        double distancia = Math.Pow(c.X - j, 2) + Math.Pow(c.Y - i, 2);
-
-                        if (distancia < menorDistancia)
-                        {
-                            menorDistancia = distancia;
-                            puntoMasCercano = c;
-                        }
-                    }
-
-                    if (puntoMasCercano != null)
-                    {
-                        superficie[i, j] = puntoMasCercano.Z;
-                    }
-                }
-            }
-
-            return superficie;
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -306,12 +277,16 @@ namespace SistemaMovimientoTierra.Views
             this.Close();
         }
 
-        // Este evento queda vacío por si el diseñador lo conectó accidentalmente.
-        private void lblTextoVolumen_Click(object sender, EventArgs e)
+        /*
+         Estos eventos quedan vacíos por si el diseñador los tiene conectados.
+         No los borres si Visual Studio los está pidiendo.
+        */
+
+        private void FrmCalculoVolumenCoordenadas_Load(object sender, EventArgs e)
         {
         }
 
-        private void FrmCalculoVolumenCoordenadas_Load(object sender, EventArgs e)
+        private void lblTextoVolumen_Click(object sender, EventArgs e)
         {
         }
     }

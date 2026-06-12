@@ -144,3 +144,10 @@ C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Ma
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.dll
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\HelixToolkit.Wpf.xml
 C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmCalculoVolumenCoordenadas.resources
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\OpenTK.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\OpenTK.GLControl.dll
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\OpenTK.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\OpenTK.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\bin\Debug\OpenTK.GLControl.xml
+C:\Users\leona\OneDrive\Documentos\GitHub\Progrmacion_3\Tercer Corte\Proyecto Manuel\SistemaMovimientoTierra\SistemaMovimientoTierra\SistemaMovimientoTierra\obj\Debug\SistemaMovimientoTierra.Views.FrmGraficaCoordenadas.resources

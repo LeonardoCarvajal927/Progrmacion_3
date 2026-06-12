@@ -92,7 +92,7 @@ namespace SistemaMovimientoTierra
 
         private void btnCalculoVolumen_Click(object sender, EventArgs e)
         {
-            FrmCalculoVolumen frm = new FrmCalculoVolumen();
+            FrmCalculoVolumenCoordenadas frm = new FrmCalculoVolumenCoordenadas();
             frm.ShowDialog();
         }
 
