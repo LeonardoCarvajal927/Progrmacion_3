@@ -207,14 +207,7 @@ namespace SistemaMovimientoTierra.Views
             /*
              Cálculo de volumen mediante coordenadas X, Y, Z.
 
-             X y Y representan la ubicación del punto en el terreno.
-             Z representa la altura del terreno.
-             h representa la altura de corte o nivel base.
-
-             Altura útil = Z - h
-
-             En esta versión, el volumen se calcula directamente desde las coordenadas.
-             Por eso Prismas, Trapecio 2D y Simpson 2D muestran el mismo volumen base.
+             
             */
 
             double volumen = 0;
