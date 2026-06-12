@@ -1,2 +1,3 @@
 IdMaterial,Nombre,TipoMaterial,UnidadMedida,PrecioUnitario,Estado,Descripcion
 5138,arena,Agregado,m³,85000,Activo,Arena para relleno
+4255,Tierra,Agregado,m³,100000,Activo,Tierra para relleno
