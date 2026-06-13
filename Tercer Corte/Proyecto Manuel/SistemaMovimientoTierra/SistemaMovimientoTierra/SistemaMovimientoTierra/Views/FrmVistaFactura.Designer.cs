@@ -32,6 +32,7 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.txtFactura = new System.Windows.Forms.TextBox();
             this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnExportarWord = new System.Windows.Forms.Button();
             this.pnlSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,25 +77,40 @@
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(134, 642);
+            this.btnCerrar.Location = new System.Drawing.Point(279, 642);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(251, 48);
+            this.btnCerrar.Size = new System.Drawing.Size(165, 48);
             this.btnCerrar.TabIndex = 22;
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnExportarWord
+            // 
+            this.btnExportarWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnExportarWord.FlatAppearance.BorderSize = 0;
+            this.btnExportarWord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExportarWord.ForeColor = System.Drawing.Color.White;
+            this.btnExportarWord.Location = new System.Drawing.Point(90, 642);
+            this.btnExportarWord.Name = "btnExportarWord";
+            this.btnExportarWord.Size = new System.Drawing.Size(165, 48);
+            this.btnExportarWord.TabIndex = 23;
+            this.btnExportarWord.Text = "Descargar";
+            this.btnExportarWord.UseVisualStyleBackColor = false;
+            this.btnExportarWord.Click += new System.EventHandler(this.btnExportarWord_Click);
             // 
             // FrmVistaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(557, 742);
+            this.Controls.Add(this.btnExportarWord);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.txtFactura);
             this.Controls.Add(this.pnlSuperior);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmVistaFactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vista de factura";
@@ -111,5 +127,6 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.TextBox txtFactura;
         private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button btnExportarWord;
     }
 }

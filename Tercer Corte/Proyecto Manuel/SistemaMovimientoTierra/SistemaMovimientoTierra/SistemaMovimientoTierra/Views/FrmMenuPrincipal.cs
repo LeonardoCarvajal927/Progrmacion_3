@@ -106,7 +106,7 @@ namespace SistemaMovimientoTierra
 
         private void btnFacturas_Click(object sender, EventArgs e)
         {
-            FrmFacturas frm = new FrmFacturas();
+            FrmFacturas frm = new FrmFacturas(usuarioActual.Rol);
             frm.ShowDialog();
         }
 

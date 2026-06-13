@@ -12,20 +12,36 @@ namespace SistemaMovimientoTierra.Views
         private CotizacionController cotizacionController = new CotizacionController();
 
         private List<Cotizacion> cotizaciones = new List<Cotizacion>();
+        private string rolUsuario;
 
         public FrmFacturas()
         {
             InitializeComponent();
+
+            rolUsuario = "Usuario";
+
+            cmbCotizacion.SelectedIndexChanged += cmbCotizacion_SelectedIndexChanged;
+        }
+
+        public FrmFacturas(string rol)
+        {
+            InitializeComponent();
+
+            rolUsuario = rol;
+
+            cmbCotizacion.SelectedIndexChanged += cmbCotizacion_SelectedIndexChanged;
         }
 
         private void FrmFacturas_Load(object sender, EventArgs e)
         {
             HabilitarCampos();
+            ConfigurarPermisosPorRol();
             CargarEstados();
-            CargarCotizaciones();
+            CargarCotizacionesDisponibles();
             GenerarIdFactura();
             ConfigurarTabla();
             CargarFacturas();
+            LimpiarCampos();
         }
 
         private void HabilitarCampos()
@@ -71,36 +87,64 @@ namespace SistemaMovimientoTierra.Views
             txtBuscar.BringToFront();
         }
 
-        private void CargarEstados()
+        private void ConfigurarPermisosPorRol()
         {
-            cmbEstado.Items.Clear();
-            cmbEstado.Items.Add("Activa");
-            cmbEstado.Items.Add("Inactiva");
-
-            cmbEstado.SelectedIndex = 0;
-        }
-
-        private void CargarCotizaciones()
-        {
-            cotizaciones = cotizacionController.ObtenerCotizaciones();
-
-            cmbCotizacion.Items.Clear();
-
-            foreach (Cotizacion cotizacion in cotizaciones)
+            if (rolUsuario == "Administrador")
             {
-                string texto = cotizacion.IdCotizacion + " - " + cotizacion.Cliente;
-                cmbCotizacion.Items.Add(texto);
-            }
-
-            if (cmbCotizacion.Items.Count > 0)
-            {
-                cmbCotizacion.SelectedIndex = 0;
-                CargarDatosCotizacionSeleccionada();
+                btnCambiarEstado.Visible = true;
+                btnCambiarEstado.Enabled = true;
             }
             else
             {
-                txtCliente.Clear();
+                btnCambiarEstado.Visible = false;
+                btnCambiarEstado.Enabled = false;
             }
+        }
+
+        private void CargarEstados()
+        {
+            cmbEstado.Items.Clear();
+
+            cmbEstado.Items.Add("Activa");
+            cmbEstado.Items.Add("Inactiva");
+
+            cmbEstado.SelectedIndex = -1;
+            cmbEstado.Text = "";
+        }
+
+        private void CargarCotizacionesDisponibles()
+        {
+            List<Cotizacion> todasLasCotizaciones = cotizacionController.ObtenerCotizaciones();
+            List<Factura> facturas = facturaController.ObtenerFacturas();
+
+            cotizaciones.Clear();
+            cmbCotizacion.Items.Clear();
+
+            foreach (Cotizacion cotizacion in todasLasCotizaciones)
+            {
+                bool yaTieneFactura = false;
+
+                foreach (Factura factura in facturas)
+                {
+                    if (factura.IdCotizacion == cotizacion.IdCotizacion)
+                    {
+                        yaTieneFactura = true;
+                        break;
+                    }
+                }
+
+                if (!yaTieneFactura)
+                {
+                    cotizaciones.Add(cotizacion);
+
+                    string texto = cotizacion.IdCotizacion + " - " + cotizacion.Cliente;
+                    cmbCotizacion.Items.Add(texto);
+                }
+            }
+
+            cmbCotizacion.SelectedIndex = -1;
+            cmbCotizacion.Text = "";
+            txtCliente.Clear();
         }
 
         private void GenerarIdFactura()
@@ -115,12 +159,25 @@ namespace SistemaMovimientoTierra.Views
 
         private void CargarDatosCotizacionSeleccionada()
         {
-            if (cmbCotizacion.SelectedIndex < 0 || cotizaciones.Count == 0)
+            if (cmbCotizacion.SelectedIndex < 0)
             {
+                txtCliente.Clear();
+                return;
+            }
+
+            if (cmbCotizacion.SelectedIndex >= cotizaciones.Count)
+            {
+                txtCliente.Clear();
                 return;
             }
 
             Cotizacion cotizacion = cotizaciones[cmbCotizacion.SelectedIndex];
+
+            if (cotizacion == null)
+            {
+                txtCliente.Clear();
+                return;
+            }
 
             txtCliente.Text = cotizacion.Cliente;
         }
@@ -182,8 +239,6 @@ namespace SistemaMovimientoTierra.Views
                 dgvFacturas.Columns["Fecha"].FillWeight = 100;
             }
 
-            // Ocultamos columnas de detalle para que la tabla no se vea amontonada.
-            // Estos datos siguen guardados y salen en "Ver factura".
             if (dgvFacturas.Columns["Material"] != null)
             {
                 dgvFacturas.Columns["Material"].Visible = false;
@@ -210,6 +265,24 @@ namespace SistemaMovimientoTierra.Views
             if (cmbCotizacion.SelectedIndex < 0)
             {
                 MessageBox.Show("Debe seleccionar una cotización.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cmbEstado.SelectedIndex < 0)
+            {
+                MessageBox.Show("Debe seleccionar el estado de la factura.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (txtCliente.Text.Trim() == "")
+            {
+                MessageBox.Show("No se ha cargado el cliente de la cotización seleccionada.",
                                 "Advertencia",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
@@ -246,6 +319,7 @@ namespace SistemaMovimientoTierra.Views
 
                 LimpiarCampos();
                 GenerarIdFactura();
+                CargarCotizacionesDisponibles();
                 CargarFacturas();
             }
             else
@@ -254,6 +328,76 @@ namespace SistemaMovimientoTierra.Views
                                 "Factura existente",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
+            }
+        }
+
+        private void btnCambiarEstado_Click(object sender, EventArgs e)
+        {
+            if (rolUsuario != "Administrador")
+            {
+                MessageBox.Show("Solo el administrador puede cambiar el estado de una factura.",
+                                "Acceso denegado",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (dgvFacturas.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione una factura de la lista.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            Factura factura = dgvFacturas.CurrentRow.DataBoundItem as Factura;
+
+            if (factura == null)
+            {
+                return;
+            }
+
+            string nuevoEstado;
+
+            if (factura.Estado == "Activa")
+            {
+                nuevoEstado = "Inactiva";
+            }
+            else
+            {
+                nuevoEstado = "Activa";
+            }
+
+            DialogResult respuesta = MessageBox.Show(
+                "¿Desea cambiar la factura " + factura.IdFactura + " de " + factura.Estado + " a " + nuevoEstado + "?",
+                "Cambiar estado",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (respuesta == DialogResult.No)
+            {
+                return;
+            }
+
+            bool actualizado = facturaController.CambiarEstadoFactura(factura.IdFactura, nuevoEstado);
+
+            if (actualizado)
+            {
+                MessageBox.Show("Estado de factura actualizado correctamente.",
+                                "Actualizado",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+
+                CargarFacturas();
+            }
+            else
+            {
+                MessageBox.Show("No se pudo actualizar el estado de la factura.",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
             }
         }
 
@@ -323,7 +467,11 @@ namespace SistemaMovimientoTierra.Views
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             txtBuscar.Clear();
+
+            CargarCotizacionesDisponibles();
             CargarFacturas();
+            LimpiarCampos();
+            GenerarIdFactura();
         }
 
         private void btnEliminarFactura_Click(object sender, EventArgs e)
@@ -360,7 +508,10 @@ namespace SistemaMovimientoTierra.Views
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
 
+                CargarCotizacionesDisponibles();
                 CargarFacturas();
+                LimpiarCampos();
+                GenerarIdFactura();
             }
         }
 
@@ -372,17 +523,16 @@ namespace SistemaMovimientoTierra.Views
 
         private void LimpiarCampos()
         {
+            cmbCotizacion.SelectedIndex = -1;
+            cmbCotizacion.Text = "";
+
+            txtCliente.Clear();
             txtObservacion.Clear();
 
             if (cmbEstado.Items.Count > 0)
             {
-                cmbEstado.SelectedIndex = 0;
-            }
-
-            if (cmbCotizacion.Items.Count > 0)
-            {
-                cmbCotizacion.SelectedIndex = 0;
-                CargarDatosCotizacionSeleccionada();
+                cmbEstado.SelectedIndex = -1;
+                cmbEstado.Text = "";
             }
         }
 

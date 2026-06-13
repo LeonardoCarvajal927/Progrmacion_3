@@ -31,6 +31,7 @@
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbDatosFactura = new System.Windows.Forms.GroupBox();
+            this.btnCambiarEstado = new System.Windows.Forms.Button();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnVerFactura = new System.Windows.Forms.Button();
             this.btnGuardarFactura = new System.Windows.Forms.Button();
@@ -52,7 +53,6 @@
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnEliminarFactura = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnCambiarEstado = new System.Windows.Forms.Button();
             this.pnlSuperior.SuspendLayout();
             this.gbDatosFactura.SuspendLayout();
             this.gbListaFacturas.SuspendLayout();
@@ -105,6 +105,20 @@
             this.gbDatosFactura.TabIndex = 1;
             this.gbDatosFactura.TabStop = false;
             this.gbDatosFactura.Text = "Datos de factura";
+            // 
+            // btnCambiarEstado
+            // 
+            this.btnCambiarEstado.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnCambiarEstado.FlatAppearance.BorderSize = 0;
+            this.btnCambiarEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCambiarEstado.ForeColor = System.Drawing.Color.White;
+            this.btnCambiarEstado.Location = new System.Drawing.Point(107, 374);
+            this.btnCambiarEstado.Name = "btnCambiarEstado";
+            this.btnCambiarEstado.Size = new System.Drawing.Size(267, 52);
+            this.btnCambiarEstado.TabIndex = 13;
+            this.btnCambiarEstado.Text = "Cambiar estado";
+            this.btnCambiarEstado.UseVisualStyleBackColor = false;
+            this.btnCambiarEstado.Click += new System.EventHandler(this.btnCambiarEstado_Click);
             // 
             // btnLimpiar
             // 
@@ -343,19 +357,6 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnCambiarEstado
-            // 
-            this.btnCambiarEstado.BackColor = System.Drawing.Color.Goldenrod;
-            this.btnCambiarEstado.FlatAppearance.BorderSize = 0;
-            this.btnCambiarEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCambiarEstado.ForeColor = System.Drawing.Color.White;
-            this.btnCambiarEstado.Location = new System.Drawing.Point(107, 374);
-            this.btnCambiarEstado.Name = "btnCambiarEstado";
-            this.btnCambiarEstado.Size = new System.Drawing.Size(267, 52);
-            this.btnCambiarEstado.TabIndex = 13;
-            this.btnCambiarEstado.Text = "Cambiar estado";
-            this.btnCambiarEstado.UseVisualStyleBackColor = false;
             // 
             // FrmFacturas
             // 

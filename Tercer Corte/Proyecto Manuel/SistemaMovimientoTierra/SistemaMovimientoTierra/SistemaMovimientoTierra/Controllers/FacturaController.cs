@@ -190,5 +190,24 @@ namespace SistemaMovimientoTierra.Controllers
 
             return texto.Trim();
         }
+
+        public bool CambiarEstadoFactura(int idFactura, string nuevoEstado)
+        {
+            List<Factura> facturas = ObtenerFacturas();
+
+            Factura factura = facturas.FirstOrDefault(f => f.IdFactura == idFactura);
+
+            if (factura == null)
+            {
+                return false;
+            }
+
+            factura.Estado = nuevoEstado;
+
+            GuardarFacturas(facturas);
+
+            return true;
+        }
+
     }
 }
