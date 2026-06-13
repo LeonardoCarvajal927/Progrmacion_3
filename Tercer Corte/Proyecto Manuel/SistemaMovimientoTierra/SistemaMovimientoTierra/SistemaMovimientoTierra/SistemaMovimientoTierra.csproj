@@ -79,12 +79,14 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CalculoTerrenoController.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\CotizacionController.cs" />
     <Compile Include="Controllers\FacturaController.cs" />
     <Compile Include="Controllers\MaterialController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Logic\CalculoVolumen.cs" />
+    <Compile Include="Models\CalculoTerreno.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Coordenada.cs" />
     <Compile Include="Models\Cotizacion.cs" />

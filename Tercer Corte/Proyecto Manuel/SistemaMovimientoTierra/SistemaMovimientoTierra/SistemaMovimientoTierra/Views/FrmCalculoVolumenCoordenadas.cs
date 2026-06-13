@@ -1,6 +1,8 @@
-﻿using SistemaMovimientoTierra.Models;
+﻿using SistemaMovimientoTierra.Controllers;
+using SistemaMovimientoTierra.Models;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SistemaMovimientoTierra.Views
@@ -10,13 +12,24 @@ namespace SistemaMovimientoTierra.Views
         private List<Coordenada> coordenadas = new List<Coordenada>();
         private Random random = new Random();
 
+        private ClienteController clienteController = new ClienteController();
+        private MaterialController materialController = new MaterialController();
+        private CalculoTerrenoController calculoTerrenoController = new CalculoTerrenoController();
+
+        private double ultimoVolumenCalculado = 0;
+        private bool calculoRealizado = false;
+
         public FrmCalculoVolumenCoordenadas()
         {
             InitializeComponent();
 
             CargarMetodos();
             ConfigurarTablaCoordenadas();
+            CargarClientes();
+            CargarMateriales();
             ConfigurarDatosIniciales();
+
+            cmbMaterial.SelectedIndexChanged += cmbMaterial_SelectedIndexChanged;
         }
 
         private void ConfigurarDatosIniciales()
@@ -30,12 +43,32 @@ namespace SistemaMovimientoTierra.Views
             txtY.Clear();
             txtZ.Clear();
 
+            txtPrecioUnitario.ReadOnly = true;
+            txtPrecioUnitario.Clear();
+
             lblVolumen.Text = "0.00 m³";
             lblMetodoResultado.Text = "Método utilizado: ---";
 
+            ultimoVolumenCalculado = 0;
+            calculoRealizado = false;
+
+            // Para que visualmente aparezcan vacíos al abrir
             if (cmbMetodo.Items.Count > 0)
             {
-                cmbMetodo.SelectedIndex = 0;
+                cmbMetodo.SelectedIndex = -1;
+                cmbMetodo.Text = "";
+            }
+
+            if (cmbCliente.Items.Count > 0)
+            {
+                cmbCliente.SelectedIndex = -1;
+                cmbCliente.Text = "";
+            }
+
+            if (cmbMaterial.Items.Count > 0)
+            {
+                cmbMaterial.SelectedIndex = -1;
+                cmbMaterial.Text = "";
             }
         }
 
@@ -48,6 +81,79 @@ namespace SistemaMovimientoTierra.Views
             cmbMetodo.Items.Add("Simpson 2D");
 
             cmbMetodo.SelectedIndex = 0;
+        }
+
+        private void CargarClientes()
+        {
+            cmbCliente.Items.Clear();
+
+            List<Cliente> clientes = clienteController.ObtenerClientes();
+
+            foreach (Cliente cliente in clientes)
+            {
+                string nombreCliente = cliente.Nombre + " " + cliente.Apellido;
+
+                ComboBoxItem<Cliente> item = new ComboBoxItem<Cliente>();
+                item.Text = nombreCliente;
+                item.Value = cliente;
+
+                cmbCliente.Items.Add(item);
+            }
+
+            if (cmbCliente.Items.Count > 0)
+            {
+                cmbCliente.SelectedIndex = 0;
+            }
+        }
+
+        private void CargarMateriales()
+        {
+            cmbMaterial.Items.Clear();
+
+            List<Material> materiales = materialController.ObtenerMateriales();
+
+            foreach (Material material in materiales)
+            {
+                if (material.Estado == "Activo")
+                {
+                    ComboBoxItem<Material> item = new ComboBoxItem<Material>();
+                    item.Text = material.Nombre;
+                    item.Value = material;
+
+                    cmbMaterial.Items.Add(item);
+                }
+            }
+
+            if (cmbMaterial.Items.Count > 0)
+            {
+                cmbMaterial.SelectedIndex = 0;
+            }
+        }
+
+        private void cmbMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ActualizarPrecioUnitario();
+        }
+
+        private void ActualizarPrecioUnitario()
+        {
+            if (cmbMaterial.SelectedItem == null)
+            {
+                txtPrecioUnitario.Clear();
+                return;
+            }
+
+            ComboBoxItem<Material> itemMaterial = cmbMaterial.SelectedItem as ComboBoxItem<Material>;
+
+            if (itemMaterial == null)
+            {
+                txtPrecioUnitario.Clear();
+                return;
+            }
+
+            Material material = itemMaterial.Value;
+
+            txtPrecioUnitario.Text = material.PrecioUnitario.ToString("N0");
         }
 
         private void ConfigurarTablaCoordenadas()
@@ -94,6 +200,11 @@ namespace SistemaMovimientoTierra.Views
 
             MostrarCoordenadasEnTabla();
 
+            calculoRealizado = false;
+            ultimoVolumenCalculado = 0;
+            lblVolumen.Text = "0.00 m³";
+            lblMetodoResultado.Text = "Método utilizado: ---";
+
             txtX.Clear();
             txtY.Clear();
             txtZ.Clear();
@@ -138,6 +249,11 @@ namespace SistemaMovimientoTierra.Views
 
             MostrarCoordenadasEnTabla();
 
+            calculoRealizado = false;
+            ultimoVolumenCalculado = 0;
+            lblVolumen.Text = "0.00 m³";
+            lblMetodoResultado.Text = "Método utilizado: ---";
+
             MessageBox.Show("Coordenadas aleatorias generadas correctamente.",
                             "Datos generados",
                             MessageBoxButtons.OK,
@@ -163,9 +279,9 @@ namespace SistemaMovimientoTierra.Views
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            if (coordenadas.Count < 4)
+            if (cmbMetodo.SelectedIndex < 0)
             {
-                MessageBox.Show("Debe ingresar o generar mínimo 4 coordenadas.",
+                MessageBox.Show("Debe seleccionar un método de cálculo.",
                                 "Advertencia",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
@@ -198,18 +314,15 @@ namespace SistemaMovimientoTierra.Views
 
             double volumen = CalcularVolumenPorCoordenadas(dx, dy, h);
 
+            ultimoVolumenCalculado = volumen;
+            calculoRealizado = true;
+
             lblVolumen.Text = volumen.ToString("N2") + " m³";
             lblMetodoResultado.Text = "Método utilizado: " + cmbMetodo.Text;
         }
 
         private double CalcularVolumenPorCoordenadas(double dx, double dy, double h)
         {
-            /*
-             Cálculo de volumen mediante coordenadas X, Y, Z.
-
-             
-            */
-
             double volumen = 0;
 
             foreach (Coordenada c in coordenadas)
@@ -223,6 +336,87 @@ namespace SistemaMovimientoTierra.Views
             }
 
             return volumen;
+        }
+
+        private void btnGuardarCalculo_Click(object sender, EventArgs e)
+        {
+            if (!calculoRealizado || ultimoVolumenCalculado <= 0)
+            {
+                MessageBox.Show("Primero debe calcular el volumen antes de guardar.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cmbCliente.SelectedItem == null)
+            {
+                MessageBox.Show("Debe seleccionar un cliente.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cmbMaterial.SelectedItem == null)
+            {
+                MessageBox.Show("Debe seleccionar un material.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (cmbMaterial.SelectedItem == null)
+            {
+                MessageBox.Show("Debe seleccionar un material.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            ComboBoxItem<Cliente> itemCliente = cmbCliente.SelectedItem as ComboBoxItem<Cliente>;
+            ComboBoxItem<Material> itemMaterial = cmbMaterial.SelectedItem as ComboBoxItem<Material>;
+
+            if (itemCliente == null || itemMaterial == null)
+            {
+                MessageBox.Show("No se pudo obtener el cliente o el material seleccionado.",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+                return;
+            }
+
+            Cliente cliente = itemCliente.Value;
+            Material material = itemMaterial.Value;
+
+            decimal precioUnitario = Convert.ToDecimal(material.PrecioUnitario);
+            decimal totalEstimado = Convert.ToDecimal(ultimoVolumenCalculado) * precioUnitario;
+
+            CalculoTerreno calculo = new CalculoTerreno();
+
+            calculo.IdCalculo = calculoTerrenoController.GenerarNuevoId();
+            calculo.IdCliente = cliente.IdCliente;
+            calculo.NombreCliente = cliente.Nombre + " " + cliente.Apellido;
+            calculo.IdMaterial = material.IdMaterial;
+            calculo.NombreMaterial = material.Nombre;
+            calculo.Volumen = ultimoVolumenCalculado;
+            calculo.PrecioUnitario = precioUnitario;
+            calculo.TotalEstimado = totalEstimado;
+            calculo.Metodo = cmbMetodo.Text;
+            calculo.Fecha = DateTime.Now;
+
+            calculoTerrenoController.GuardarCalculo(calculo);
+
+            MessageBox.Show("Cálculo de terreno guardado correctamente." + Environment.NewLine +
+                            "Cliente: " + calculo.NombreCliente + Environment.NewLine +
+                            "Material: " + calculo.NombreMaterial + Environment.NewLine +
+                            "Volumen: " + calculo.Volumen.ToString("N2") + " m³" + Environment.NewLine +
+                            "Total estimado: $" + calculo.TotalEstimado.ToString("N0"),
+                            "Guardado",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
         }
 
         private void btnGrafica3D_Click(object sender, EventArgs e)
@@ -257,9 +451,23 @@ namespace SistemaMovimientoTierra.Views
             lblVolumen.Text = "0.00 m³";
             lblMetodoResultado.Text = "Método utilizado: ---";
 
+            ultimoVolumenCalculado = 0;
+            calculoRealizado = false;
+
             if (cmbMetodo.Items.Count > 0)
             {
                 cmbMetodo.SelectedIndex = 0;
+            }
+
+            if (cmbCliente.Items.Count > 0)
+            {
+                cmbCliente.SelectedIndex = 0;
+            }
+
+            if (cmbMaterial.Items.Count > 0)
+            {
+                cmbMaterial.SelectedIndex = 0;
+                ActualizarPrecioUnitario();
             }
 
             txtX.Focus();
@@ -270,17 +478,27 @@ namespace SistemaMovimientoTierra.Views
             this.Close();
         }
 
-        /*
-         Estos eventos quedan vacíos por si el diseñador los tiene conectados.
-         No los borres si Visual Studio los está pidiendo.
-        */
-
         private void FrmCalculoVolumenCoordenadas_Load(object sender, EventArgs e)
         {
         }
 
         private void lblTextoVolumen_Click(object sender, EventArgs e)
         {
+        }
+
+        private void lblPrecioUnitario_Click(object sender, EventArgs e)
+        {
+        }
+
+        private class ComboBoxItem<T>
+        {
+            public string Text { get; set; }
+            public T Value { get; set; }
+
+            public override string ToString()
+            {
+                return Text;
+            }
         }
     }
 }

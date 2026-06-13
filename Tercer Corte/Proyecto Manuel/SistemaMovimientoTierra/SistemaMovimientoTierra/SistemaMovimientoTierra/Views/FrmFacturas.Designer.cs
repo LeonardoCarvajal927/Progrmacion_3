@@ -31,27 +31,28 @@
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbDatosFactura = new System.Windows.Forms.GroupBox();
-            this.lblIdFactura = new System.Windows.Forms.Label();
-            this.txtIdFactura = new System.Windows.Forms.TextBox();
-            this.lblCotizacion = new System.Windows.Forms.Label();
-            this.cmbCotizacion = new System.Windows.Forms.ComboBox();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.lblCliente = new System.Windows.Forms.Label();
-            this.cmbEstado = new System.Windows.Forms.ComboBox();
-            this.lblEstado = new System.Windows.Forms.Label();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.btnVerFactura = new System.Windows.Forms.Button();
+            this.btnGuardarFactura = new System.Windows.Forms.Button();
             this.txtObservacion = new System.Windows.Forms.TextBox();
             this.lblObservacion = new System.Windows.Forms.Label();
-            this.btnGuardarFactura = new System.Windows.Forms.Button();
-            this.btnVerFactura = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.cmbEstado = new System.Windows.Forms.ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.cmbCotizacion = new System.Windows.Forms.ComboBox();
+            this.lblCotizacion = new System.Windows.Forms.Label();
+            this.txtIdFactura = new System.Windows.Forms.TextBox();
+            this.lblIdFactura = new System.Windows.Forms.Label();
             this.gbListaFacturas = new System.Windows.Forms.GroupBox();
+            this.dgvFacturas = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
-            this.dgvFacturas = new System.Windows.Forms.DataGridView();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnEliminarFactura = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnCambiarEstado = new System.Windows.Forms.Button();
             this.pnlSuperior.SuspendLayout();
             this.gbDatosFactura.SuspendLayout();
             this.gbListaFacturas.SuspendLayout();
@@ -65,7 +66,7 @@
             this.pnlSuperior.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSuperior.Location = new System.Drawing.Point(0, 0);
             this.pnlSuperior.Name = "pnlSuperior";
-            this.pnlSuperior.Size = new System.Drawing.Size(1078, 90);
+            this.pnlSuperior.Size = new System.Drawing.Size(1144, 90);
             this.pnlSuperior.TabIndex = 0;
             // 
             // lblTitulo
@@ -75,7 +76,7 @@
             this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(0, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(1078, 90);
+            this.lblTitulo.Size = new System.Drawing.Size(1144, 90);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "FACTURAS";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,6 +84,7 @@
             // gbDatosFactura
             // 
             this.gbDatosFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gbDatosFactura.Controls.Add(this.btnCambiarEstado);
             this.gbDatosFactura.Controls.Add(this.btnLimpiar);
             this.gbDatosFactura.Controls.Add(this.btnVerFactura);
             this.gbDatosFactura.Controls.Add(this.btnGuardarFactura);
@@ -99,63 +101,69 @@
             this.gbDatosFactura.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbDatosFactura.Location = new System.Drawing.Point(12, 115);
             this.gbDatosFactura.Name = "gbDatosFactura";
-            this.gbDatosFactura.Size = new System.Drawing.Size(380, 449);
+            this.gbDatosFactura.Size = new System.Drawing.Size(380, 513);
             this.gbDatosFactura.TabIndex = 1;
             this.gbDatosFactura.TabStop = false;
             this.gbDatosFactura.Text = "Datos de factura";
             // 
-            // lblIdFactura
+            // btnLimpiar
             // 
-            this.lblIdFactura.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIdFactura.Location = new System.Drawing.Point(18, 52);
-            this.lblIdFactura.Name = "lblIdFactura";
-            this.lblIdFactura.Size = new System.Drawing.Size(206, 34);
-            this.lblIdFactura.TabIndex = 0;
-            this.lblIdFactura.Text = "ID Factura:";
+            this.btnLimpiar.BackColor = System.Drawing.Color.Gray;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpiar.Location = new System.Drawing.Point(107, 432);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(267, 52);
+            this.btnLimpiar.TabIndex = 12;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // txtIdFactura
+            // btnVerFactura
             // 
-            this.txtIdFactura.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdFactura.Location = new System.Drawing.Point(107, 52);
-            this.txtIdFactura.Name = "txtIdFactura";
-            this.txtIdFactura.Size = new System.Drawing.Size(267, 34);
-            this.txtIdFactura.TabIndex = 1;
+            this.btnVerFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnVerFactura.FlatAppearance.BorderSize = 0;
+            this.btnVerFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerFactura.ForeColor = System.Drawing.Color.White;
+            this.btnVerFactura.Location = new System.Drawing.Point(107, 316);
+            this.btnVerFactura.Name = "btnVerFactura";
+            this.btnVerFactura.Size = new System.Drawing.Size(267, 52);
+            this.btnVerFactura.TabIndex = 11;
+            this.btnVerFactura.Text = "Ver factura";
+            this.btnVerFactura.UseVisualStyleBackColor = false;
+            this.btnVerFactura.Click += new System.EventHandler(this.btnVerFactura_Click);
             // 
-            // lblCotizacion
+            // btnGuardarFactura
             // 
-            this.lblCotizacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCotizacion.Location = new System.Drawing.Point(18, 97);
-            this.lblCotizacion.Name = "lblCotizacion";
-            this.lblCotizacion.Size = new System.Drawing.Size(206, 34);
-            this.lblCotizacion.TabIndex = 2;
-            this.lblCotizacion.Text = "Cotización:";
+            this.btnGuardarFactura.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnGuardarFactura.FlatAppearance.BorderSize = 0;
+            this.btnGuardarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarFactura.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarFactura.Location = new System.Drawing.Point(107, 258);
+            this.btnGuardarFactura.Name = "btnGuardarFactura";
+            this.btnGuardarFactura.Size = new System.Drawing.Size(267, 52);
+            this.btnGuardarFactura.TabIndex = 10;
+            this.btnGuardarFactura.Text = "Guardar factura";
+            this.btnGuardarFactura.UseVisualStyleBackColor = false;
+            this.btnGuardarFactura.Click += new System.EventHandler(this.btnGuardarFactura_Click);
             // 
-            // cmbCotizacion
+            // txtObservacion
             // 
-            this.cmbCotizacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbCotizacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCotizacion.FormattingEnabled = true;
-            this.cmbCotizacion.Location = new System.Drawing.Point(107, 94);
-            this.cmbCotizacion.Name = "cmbCotizacion";
-            this.cmbCotizacion.Size = new System.Drawing.Size(267, 36);
-            this.cmbCotizacion.TabIndex = 3;
+            this.txtObservacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObservacion.Location = new System.Drawing.Point(107, 218);
+            this.txtObservacion.Name = "txtObservacion";
+            this.txtObservacion.Size = new System.Drawing.Size(267, 34);
+            this.txtObservacion.TabIndex = 9;
             // 
-            // txtCliente
+            // lblObservacion
             // 
-            this.txtCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCliente.Location = new System.Drawing.Point(107, 136);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(267, 34);
-            this.txtCliente.TabIndex = 5;
-            // 
-            // lblCliente
-            // 
-            this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCliente.Location = new System.Drawing.Point(39, 136);
-            this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(206, 34);
-            this.lblCliente.TabIndex = 4;
-            this.lblCliente.Text = "Cliente:";
+            this.lblObservacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblObservacion.Location = new System.Drawing.Point(6, 218);
+            this.lblObservacion.Name = "lblObservacion";
+            this.lblObservacion.Size = new System.Drawing.Size(206, 34);
+            this.lblObservacion.TabIndex = 8;
+            this.lblObservacion.Text = "Observación:";
             // 
             // cmbEstado
             // 
@@ -176,64 +184,58 @@
             this.lblEstado.TabIndex = 6;
             this.lblEstado.Text = "Estado:";
             // 
-            // txtObservacion
+            // txtCliente
             // 
-            this.txtObservacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservacion.Location = new System.Drawing.Point(107, 218);
-            this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(267, 34);
-            this.txtObservacion.TabIndex = 9;
+            this.txtCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCliente.Location = new System.Drawing.Point(107, 136);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(267, 34);
+            this.txtCliente.TabIndex = 5;
             // 
-            // lblObservacion
+            // lblCliente
             // 
-            this.lblObservacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblObservacion.Location = new System.Drawing.Point(6, 218);
-            this.lblObservacion.Name = "lblObservacion";
-            this.lblObservacion.Size = new System.Drawing.Size(206, 34);
-            this.lblObservacion.TabIndex = 8;
-            this.lblObservacion.Text = "Observación:";
+            this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Location = new System.Drawing.Point(39, 136);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(206, 34);
+            this.lblCliente.TabIndex = 4;
+            this.lblCliente.Text = "Cliente:";
             // 
-            // btnGuardarFactura
+            // cmbCotizacion
             // 
-            this.btnGuardarFactura.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnGuardarFactura.FlatAppearance.BorderSize = 0;
-            this.btnGuardarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarFactura.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarFactura.Location = new System.Drawing.Point(107, 258);
-            this.btnGuardarFactura.Name = "btnGuardarFactura";
-            this.btnGuardarFactura.Size = new System.Drawing.Size(267, 52);
-            this.btnGuardarFactura.TabIndex = 10;
-            this.btnGuardarFactura.Text = "Guardar factura";
-            this.btnGuardarFactura.UseVisualStyleBackColor = false;
-            this.btnGuardarFactura.Click += new System.EventHandler(this.btnGuardarFactura_Click);
+            this.cmbCotizacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCotizacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCotizacion.FormattingEnabled = true;
+            this.cmbCotizacion.Location = new System.Drawing.Point(107, 94);
+            this.cmbCotizacion.Name = "cmbCotizacion";
+            this.cmbCotizacion.Size = new System.Drawing.Size(267, 36);
+            this.cmbCotizacion.TabIndex = 3;
             // 
-            // btnVerFactura
+            // lblCotizacion
             // 
-            this.btnVerFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnVerFactura.FlatAppearance.BorderSize = 0;
-            this.btnVerFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerFactura.ForeColor = System.Drawing.Color.White;
-            this.btnVerFactura.Location = new System.Drawing.Point(107, 316);
-            this.btnVerFactura.Name = "btnVerFactura";
-            this.btnVerFactura.Size = new System.Drawing.Size(267, 52);
-            this.btnVerFactura.TabIndex = 11;
-            this.btnVerFactura.Text = "Ver factura";
-            this.btnVerFactura.UseVisualStyleBackColor = false;
-            this.btnVerFactura.Click += new System.EventHandler(this.btnVerFactura_Click);
+            this.lblCotizacion.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCotizacion.Location = new System.Drawing.Point(18, 97);
+            this.lblCotizacion.Name = "lblCotizacion";
+            this.lblCotizacion.Size = new System.Drawing.Size(206, 34);
+            this.lblCotizacion.TabIndex = 2;
+            this.lblCotizacion.Text = "Cotización:";
             // 
-            // btnLimpiar
+            // txtIdFactura
             // 
-            this.btnLimpiar.BackColor = System.Drawing.Color.Gray;
-            this.btnLimpiar.FlatAppearance.BorderSize = 0;
-            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(107, 374);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(267, 52);
-            this.btnLimpiar.TabIndex = 12;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = false;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            this.txtIdFactura.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdFactura.Location = new System.Drawing.Point(107, 52);
+            this.txtIdFactura.Name = "txtIdFactura";
+            this.txtIdFactura.Size = new System.Drawing.Size(267, 34);
+            this.txtIdFactura.TabIndex = 1;
+            // 
+            // lblIdFactura
+            // 
+            this.lblIdFactura.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdFactura.Location = new System.Drawing.Point(18, 52);
+            this.lblIdFactura.Name = "lblIdFactura";
+            this.lblIdFactura.Size = new System.Drawing.Size(206, 34);
+            this.lblIdFactura.TabIndex = 0;
+            this.lblIdFactura.Text = "ID Factura:";
             // 
             // gbListaFacturas
             // 
@@ -246,10 +248,28 @@
             this.gbListaFacturas.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbListaFacturas.Location = new System.Drawing.Point(410, 115);
             this.gbListaFacturas.Name = "gbListaFacturas";
-            this.gbListaFacturas.Size = new System.Drawing.Size(632, 368);
+            this.gbListaFacturas.Size = new System.Drawing.Size(632, 459);
             this.gbListaFacturas.TabIndex = 2;
             this.gbListaFacturas.TabStop = false;
             this.gbListaFacturas.Text = "Lista de facturas";
+            // 
+            // dgvFacturas
+            // 
+            this.dgvFacturas.AllowUserToAddRows = false;
+            this.dgvFacturas.AllowUserToDeleteRows = false;
+            this.dgvFacturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvFacturas.BackgroundColor = System.Drawing.Color.White;
+            this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFacturas.Location = new System.Drawing.Point(15, 97);
+            this.dgvFacturas.MultiSelect = false;
+            this.dgvFacturas.Name = "dgvFacturas";
+            this.dgvFacturas.ReadOnly = true;
+            this.dgvFacturas.RowHeadersVisible = false;
+            this.dgvFacturas.RowHeadersWidth = 62;
+            this.dgvFacturas.RowTemplate.Height = 28;
+            this.dgvFacturas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvFacturas.Size = new System.Drawing.Size(599, 329);
+            this.dgvFacturas.TabIndex = 21;
             // 
             // btnBuscar
             // 
@@ -282,31 +302,13 @@
             this.lblBuscar.TabIndex = 18;
             this.lblBuscar.Text = "Buscar:";
             // 
-            // dgvFacturas
-            // 
-            this.dgvFacturas.AllowUserToAddRows = false;
-            this.dgvFacturas.AllowUserToDeleteRows = false;
-            this.dgvFacturas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvFacturas.BackgroundColor = System.Drawing.Color.White;
-            this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturas.Location = new System.Drawing.Point(15, 97);
-            this.dgvFacturas.MultiSelect = false;
-            this.dgvFacturas.Name = "dgvFacturas";
-            this.dgvFacturas.ReadOnly = true;
-            this.dgvFacturas.RowHeadersVisible = false;
-            this.dgvFacturas.RowHeadersWidth = 62;
-            this.dgvFacturas.RowTemplate.Height = 28;
-            this.dgvFacturas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFacturas.Size = new System.Drawing.Size(599, 250);
-            this.dgvFacturas.TabIndex = 21;
-            // 
             // btnCerrar
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.DimGray;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(848, 489);
+            this.btnCerrar.Location = new System.Drawing.Point(848, 580);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(185, 48);
             this.btnCerrar.TabIndex = 25;
@@ -320,7 +322,7 @@
             this.btnEliminarFactura.FlatAppearance.BorderSize = 0;
             this.btnEliminarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarFactura.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarFactura.Location = new System.Drawing.Point(634, 489);
+            this.btnEliminarFactura.Location = new System.Drawing.Point(632, 580);
             this.btnEliminarFactura.Name = "btnEliminarFactura";
             this.btnEliminarFactura.Size = new System.Drawing.Size(185, 48);
             this.btnEliminarFactura.TabIndex = 24;
@@ -334,7 +336,7 @@
             this.btnActualizar.FlatAppearance.BorderSize = 0;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
-            this.btnActualizar.Location = new System.Drawing.Point(425, 489);
+            this.btnActualizar.Location = new System.Drawing.Point(410, 580);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(185, 48);
             this.btnActualizar.TabIndex = 23;
@@ -342,11 +344,24 @@
             this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // btnCambiarEstado
+            // 
+            this.btnCambiarEstado.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnCambiarEstado.FlatAppearance.BorderSize = 0;
+            this.btnCambiarEstado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCambiarEstado.ForeColor = System.Drawing.Color.White;
+            this.btnCambiarEstado.Location = new System.Drawing.Point(107, 374);
+            this.btnCambiarEstado.Name = "btnCambiarEstado";
+            this.btnCambiarEstado.Size = new System.Drawing.Size(267, 52);
+            this.btnCambiarEstado.TabIndex = 13;
+            this.btnCambiarEstado.Text = "Cambiar estado";
+            this.btnCambiarEstado.UseVisualStyleBackColor = false;
+            // 
             // FrmFacturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 594);
+            this.ClientSize = new System.Drawing.Size(1144, 713);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnEliminarFactura);
             this.Controls.Add(this.btnActualizar);
@@ -355,7 +370,7 @@
             this.Controls.Add(this.pnlSuperior);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "FrmFacturas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -397,5 +412,6 @@
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnEliminarFactura;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnCambiarEstado;
     }
 }

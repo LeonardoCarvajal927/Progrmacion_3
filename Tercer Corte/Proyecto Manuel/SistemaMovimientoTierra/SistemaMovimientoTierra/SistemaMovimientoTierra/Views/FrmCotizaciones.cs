@@ -2,7 +2,6 @@
 using SistemaMovimientoTierra.Models;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Windows.Forms;
 
 namespace SistemaMovimientoTierra.Views
@@ -10,41 +9,55 @@ namespace SistemaMovimientoTierra.Views
     public partial class FrmCotizaciones : Form
     {
         private CotizacionController cotizacionController = new CotizacionController();
-        private ClienteController clienteController = new ClienteController();
-        private MaterialController materialController = new MaterialController();
+        private CalculoTerrenoController calculoTerrenoController = new CalculoTerrenoController();
 
-        private List<Cliente> clientes = new List<Cliente>();
-        private List<Material> materiales = new List<Material>();
+        private CalculoTerreno calculoSeleccionado = null;
 
         public FrmCotizaciones()
         {
             InitializeComponent();
+
+            // Conectamos el evento por código para que al seleccionar un cálculo
+            // se llenen automáticamente los campos.
+            cmbCliente.SelectedIndexChanged += cmbCliente_SelectedIndexChanged;
         }
 
         private void FrmCotizaciones_Load(object sender, EventArgs e)
         {
             HabilitarCampos();
 
-            CargarClientes();
-            CargarMateriales();
+            CargarCalculosTerreno();
             CargarEstados();
             GenerarIdCotizacion();
             ConfigurarFormulario();
             CargarCotizaciones();
 
-            CargarPrecioMaterialSeleccionado();
+            LimpiarCampos();
         }
 
         private void HabilitarCampos()
         {
-            // Habilitar grupos principales
             gbDatosCotizacion.Enabled = true;
             gbListaCotizaciones.Enabled = true;
 
-            // Campos que NO se escriben manualmente
             txtIdCotizacion.Enabled = true;
             txtIdCotizacion.ReadOnly = true;
             txtIdCotizacion.TabStop = false;
+
+            // El combo de cliente realmente carga los cálculos guardados.
+            cmbCliente.Enabled = true;
+            cmbCliente.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbCliente.TabStop = true;
+
+            // El material ya viene desde el cálculo guardado, no se debe editar.
+            cmbMaterial.Enabled = false;
+            cmbMaterial.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMaterial.TabStop = false;
+
+            // Estos campos se llenan automáticamente desde el cálculo guardado.
+            txtVolumen.Enabled = true;
+            txtVolumen.ReadOnly = true;
+            txtVolumen.TabStop = false;
 
             txtPrecioUnitario.Enabled = true;
             txtPrecioUnitario.ReadOnly = true;
@@ -54,10 +67,10 @@ namespace SistemaMovimientoTierra.Views
             txtTotal.ReadOnly = true;
             txtTotal.TabStop = false;
 
-            // Campos que SÍ deben dejar escribir
-            txtVolumen.Enabled = true;
-            txtVolumen.ReadOnly = false;
-            txtVolumen.TabStop = true;
+            // Estos sí quedan editables.
+            cmbEstado.Enabled = true;
+            cmbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbEstado.TabStop = true;
 
             txtObservacion.Enabled = true;
             txtObservacion.ReadOnly = false;
@@ -66,19 +79,6 @@ namespace SistemaMovimientoTierra.Views
             txtBuscar.Enabled = true;
             txtBuscar.ReadOnly = false;
             txtBuscar.TabStop = true;
-
-            // Combos
-            cmbCliente.Enabled = true;
-            cmbCliente.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbCliente.TabStop = true;
-
-            cmbMaterial.Enabled = true;
-            cmbMaterial.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbMaterial.TabStop = true;
-
-            cmbEstado.Enabled = true;
-            cmbEstado.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbEstado.TabStop = true;
 
             // Botones
             btnCalcularTotal.Enabled = true;
@@ -89,7 +89,6 @@ namespace SistemaMovimientoTierra.Views
             btnEliminarCotizacion.Enabled = true;
             btnCerrar.Enabled = true;
 
-            // Traer controles al frente por si algún panel quedó encima
             txtIdCotizacion.BringToFront();
             cmbCliente.BringToFront();
             cmbMaterial.BringToFront();
@@ -104,6 +103,7 @@ namespace SistemaMovimientoTierra.Views
         private void ConfigurarFormulario()
         {
             txtIdCotizacion.ReadOnly = true;
+            txtVolumen.ReadOnly = true;
             txtPrecioUnitario.ReadOnly = true;
             txtTotal.ReadOnly = true;
 
@@ -116,47 +116,48 @@ namespace SistemaMovimientoTierra.Views
             dgvCotizaciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void CargarClientes()
+        private void CargarCalculosTerreno()
         {
-            clientes = clienteController.ObtenerClientes();
-
             cmbCliente.Items.Clear();
 
-            foreach (Cliente cliente in clientes)
+            List<CalculoTerreno> calculos = calculoTerrenoController.ObtenerCalculos();
+            List<Cotizacion> cotizaciones = cotizacionController.ObtenerCotizaciones();
+
+            foreach (CalculoTerreno calculo in calculos)
             {
-                string textoCliente = cliente.Nombre + " " + cliente.Apellido + " - " + cliente.Documento;
-                cmbCliente.Items.Add(textoCliente);
-            }
+                bool clienteYaTieneCotizacion = false;
 
-            if (cmbCliente.Items.Count > 0)
-            {
-                cmbCliente.SelectedIndex = 0;
-            }
-        }
-
-        private void CargarMateriales()
-        {
-            materiales = materialController.ObtenerMateriales();
-
-            cmbMaterial.Items.Clear();
-
-            foreach (Material material in materiales)
-            {
-                if (material.Estado == "Activo")
+                foreach (Cotizacion cotizacion in cotizaciones)
                 {
-                    cmbMaterial.Items.Add(material.Nombre);
+                    if (cotizacion.Cliente == calculo.NombreCliente)
+                    {
+                        clienteYaTieneCotizacion = true;
+                        break;
+                    }
+                }
+
+                if (clienteYaTieneCotizacion == false)
+                {
+                    ComboBoxItem<CalculoTerreno> item = new ComboBoxItem<CalculoTerreno>();
+
+                    item.Text = calculo.NombreCliente + " - " +
+                                calculo.NombreMaterial + " - " +
+                                calculo.Volumen.ToString("N2") + " m³";
+
+                    item.Value = calculo;
+
+                    cmbCliente.Items.Add(item);
                 }
             }
 
-            if (cmbMaterial.Items.Count > 0)
-            {
-                cmbMaterial.SelectedIndex = 0;
-            }
+            cmbCliente.SelectedIndex = -1;
+            calculoSeleccionado = null;
         }
 
         private void CargarEstados()
         {
             cmbEstado.Items.Clear();
+
             cmbEstado.Items.Add("Pendiente");
             cmbEstado.Items.Add("Aprobada");
             cmbEstado.Items.Add("Rechazada");
@@ -245,26 +246,43 @@ namespace SistemaMovimientoTierra.Views
             }
         }
 
-        private void cmbMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        private void cmbCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CargarPrecioMaterialSeleccionado();
-        }
-
-        private void CargarPrecioMaterialSeleccionado()
-        {
-            if (cmbMaterial.SelectedIndex < 0)
+            if (cmbCliente.SelectedItem == null)
             {
+                calculoSeleccionado = null;
+                LimpiarCamposAutomaticos();
                 return;
             }
 
-            string nombreMaterial = cmbMaterial.Text;
+            ComboBoxItem<CalculoTerreno> item = cmbCliente.SelectedItem as ComboBoxItem<CalculoTerreno>;
 
-            Material materialSeleccionado = materiales.Find(m => m.Nombre == nombreMaterial);
-
-            if (materialSeleccionado != null)
+            if (item == null)
             {
-                txtPrecioUnitario.Text = materialSeleccionado.PrecioUnitario.ToString("N0");
+                calculoSeleccionado = null;
+                LimpiarCamposAutomaticos();
+                return;
             }
+
+            calculoSeleccionado = item.Value;
+
+            cmbMaterial.Items.Clear();
+            cmbMaterial.Items.Add(calculoSeleccionado.NombreMaterial);
+            cmbMaterial.SelectedIndex = 0;
+
+            txtVolumen.Text = calculoSeleccionado.Volumen.ToString("N2");
+            txtPrecioUnitario.Text = calculoSeleccionado.PrecioUnitario.ToString("N0");
+            txtTotal.Text = calculoSeleccionado.TotalEstimado.ToString("N0");
+        }
+
+        private void LimpiarCamposAutomaticos()
+        {
+            cmbMaterial.Items.Clear();
+            cmbMaterial.Text = "";
+
+            txtVolumen.Clear();
+            txtPrecioUnitario.Clear();
+            txtTotal.Clear();
         }
 
         private void btnCalcularTotal_Click(object sender, EventArgs e)
@@ -274,61 +292,34 @@ namespace SistemaMovimientoTierra.Views
 
         private bool CalcularTotal()
         {
-            decimal volumen;
-            decimal precioUnitario;
-
-            if (!decimal.TryParse(txtVolumen.Text.Trim(), out volumen))
+            if (calculoSeleccionado == null)
             {
-                MessageBox.Show("El volumen debe ser un número válido.",
-                                "Error",
+                MessageBox.Show("Debe seleccionar un cálculo de terreno guardado.",
+                                "Advertencia",
                                 MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
+                                MessageBoxIcon.Warning);
                 return false;
             }
 
-            string precioTexto = txtPrecioUnitario.Text.Replace(".", "").Replace(",", "");
-
-            if (!decimal.TryParse(precioTexto, out precioUnitario))
-            {
-                MessageBox.Show("El precio unitario no es válido.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-                return false;
-            }
-
-            if (volumen <= 0)
-            {
-                MessageBox.Show("El volumen debe ser mayor que cero.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-                return false;
-            }
-
-            if (precioUnitario <= 0)
-            {
-                MessageBox.Show("El precio unitario debe ser mayor que cero.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-                return false;
-            }
-
-            decimal total = volumen * precioUnitario;
-
-            txtTotal.Text = total.ToString("N0");
+            txtVolumen.Text = calculoSeleccionado.Volumen.ToString("N2");
+            txtPrecioUnitario.Text = calculoSeleccionado.PrecioUnitario.ToString("N0");
+            txtTotal.Text = calculoSeleccionado.TotalEstimado.ToString("N0");
 
             return true;
         }
 
         private void btnGuardarCotizacion_Click(object sender, EventArgs e)
         {
+            if (calculoSeleccionado == null)
+            {
+                MessageBox.Show("Debe seleccionar un cálculo de terreno guardado.",
+                                "Advertencia",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
             if (txtIdCotizacion.Text.Trim() == "" ||
-                cmbCliente.Text == "" ||
-                cmbMaterial.Text == "" ||
-                txtVolumen.Text.Trim() == "" ||
-                txtPrecioUnitario.Text.Trim() == "" ||
                 cmbEstado.Text == "")
             {
                 MessageBox.Show("Complete los campos principales de la cotización.",
@@ -338,6 +329,20 @@ namespace SistemaMovimientoTierra.Views
                 return;
             }
 
+            List<Cotizacion> cotizacionesExistentes = cotizacionController.ObtenerCotizaciones();
+
+            foreach (Cotizacion cotizacionExistente in cotizacionesExistentes)
+            {
+                if (cotizacionExistente.Cliente == calculoSeleccionado.NombreCliente)
+                {
+                    MessageBox.Show("Este cliente ya tiene una cotización registrada. No se puede crear otra cotización para el mismo cliente.",
+                                    "Cotización duplicada",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
             bool totalCalculado = CalcularTotal();
 
             if (!totalCalculado)
@@ -345,18 +350,14 @@ namespace SistemaMovimientoTierra.Views
                 return;
             }
 
-            decimal volumen = Convert.ToDecimal(txtVolumen.Text.Trim());
-            decimal precioUnitario = Convert.ToDecimal(txtPrecioUnitario.Text.Replace(".", "").Replace(",", ""));
-            decimal total = Convert.ToDecimal(txtTotal.Text.Replace(".", "").Replace(",", ""));
-
             Cotizacion cotizacion = new Cotizacion
             {
                 IdCotizacion = Convert.ToInt32(txtIdCotizacion.Text),
-                Cliente = cmbCliente.Text,
-                Material = cmbMaterial.Text,
-                Volumen = volumen,
-                PrecioUnitario = precioUnitario,
-                Total = total,
+                Cliente = calculoSeleccionado.NombreCliente,
+                Material = calculoSeleccionado.NombreMaterial,
+                Volumen = Convert.ToDecimal(calculoSeleccionado.Volumen),
+                PrecioUnitario = calculoSeleccionado.PrecioUnitario,
+                Total = calculoSeleccionado.TotalEstimado,
                 Estado = cmbEstado.Text,
                 Observacion = txtObservacion.Text.Trim(),
                 Fecha = DateTime.Now
@@ -374,6 +375,7 @@ namespace SistemaMovimientoTierra.Views
                 LimpiarCampos();
                 GenerarIdCotizacion();
                 CargarCotizaciones();
+                CargarCalculosTerreno();
             }
             else
             {
@@ -400,6 +402,8 @@ namespace SistemaMovimientoTierra.Views
         {
             txtBuscar.Clear();
             CargarCotizaciones();
+            CargarCalculosTerreno();
+            LimpiarCampos();
         }
 
         private void btnEliminarCotizacion_Click(object sender, EventArgs e)
@@ -455,32 +459,41 @@ namespace SistemaMovimientoTierra.Views
 
         private void LimpiarCampos()
         {
+            calculoSeleccionado = null;
+
+            if (cmbCliente.Items.Count > 0)
+            {
+                cmbCliente.SelectedIndex = -1;
+            }
+
+            cmbMaterial.Items.Clear();
+            cmbMaterial.Text = "";
+
             txtVolumen.Clear();
             txtPrecioUnitario.Clear();
             txtTotal.Clear();
             txtObservacion.Clear();
 
-            if (cmbCliente.Items.Count > 0)
-            {
-                cmbCliente.SelectedIndex = 0;
-            }
-
-            if (cmbMaterial.Items.Count > 0)
-            {
-                cmbMaterial.SelectedIndex = 0;
-            }
-
             if (cmbEstado.Items.Count > 0)
             {
                 cmbEstado.SelectedIndex = 0;
             }
-
-            CargarPrecioMaterialSeleccionado();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private class ComboBoxItem<T>
+        {
+            public string Text { get; set; }
+            public T Value { get; set; }
+
+            public override string ToString()
+            {
+                return Text;
+            }
         }
     }
 }

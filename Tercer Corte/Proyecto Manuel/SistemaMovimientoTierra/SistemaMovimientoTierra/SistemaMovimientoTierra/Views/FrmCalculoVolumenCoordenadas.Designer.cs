@@ -31,34 +31,41 @@
             this.pnlSuperior = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbConfiguracion = new System.Windows.Forms.GroupBox();
-            this.cmbMetodo = new System.Windows.Forms.ComboBox();
-            this.lblMetodo = new System.Windows.Forms.Label();
-            this.lblCantidadPuntos = new System.Windows.Forms.Label();
-            this.txtCantidadPuntos = new System.Windows.Forms.TextBox();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.txtH = new System.Windows.Forms.TextBox();
             this.lblH = new System.Windows.Forms.Label();
             this.txtDy = new System.Windows.Forms.TextBox();
             this.lblDy = new System.Windows.Forms.Label();
             this.txtDx = new System.Windows.Forms.TextBox();
             this.lblDx = new System.Windows.Forms.Label();
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.txtCantidadPuntos = new System.Windows.Forms.TextBox();
+            this.lblCantidadPuntos = new System.Windows.Forms.Label();
+            this.cmbMetodo = new System.Windows.Forms.ComboBox();
+            this.lblMetodo = new System.Windows.Forms.Label();
             this.gbCoordenadas = new System.Windows.Forms.GroupBox();
+            this.btnGenerarAleatorio = new System.Windows.Forms.Button();
+            this.btnAgregarPunto = new System.Windows.Forms.Button();
+            this.txtZ = new System.Windows.Forms.TextBox();
+            this.lblZ = new System.Windows.Forms.Label();
+            this.txtY = new System.Windows.Forms.TextBox();
+            this.lblY = new System.Windows.Forms.Label();
+            this.txtX = new System.Windows.Forms.TextBox();
+            this.lblX = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnGrafica3D = new System.Windows.Forms.Button();
             this.dgvCoordenadas = new System.Windows.Forms.DataGridView();
-            this.lblX = new System.Windows.Forms.Label();
-            this.txtX = new System.Windows.Forms.TextBox();
-            this.txtY = new System.Windows.Forms.TextBox();
-            this.lblY = new System.Windows.Forms.Label();
-            this.txtZ = new System.Windows.Forms.TextBox();
-            this.lblZ = new System.Windows.Forms.Label();
-            this.btnAgregarPunto = new System.Windows.Forms.Button();
-            this.btnGenerarAleatorio = new System.Windows.Forms.Button();
             this.gbResultado = new System.Windows.Forms.GroupBox();
             this.lblMetodoResultado = new System.Windows.Forms.Label();
             this.lblVolumen = new System.Windows.Forms.Label();
             this.lblTextoVolumen = new System.Windows.Forms.Label();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.cmbMaterial = new System.Windows.Forms.ComboBox();
+            this.lblMaterial = new System.Windows.Forms.Label();
+            this.txtPrecioUnitario = new System.Windows.Forms.TextBox();
+            this.lblPrecioUnitario = new System.Windows.Forms.Label();
+            this.btnGuardarCalculo = new System.Windows.Forms.Button();
             this.pnlSuperior.SuspendLayout();
             this.gbConfiguracion.SuspendLayout();
             this.gbCoordenadas.SuspendLayout();
@@ -91,6 +98,13 @@
             // gbConfiguracion
             // 
             this.gbConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.gbConfiguracion.Controls.Add(this.btnGuardarCalculo);
+            this.gbConfiguracion.Controls.Add(this.txtPrecioUnitario);
+            this.gbConfiguracion.Controls.Add(this.lblPrecioUnitario);
+            this.gbConfiguracion.Controls.Add(this.cmbMaterial);
+            this.gbConfiguracion.Controls.Add(this.lblMaterial);
+            this.gbConfiguracion.Controls.Add(this.cmbCliente);
+            this.gbConfiguracion.Controls.Add(this.lblCliente);
             this.gbConfiguracion.Controls.Add(this.btnCerrar);
             this.gbConfiguracion.Controls.Add(this.btnLimpiar);
             this.gbConfiguracion.Controls.Add(this.txtH);
@@ -111,101 +125,13 @@
             this.gbConfiguracion.TabStop = false;
             this.gbConfiguracion.Text = "Configuración del cálculo";
             // 
-            // cmbMetodo
-            // 
-            this.cmbMetodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMetodo.FormattingEnabled = true;
-            this.cmbMetodo.Location = new System.Drawing.Point(119, 51);
-            this.cmbMetodo.Name = "cmbMetodo";
-            this.cmbMetodo.Size = new System.Drawing.Size(226, 36);
-            this.cmbMetodo.TabIndex = 3;
-            // 
-            // lblMetodo
-            // 
-            this.lblMetodo.AutoSize = true;
-            this.lblMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMetodo.Location = new System.Drawing.Point(49, 54);
-            this.lblMetodo.Name = "lblMetodo";
-            this.lblMetodo.Size = new System.Drawing.Size(87, 28);
-            this.lblMetodo.TabIndex = 2;
-            this.lblMetodo.Text = "Método:";
-            // 
-            // lblCantidadPuntos
-            // 
-            this.lblCantidadPuntos.AutoSize = true;
-            this.lblCantidadPuntos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadPuntos.Location = new System.Drawing.Point(20, 96);
-            this.lblCantidadPuntos.Name = "lblCantidadPuntos";
-            this.lblCantidadPuntos.Size = new System.Drawing.Size(126, 28);
-            this.lblCantidadPuntos.TabIndex = 4;
-            this.lblCantidadPuntos.Text = "Cant. puntos:";
-            // 
-            // txtCantidadPuntos
-            // 
-            this.txtCantidadPuntos.Location = new System.Drawing.Point(119, 93);
-            this.txtCantidadPuntos.Name = "txtCantidadPuntos";
-            this.txtCantidadPuntos.Size = new System.Drawing.Size(226, 34);
-            this.txtCantidadPuntos.TabIndex = 5;
-            // 
-            // txtH
-            // 
-            this.txtH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtH.Location = new System.Drawing.Point(119, 213);
-            this.txtH.Name = "txtH";
-            this.txtH.Size = new System.Drawing.Size(226, 34);
-            this.txtH.TabIndex = 17;
-            // 
-            // lblH
-            // 
-            this.lblH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblH.Location = new System.Drawing.Point(63, 216);
-            this.lblH.Name = "lblH";
-            this.lblH.Size = new System.Drawing.Size(102, 28);
-            this.lblH.TabIndex = 16;
-            this.lblH.Text = "h corte:";
-            // 
-            // txtDy
-            // 
-            this.txtDy.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDy.Location = new System.Drawing.Point(119, 173);
-            this.txtDy.Name = "txtDy";
-            this.txtDy.Size = new System.Drawing.Size(226, 34);
-            this.txtDy.TabIndex = 15;
-            // 
-            // lblDy
-            // 
-            this.lblDy.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDy.Location = new System.Drawing.Point(86, 176);
-            this.lblDy.Name = "lblDy";
-            this.lblDy.Size = new System.Drawing.Size(102, 28);
-            this.lblDy.TabIndex = 14;
-            this.lblDy.Text = "dy:";
-            // 
-            // txtDx
-            // 
-            this.txtDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDx.Location = new System.Drawing.Point(119, 133);
-            this.txtDx.Name = "txtDx";
-            this.txtDx.Size = new System.Drawing.Size(226, 34);
-            this.txtDx.TabIndex = 13;
-            // 
-            // lblDx
-            // 
-            this.lblDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDx.Location = new System.Drawing.Point(86, 136);
-            this.lblDx.Name = "lblDx";
-            this.lblDx.Size = new System.Drawing.Size(102, 28);
-            this.lblDx.TabIndex = 12;
-            this.lblDx.Text = "dx:";
-            // 
             // btnCerrar
             // 
             this.btnCerrar.BackColor = System.Drawing.Color.Firebrick;
             this.btnCerrar.FlatAppearance.BorderSize = 0;
             this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.Location = new System.Drawing.Point(119, 305);
+            this.btnCerrar.Location = new System.Drawing.Point(121, 465);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(226, 46);
             this.btnCerrar.TabIndex = 19;
@@ -219,13 +145,101 @@
             this.btnLimpiar.FlatAppearance.BorderSize = 0;
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(119, 253);
+            this.btnLimpiar.Location = new System.Drawing.Point(121, 413);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(226, 46);
             this.btnLimpiar.TabIndex = 18;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // txtH
+            // 
+            this.txtH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtH.Location = new System.Drawing.Point(121, 321);
+            this.txtH.Name = "txtH";
+            this.txtH.Size = new System.Drawing.Size(226, 34);
+            this.txtH.TabIndex = 17;
+            // 
+            // lblH
+            // 
+            this.lblH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblH.Location = new System.Drawing.Point(65, 324);
+            this.lblH.Name = "lblH";
+            this.lblH.Size = new System.Drawing.Size(102, 28);
+            this.lblH.TabIndex = 16;
+            this.lblH.Text = "h corte:";
+            // 
+            // txtDy
+            // 
+            this.txtDy.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDy.Location = new System.Drawing.Point(121, 281);
+            this.txtDy.Name = "txtDy";
+            this.txtDy.Size = new System.Drawing.Size(226, 34);
+            this.txtDy.TabIndex = 15;
+            // 
+            // lblDy
+            // 
+            this.lblDy.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDy.Location = new System.Drawing.Point(88, 284);
+            this.lblDy.Name = "lblDy";
+            this.lblDy.Size = new System.Drawing.Size(102, 28);
+            this.lblDy.TabIndex = 14;
+            this.lblDy.Text = "dy:";
+            // 
+            // txtDx
+            // 
+            this.txtDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDx.Location = new System.Drawing.Point(121, 241);
+            this.txtDx.Name = "txtDx";
+            this.txtDx.Size = new System.Drawing.Size(226, 34);
+            this.txtDx.TabIndex = 13;
+            // 
+            // lblDx
+            // 
+            this.lblDx.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDx.Location = new System.Drawing.Point(88, 244);
+            this.lblDx.Name = "lblDx";
+            this.lblDx.Size = new System.Drawing.Size(102, 28);
+            this.lblDx.TabIndex = 12;
+            this.lblDx.Text = "dx:";
+            // 
+            // txtCantidadPuntos
+            // 
+            this.txtCantidadPuntos.Location = new System.Drawing.Point(121, 201);
+            this.txtCantidadPuntos.Name = "txtCantidadPuntos";
+            this.txtCantidadPuntos.Size = new System.Drawing.Size(226, 34);
+            this.txtCantidadPuntos.TabIndex = 5;
+            // 
+            // lblCantidadPuntos
+            // 
+            this.lblCantidadPuntos.AutoSize = true;
+            this.lblCantidadPuntos.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadPuntos.Location = new System.Drawing.Point(22, 204);
+            this.lblCantidadPuntos.Name = "lblCantidadPuntos";
+            this.lblCantidadPuntos.Size = new System.Drawing.Size(126, 28);
+            this.lblCantidadPuntos.TabIndex = 4;
+            this.lblCantidadPuntos.Text = "Cant. puntos:";
+            // 
+            // cmbMetodo
+            // 
+            this.cmbMetodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMetodo.FormattingEnabled = true;
+            this.cmbMetodo.Location = new System.Drawing.Point(121, 159);
+            this.cmbMetodo.Name = "cmbMetodo";
+            this.cmbMetodo.Size = new System.Drawing.Size(226, 36);
+            this.cmbMetodo.TabIndex = 3;
+            // 
+            // lblMetodo
+            // 
+            this.lblMetodo.AutoSize = true;
+            this.lblMetodo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMetodo.Location = new System.Drawing.Point(51, 162);
+            this.lblMetodo.Name = "lblMetodo";
+            this.lblMetodo.Size = new System.Drawing.Size(87, 28);
+            this.lblMetodo.TabIndex = 2;
+            this.lblMetodo.Text = "Método:";
             // 
             // gbCoordenadas
             // 
@@ -248,6 +262,85 @@
             this.gbCoordenadas.TabIndex = 3;
             this.gbCoordenadas.TabStop = false;
             this.gbCoordenadas.Text = "Registro de coordenadas";
+            // 
+            // btnGenerarAleatorio
+            // 
+            this.btnGenerarAleatorio.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnGenerarAleatorio.FlatAppearance.BorderSize = 0;
+            this.btnGenerarAleatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerarAleatorio.ForeColor = System.Drawing.Color.White;
+            this.btnGenerarAleatorio.Location = new System.Drawing.Point(356, 96);
+            this.btnGenerarAleatorio.Name = "btnGenerarAleatorio";
+            this.btnGenerarAleatorio.Size = new System.Drawing.Size(226, 46);
+            this.btnGenerarAleatorio.TabIndex = 23;
+            this.btnGenerarAleatorio.Text = "Coor. aleatorias";
+            this.btnGenerarAleatorio.UseVisualStyleBackColor = false;
+            this.btnGenerarAleatorio.Click += new System.EventHandler(this.btnGenerarAleatorio_Click);
+            // 
+            // btnAgregarPunto
+            // 
+            this.btnAgregarPunto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            this.btnAgregarPunto.FlatAppearance.BorderSize = 0;
+            this.btnAgregarPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarPunto.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarPunto.Location = new System.Drawing.Point(91, 96);
+            this.btnAgregarPunto.Name = "btnAgregarPunto";
+            this.btnAgregarPunto.Size = new System.Drawing.Size(226, 46);
+            this.btnAgregarPunto.TabIndex = 22;
+            this.btnAgregarPunto.Text = "Agregar punto";
+            this.btnAgregarPunto.UseVisualStyleBackColor = false;
+            this.btnAgregarPunto.Click += new System.EventHandler(this.btnAgregarPunto_Click);
+            // 
+            // txtZ
+            // 
+            this.txtZ.Location = new System.Drawing.Point(462, 48);
+            this.txtZ.Name = "txtZ";
+            this.txtZ.Size = new System.Drawing.Size(120, 34);
+            this.txtZ.TabIndex = 21;
+            // 
+            // lblZ
+            // 
+            this.lblZ.AutoSize = true;
+            this.lblZ.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZ.Location = new System.Drawing.Point(428, 51);
+            this.lblZ.Name = "lblZ";
+            this.lblZ.Size = new System.Drawing.Size(27, 28);
+            this.lblZ.TabIndex = 20;
+            this.lblZ.Text = "Z:";
+            // 
+            // txtY
+            // 
+            this.txtY.Location = new System.Drawing.Point(276, 48);
+            this.txtY.Name = "txtY";
+            this.txtY.Size = new System.Drawing.Size(120, 34);
+            this.txtY.TabIndex = 19;
+            // 
+            // lblY
+            // 
+            this.lblY.AutoSize = true;
+            this.lblY.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblY.Location = new System.Drawing.Point(242, 51);
+            this.lblY.Name = "lblY";
+            this.lblY.Size = new System.Drawing.Size(27, 28);
+            this.lblY.TabIndex = 18;
+            this.lblY.Text = "Y:";
+            // 
+            // txtX
+            // 
+            this.txtX.Location = new System.Drawing.Point(91, 48);
+            this.txtX.Name = "txtX";
+            this.txtX.Size = new System.Drawing.Size(120, 34);
+            this.txtX.TabIndex = 17;
+            // 
+            // lblX
+            // 
+            this.lblX.AutoSize = true;
+            this.lblX.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblX.Location = new System.Drawing.Point(57, 51);
+            this.lblX.Name = "lblX";
+            this.lblX.Size = new System.Drawing.Size(28, 28);
+            this.lblX.TabIndex = 16;
+            this.lblX.Text = "X:";
             // 
             // btnCalcular
             // 
@@ -291,85 +384,6 @@
             this.dgvCoordenadas.RowTemplate.Height = 28;
             this.dgvCoordenadas.Size = new System.Drawing.Size(670, 270);
             this.dgvCoordenadas.TabIndex = 0;
-            // 
-            // lblX
-            // 
-            this.lblX.AutoSize = true;
-            this.lblX.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblX.Location = new System.Drawing.Point(57, 51);
-            this.lblX.Name = "lblX";
-            this.lblX.Size = new System.Drawing.Size(28, 28);
-            this.lblX.TabIndex = 16;
-            this.lblX.Text = "X:";
-            // 
-            // txtX
-            // 
-            this.txtX.Location = new System.Drawing.Point(91, 48);
-            this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(120, 34);
-            this.txtX.TabIndex = 17;
-            // 
-            // txtY
-            // 
-            this.txtY.Location = new System.Drawing.Point(276, 48);
-            this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(120, 34);
-            this.txtY.TabIndex = 19;
-            // 
-            // lblY
-            // 
-            this.lblY.AutoSize = true;
-            this.lblY.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblY.Location = new System.Drawing.Point(242, 51);
-            this.lblY.Name = "lblY";
-            this.lblY.Size = new System.Drawing.Size(27, 28);
-            this.lblY.TabIndex = 18;
-            this.lblY.Text = "Y:";
-            // 
-            // txtZ
-            // 
-            this.txtZ.Location = new System.Drawing.Point(462, 48);
-            this.txtZ.Name = "txtZ";
-            this.txtZ.Size = new System.Drawing.Size(120, 34);
-            this.txtZ.TabIndex = 21;
-            // 
-            // lblZ
-            // 
-            this.lblZ.AutoSize = true;
-            this.lblZ.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblZ.Location = new System.Drawing.Point(428, 51);
-            this.lblZ.Name = "lblZ";
-            this.lblZ.Size = new System.Drawing.Size(27, 28);
-            this.lblZ.TabIndex = 20;
-            this.lblZ.Text = "Z:";
-            // 
-            // btnAgregarPunto
-            // 
-            this.btnAgregarPunto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            this.btnAgregarPunto.FlatAppearance.BorderSize = 0;
-            this.btnAgregarPunto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarPunto.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarPunto.Location = new System.Drawing.Point(91, 96);
-            this.btnAgregarPunto.Name = "btnAgregarPunto";
-            this.btnAgregarPunto.Size = new System.Drawing.Size(226, 46);
-            this.btnAgregarPunto.TabIndex = 22;
-            this.btnAgregarPunto.Text = "Agregar punto";
-            this.btnAgregarPunto.UseVisualStyleBackColor = false;
-            this.btnAgregarPunto.Click += new System.EventHandler(this.btnAgregarPunto_Click);
-            // 
-            // btnGenerarAleatorio
-            // 
-            this.btnGenerarAleatorio.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnGenerarAleatorio.FlatAppearance.BorderSize = 0;
-            this.btnGenerarAleatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerarAleatorio.ForeColor = System.Drawing.Color.White;
-            this.btnGenerarAleatorio.Location = new System.Drawing.Point(356, 96);
-            this.btnGenerarAleatorio.Name = "btnGenerarAleatorio";
-            this.btnGenerarAleatorio.Size = new System.Drawing.Size(226, 46);
-            this.btnGenerarAleatorio.TabIndex = 23;
-            this.btnGenerarAleatorio.Text = "Coor. aleatorias";
-            this.btnGenerarAleatorio.UseVisualStyleBackColor = false;
-            this.btnGenerarAleatorio.Click += new System.EventHandler(this.btnGenerarAleatorio_Click);
             // 
             // gbResultado
             // 
@@ -415,6 +429,78 @@
             this.lblTextoVolumen.Text = "Volumen calculado:";
             this.lblTextoVolumen.Click += new System.EventHandler(this.lblTextoVolumen_Click);
             // 
+            // cmbCliente
+            // 
+            this.cmbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(121, 35);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(226, 36);
+            this.cmbCliente.TabIndex = 21;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Location = new System.Drawing.Point(62, 38);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(76, 28);
+            this.lblCliente.TabIndex = 20;
+            this.lblCliente.Text = "Cliente:";
+            // 
+            // cmbMaterial
+            // 
+            this.cmbMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMaterial.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbMaterial.FormattingEnabled = true;
+            this.cmbMaterial.Location = new System.Drawing.Point(121, 77);
+            this.cmbMaterial.Name = "cmbMaterial";
+            this.cmbMaterial.Size = new System.Drawing.Size(226, 36);
+            this.cmbMaterial.TabIndex = 23;
+            // 
+            // lblMaterial
+            // 
+            this.lblMaterial.AutoSize = true;
+            this.lblMaterial.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaterial.Location = new System.Drawing.Point(51, 80);
+            this.lblMaterial.Name = "lblMaterial";
+            this.lblMaterial.Size = new System.Drawing.Size(88, 28);
+            this.lblMaterial.TabIndex = 22;
+            this.lblMaterial.Text = "Material:";
+            // 
+            // txtPrecioUnitario
+            // 
+            this.txtPrecioUnitario.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrecioUnitario.Location = new System.Drawing.Point(121, 119);
+            this.txtPrecioUnitario.Name = "txtPrecioUnitario";
+            this.txtPrecioUnitario.Size = new System.Drawing.Size(226, 34);
+            this.txtPrecioUnitario.TabIndex = 25;
+            // 
+            // lblPrecioUnitario
+            // 
+            this.lblPrecioUnitario.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecioUnitario.Location = new System.Drawing.Point(15, 122);
+            this.lblPrecioUnitario.Name = "lblPrecioUnitario";
+            this.lblPrecioUnitario.Size = new System.Drawing.Size(152, 28);
+            this.lblPrecioUnitario.TabIndex = 24;
+            this.lblPrecioUnitario.Text = "Precio unitario:";
+            this.lblPrecioUnitario.Click += new System.EventHandler(this.lblPrecioUnitario_Click);
+            // 
+            // btnGuardarCalculo
+            // 
+            this.btnGuardarCalculo.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnGuardarCalculo.FlatAppearance.BorderSize = 0;
+            this.btnGuardarCalculo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarCalculo.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarCalculo.Location = new System.Drawing.Point(121, 361);
+            this.btnGuardarCalculo.Name = "btnGuardarCalculo";
+            this.btnGuardarCalculo.Size = new System.Drawing.Size(226, 46);
+            this.btnGuardarCalculo.TabIndex = 26;
+            this.btnGuardarCalculo.Text = "Guardar cálculo";
+            this.btnGuardarCalculo.UseVisualStyleBackColor = false;
+            this.btnGuardarCalculo.Click += new System.EventHandler(this.btnGuardarCalculo_Click);
+            // 
             // FrmCalculoVolumenCoordenadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
@@ -425,7 +511,7 @@
             this.Controls.Add(this.gbConfiguracion);
             this.Controls.Add(this.pnlSuperior);
             this.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "FrmCalculoVolumenCoordenadas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -477,5 +563,12 @@
         private System.Windows.Forms.Label lblMetodoResultado;
         private System.Windows.Forms.Label lblVolumen;
         private System.Windows.Forms.Label lblTextoVolumen;
+        private System.Windows.Forms.ComboBox cmbCliente;
+        private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.TextBox txtPrecioUnitario;
+        private System.Windows.Forms.Label lblPrecioUnitario;
+        private System.Windows.Forms.ComboBox cmbMaterial;
+        private System.Windows.Forms.Label lblMaterial;
+        private System.Windows.Forms.Button btnGuardarCalculo;
     }
 }
